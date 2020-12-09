@@ -49,14 +49,6 @@ relays_htm_files/20.png
 relays_htm_files/20@2x.png
 relays_htm_files/21.png
 relays_htm_files/21@2x.png
-relays_htm_files/23.png
-relays_htm_files/23@2x.png
-relays_htm_files/24.png
-relays_htm_files/24@2x.png
-relays_htm_files/25.png
-relays_htm_files/25@2x.png
-relays_htm_files/26.png
-relays_htm_files/26@2x.png
 relays_htm_files/110.jpg
 relays_htm_files/128.png
 relays_htm_files/128@2x.png
@@ -72,8 +64,6 @@ relays_htm_files/149.png
 relays_htm_files/156.jpg
 relays_htm_files/157.jpg
 relays_htm_files/159@2x.png
-relays_htm_files/169.png
-relays_htm_files/169@2x.png
 relays_htm_files/170.png
 relays_htm_files/170@2x.png
 relays_htm_files/171.png
