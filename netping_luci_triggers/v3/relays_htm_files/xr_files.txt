@@ -177,3 +177,5 @@ relays_htm_files/584.jpg
 relays_htm_files/584@2x.jpg
 relays_htm_files/585.jpg
 relays_htm_files/585@2x.jpg
+relays_htm_files/603.png
+relays_htm_files/603@2x.png
