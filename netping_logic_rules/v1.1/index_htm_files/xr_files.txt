@@ -70,7 +70,6 @@ index_htm_files/384.png
 index_htm_files/385.png
 index_htm_files/385@2x.png
 index_htm_files/386.png
-index_htm_files/386@2x.png
 index_htm_files/387.png
 index_htm_files/35.png
 index_htm_files/36.png
@@ -311,6 +310,11 @@ index_htm_files/607@2x.png
 index_htm_files/608.png
 index_htm_files/609.png
 index_htm_files/609@2x.png
+index_htm_files/386@2x.png
+index_htm_files/622.png
+index_htm_files/623.png
+index_htm_files/623@2x.png
+index_htm_files/624.png
 index_htm_files/XaraWDEmbeddedHTMLfont1.ttf
 index_htm_files/XaraWDEmbeddedHTMLfont1.eot
 index_htm_files/XaraWDEmbeddedHTMLfont2.ttf
