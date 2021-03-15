@@ -1,6 +1,14 @@
 
 config cli 'sensor'
-	option id 'sensor_001'
-	option grammar '/etc/netping_sensor/sensor_cli.ebnf'
+	option id 'cli_001'
+	option grammar '/etc/netping_sensor/sensor_cli.ne'
+	option executor 'sensor_cli.py'
+
+config cli 'sensor'
+	option id 'http_001'
+	option grammar '/etc/netping_sensor/sensor_http.ne'
+	option executor 'sensor_http.py'
+
+
 
 
