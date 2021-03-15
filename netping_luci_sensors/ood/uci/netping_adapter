@@ -1,0 +1,23 @@
+
+config adapter
+	option id 'adapter_001'
+	option type '1-wire'
+	option name 'Адаптер 1'
+
+config adapter
+	option id 'adapter_002'
+	option type 'usb'
+	option name 'Адаптер 2'
+
+config adapter
+	option id 'adapter_003'
+	option type 'uart'
+	option name 'Адаптер 3'
+
+config adapter
+	option id 'adapter_004'
+	option type 'gpio'
+	option name 'Адаптер 4'
+
+
+
