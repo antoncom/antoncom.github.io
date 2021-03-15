@@ -1,0 +1,25 @@
+
+config cli 'sensor'
+	option id 'sensor_001'
+	option sensor_status 'sensor_cli.py status'
+	option sensor_status_%NAME% 'sensor_cli.py status [NAME]'
+	option sensor_status_%NUMBER% 'sensor_cli.py status [NUMBER]'
+	option sensor_%NAME%_data 'sensor_cli.py [NAME] data'
+	option sensor_%NUMBER%_data 'sensor_cli.py [NUMBER] data'
+	option sensor_add__tmpl__%NAME% 'sensor_cli.py add --tmpl=[NAME]'
+	option sensor_add__tmpl__%NUMBER% 'sensor_cli.py add --tmpl=[NUMBER]'
+	option sensor_del_%NAME% 'sensor_cli.py del [NAME]'
+	option sensor_del_%NUMBER% 'sensor_cli.py del [NUMBER]'
+	option sensor_create_template_%NAME% 'sensor_cli.py create template [NAME]'
+	option sensor_create_template_%NUMBER% 'sensor_cli.py create template [NUMBER]'
+	option sensor_remove_template_%NAME% 'sensor_cli.py create template [NAME]'
+	option sensor_remove_template_%NUMBER% 'sensor_cli.py create template [NUMBER]'
+	option sensor__template__%NAME%__indicator_add_%NAME%_unit_%LETTER% 'sensor_cli.py --tmpl=[NAME] indicator add [NAME] unit [LETTER]'
+	option sensor__tmpl__%NAME% 'sensor_cli.py --tmpl=[NAME]'
+	
+	
+config cli 'adapter'
+	option adapter_list 'sensor_cli.py adapter list'
+	option adapter_%NAME%_list 'sensor_cli.py adapter [NAME] list'
+	option adapter_%NUMBER%_list 'sensor_cli.py adapter [NUMBER] list'
+

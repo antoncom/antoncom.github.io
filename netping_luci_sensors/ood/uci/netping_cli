@@ -1,0 +1,6 @@
+
+config cli 'sensor'
+	option id 'sensor_001'
+	option grammar '/etc/netping_sensor/sensor_cli.ebnf'
+
+
