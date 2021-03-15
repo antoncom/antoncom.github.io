@@ -1,0 +1,35 @@
+
+# Section for an architector
+# ==========================
+
+MAIN 			-> 	SENSOR_CLI
+				|	ADAPTER_CLI	
+
+SENSOR_CLI		->	sensor status			# list all sensors and their statuses
+				|	sensor NAME status 		# get status of sensor with defined NAME
+				|	sensor NUMBER status	# get status of sensor with defined N (number)
+
+				|	sensor NAME data		# get data of sensor by NAME of sensor
+				|	sensor NUMBER data		# get data of sensor by NUMBER of sensor
+
+				|	sensor add --tmpl=[NAME]				# add sensor by NAME of template
+				|	sensor add --tmpl=[NUMBER] 				# add sensor by NUMBER of template
+				|	sensor del [NAME]						# delete sensor by NAME
+				|	sensor del [NUMBER]						# delete sensor by NUMBER
+
+				|	sensor create template [NAME]									# create template with NAME
+				|	sensor --tmpl=[NAME] indicator add [NAME] unit [LETTER]			# add new indicator to template
+				|	sensor --tmpl=[NAME]											# get teamplate's indicators
+				|	sensor remove template [NAME]									# remove teamplate
+				
+
+ADAPTER_CLI		->	adapter list			# get all adapters and their sensors
+				|	adapter [NAME] list		# get all sensors by adapter NAME
+				|	adapter [NUMBER] list	# get all sensors by adapter NUMBER
+
+
+# Section for a programmer
+# ========================
+
+# NAME 			Letters, Digits, Spaces, Special characters (e.g. !#$%, etc.)
+# NUMBER 		1..999
