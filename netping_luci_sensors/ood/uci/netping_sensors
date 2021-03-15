@@ -1,18 +1,41 @@
 
 config sensor
-    option state '1'
     option id 'sensor_001'				# unique identifier - for easy/fast program operation
     option name 'Напряжение на резервном UPS'		# unique name - for user good usability
+    option value '12'					# measured value
+    option unit 'V'					# unit
     option connected_with 'protocol_001'		# reference to connection config
     list managed_via 'cli_001'				# reference to interfaces config
     list managed_via 'http_001'
     list sends_alert 'email_001'			# reference to alert config (type 'email')
     list sends_alert 'syslog_001'			# reference to alert config (type 'syslog')
     option logged_as 'sensor_001'			# reference to eventlogs record
+    option state '1'
+    option based_on 'tmpl_001'				#reference to template config
 
-config indicator
-    option sensor_id 'sensor_001'			# reference to sensor
-    option name 'Напряжение'
-    option value '12'
+config template 'sensor'
+    option id 'tmpl_001'
+    option name 'Шаблон датчика напряжения'
+    option value '0'
     option unit 'V'
+    option connected_with 'protocol_http_default'
+    list managed_via 'cli_sensor'
+    list managed_via 'http_sensor'
+    list sends_alert 'email_alert_default'
+    list sends_alert 'syslog_alert_default'
+    option logged_as ''
+    option state '1'
+
+config template 'sensor'
+    option id 'tmpl_002'
+    option name 'Шаблон датчика температуры'
+    option value '0'
+    option unit 'С'
+    option connected_with 'protocol_http_default'
+    list managed_via 'cli_sensor'
+    list managed_via 'http_sensor'
+    list sends_alert 'email_alert_default'
+    list sends_alert 'syslog_alert_default'
+    option logged_as ''
+    option state '1'
 
