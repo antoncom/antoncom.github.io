@@ -299,8 +299,6 @@ index_htm_files/358.png
 index_htm_files/359.png
 index_htm_files/360.png
 index_htm_files/360@2x.png
-index_htm_files/361.png
-index_htm_files/361@2x.png
 index_htm_files/362.png
 index_htm_files/363.png
 index_htm_files/363@2x.png
@@ -340,5 +338,7 @@ index_htm_files/378.png
 index_htm_files/378@2x.png
 index_htm_files/379.png
 index_htm_files/379@2x.png
+index_htm_files/398.jpg
+index_htm_files/398@2x.jpg
 index_htm_files/XaraWDEmbeddedHTMLfont1.ttf
 index_htm_files/XaraWDEmbeddedHTMLfont1.eot
