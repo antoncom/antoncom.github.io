@@ -1,6 +1,6 @@
-@import url(//fonts.googleapis.com/css?family=Arimo:regular,700,italic&subset=latin,cyrillic);
+@import url(//fonts.googleapis.com/css?family=Arimo:regular,700,italic,700italic&subset=latin,cyrillic);
 @import url(//fonts.googleapis.com/css?family=Cuprum:700&subset=latin,cyrillic);
-@import url(//fonts.googleapis.com/css?family=Cousine:700&subset=latin);
+@import url(//fonts.googleapis.com/css?family=Cousine:regular,700&subset=latin);
 @font-face {font-family: 'Verdana Regular';src: url("XaraWDEmbeddedHTMLfont1.woff") format("woff"), local(Verdana Regular), local("Verdana");}
 @font-face {font-family: 'Courier Prime Bold';src: url("XaraWDEmbeddedHTMLfont2.eot?") format("embedded-opentype"), local('Courier Prime Bold'), local("CourierPrime");}
 @font-face {font-family: 'Courier Prime Regular';src: url("XaraWDEmbeddedHTMLfont3.eot?") format("embedded-opentype"), local('Courier Prime Regular'), local("CourierPrime");}
