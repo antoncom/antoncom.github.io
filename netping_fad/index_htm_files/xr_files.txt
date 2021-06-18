@@ -64,8 +64,6 @@ index_htm_files/40.png
 index_htm_files/40@2x.png
 index_htm_files/41.png
 index_htm_files/41@2x.png
-index_htm_files/42.png
-index_htm_files/42@2x.png
 index_htm_files/43.png
 index_htm_files/43@2x.png
 index_htm_files/44.png
@@ -110,6 +108,10 @@ index_htm_files/81@2x.png
 index_htm_files/82.png
 index_htm_files/82@2x.png
 index_htm_files/75@2x.png
+index_htm_files/87.png
+index_htm_files/87@2x.png
+index_htm_files/90.png
+index_htm_files/90@2x.png
 index_htm_files/XaraWDEmbeddedHTMLfont1.ttf
 index_htm_files/XaraWDEmbeddedHTMLfont1.eot
 index_htm_files/XaraWDEmbeddedHTMLfont2.ttf
