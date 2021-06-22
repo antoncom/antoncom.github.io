@@ -990,6 +990,8 @@ index_htm_files/3498.png
 index_htm_files/3498@2x.png
 index_htm_files/3499.png
 index_htm_files/3499@2x.png
+index_htm_files/3513.png
+index_htm_files/3513@2x.png
 index_htm_files/XaraWDEmbeddedHTMLfont1.ttf
 index_htm_files/XaraWDEmbeddedHTMLfont1.eot
 index_htm_files/XaraWDEmbeddedHTMLfont2.ttf
