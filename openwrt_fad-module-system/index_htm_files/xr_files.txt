@@ -227,8 +227,6 @@ index_htm_files/2366.png
 index_htm_files/2366@2x.png
 index_htm_files/2367.png
 index_htm_files/2367@2x.png
-index_htm_files/2368.png
-index_htm_files/2368@2x.png
 index_htm_files/2416.png
 index_htm_files/2416@2x.png
 index_htm_files/2417.png
