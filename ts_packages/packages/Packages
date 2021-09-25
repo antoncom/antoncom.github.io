@@ -1,14 +1,14 @@
-Package: ts_skw92a
-Version: 1.3.3-1
+Package: tsmodem
+Version: 1.3.4-1
 Depends: libc, luci-compat, luaposix, luabitop, lpeg, coreutils-sleep, libubox-lua, luasocket, coreutils-stty, libopenssl1.1, comgt, kmod-usb-serial, kmod-usb-serial-option, kmod-usb-serial-wwan, usb-modeswitch, kmod-usb-core, luci-app-uhttpd, luci-ssl-openssl
-Source: /home/anton/lua_projects/SKW92A/MAKING_A_PACKAGE/TS_REPO/ts_skw92a
-SourceName: ts_skw92a
+Source: /home/anton/lua_projects/SKW92A/MAKING_A_PACKAGE/TS_REPO/tsmodem
+SourceName: tsmodem
 License: GPL-3.0-or-later
 Section: luci
 Architecture: all
 Installed-Size: 989432
-Filename: ts_skw92a_1.3.3-1_all.ipk
-Size: 990040
-SHA256sum: 23c284c3a5848c28b81b35a921fe12603f1e81cef5a42d5edca47f112949454e
+Filename: tsmodem_1.3.4-1_all.ipk
+Size: 990042
+SHA256sum: 586db1722ff74ec2cf8797114f17c541ff4fa699f9e28ea5a165e43fe5b94827
 Description:  Double SIM management for Skw92A with Sim7600 modem integration.
 
