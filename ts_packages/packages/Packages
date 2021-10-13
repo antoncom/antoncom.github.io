@@ -19,9 +19,9 @@ SourceName: tsmodem
 License: GPL-3.0-or-later
 Section: luci
 Architecture: all
-Installed-Size: 1002675
+Installed-Size: 1001116
 Filename: tsmodem_1.3.6-1_all.ipk
-Size: 1003283
+Size: 1001751
 SHA256sum: ¢Èÿ*ç‡îÔ;)—C{∫?5T32+EozQ˙A™äb
 Description:  Double SIM management for Skw92A with Sim7600 modem integration.
 
