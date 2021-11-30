@@ -1,0 +1,31 @@
+"Activity Name","Activity Definition","Activity Cost","Activity Duration","Activity Children","Activity Parent"
+"SMARTLIGHT  Firmware & Software Development",,873 600,182,"Технические изыскания подготовка детализированного ТЗ
+Hardware Layer (drivers)
+Application Layer (logical rules)",None
+"Технические изыскания подготовка детализированного ТЗ",,100 800,28,None,"SMARTLIGHT  Firmware & Software Development"
+"Hardware Layer (drivers)",,0,0,None,"SMARTLIGHT  Firmware & Software Development"
+"Application Layer (logical rules)",,772 800,154,"LISTEN SERVICE
+AUDIO SERVICE
+TOUCH SERVICE
+PHOTO SENCE SERVICE
+LIGHT SERVICE
+VIBRATION SERVICE
+NAVIGATE SERVICE
+MAIN DEVICE LOGIC 
+MAIN SYSTEM LOGIC","SMARTLIGHT  Firmware & Software Development"
+"LISTEN SERVICE","Восприятие звуковых событий датчиком звука. Примитивный анализ: например, сколько раз хлопнули в ладоши или прохлопать музыкальный ритм. Без распознавания речи.",67 200,14,None,"Application Layer (logical rules)"
+"AUDIO SERVICE","Озвучивание событий по заданным правилам. Запуск аудиоплейера. Выбор аудиотрека по классификатору событий.
+Передача по интерфейсу Blueetooth.",100 800,21,None,"Application Layer (logical rules)"
+"TOUCH SERVICE","Правила обработки события типа ""Прикладывание к предмету"". Обработка данных RFID-меток.",33 600,7,None,"Application Layer (logical rules)"
+"PHOTO SENCE SERVICE","Восприятие датчиком световых событий и обработка программой в соответствии с заданными правилами.
+",67 200,14,None,"Application Layer (logical rules)"
+"LIGHT SERVICE","Световая индикация устройства по заданным правилам на основе классификатора событий.",33 600,7,None,"Application Layer (logical rules)"
+"VIBRATION SERVICE","Вибрация в зависимости от различных событий. Запуск/остановка мотора, длительность/интенсивность вибрации в зависимости от внешних событий (приближение/отдаление к цели на маршруте).",33 600,7,None,"Application Layer (logical rules)"
+"NAVIGATE SERVICE","Правила обработки событий на основе GPS навигации. Ориентация устройства в пространстве и т.п.",67 200,14,None,"Application Layer (logical rules)"
+"MAIN DEVICE LOGIC ","Основные логика программы каждого усторйства. То есть набор поведений отдельного программно-аппаратного персонажа.
+При использовании iBeacon осуществляется отслеживание перемещений, контрольно-пропускные действия, навигация.
+Запрос к общему классификатору событий.",168 000,28,None,"Application Layer (logical rules)"
+"MAIN SYSTEM LOGIC","Обслуживающий интернет-сервер. Предназначен для хранения основного массива данных, обмена данных с устройствами.
+По сути здесь должен быть размещён ""игровой движок"" - MAIN SYSTEM LOGIC",201 600,42,None,"Application Layer (logical rules)"
+
+
