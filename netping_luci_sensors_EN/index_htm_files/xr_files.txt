@@ -71,8 +71,6 @@ index_htm_files/41.png
 index_htm_files/41@2x.png
 index_htm_files/42.png
 index_htm_files/42@2x.png
-index_htm_files/622.png
-index_htm_files/622@2x.png
 index_htm_files/74.png
 index_htm_files/74@2x.png
 index_htm_files/75.png
@@ -104,5 +102,7 @@ index_htm_files/642.png
 index_htm_files/642@2x.png
 index_htm_files/643.png
 index_htm_files/643@2x.png
+index_htm_files/646.png
+index_htm_files/646@2x.png
 index_htm_files/XaraWDEmbeddedHTMLfont1.ttf
 index_htm_files/XaraWDEmbeddedHTMLfont1.eot
