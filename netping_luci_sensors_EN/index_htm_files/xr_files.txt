@@ -99,10 +99,10 @@ index_htm_files/103@2x.png
 index_htm_files/641.png
 index_htm_files/641@2x.png
 index_htm_files/642.png
-index_htm_files/642@2x.png
-index_htm_files/643.png
-index_htm_files/643@2x.png
 index_htm_files/646.png
 index_htm_files/646@2x.png
+index_htm_files/642@2x.png
+index_htm_files/652.png
+index_htm_files/652@2x.png
 index_htm_files/XaraWDEmbeddedHTMLfont1.ttf
 index_htm_files/XaraWDEmbeddedHTMLfont1.eot
