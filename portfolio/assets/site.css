@@ -56,3 +56,9 @@ figure img{cursor:zoom-in}
 .lb button:hover,.lb button:focus-visible{background:rgb(255 255 255/.25)}
 .lb-x{top:14px;right:14px}.lb-p{left:10px;top:50%;transform:translateY(-50%)}.lb-n{right:10px;top:50%;transform:translateY(-50%)}
 @media(max-width:600px){.lb{padding:56px 8px}.lb-p,.lb-n{top:auto;bottom:12px;transform:none}}
+/* non-Latin scripts */
+html:lang(hi) body{font-family:Inter,"Noto Sans Devanagari",system-ui,sans-serif;line-height:1.75}
+html:lang(hi) :is(h1,h2,h3,.brand,.line b){font-family:Spectral,"Noto Serif Devanagari",Georgia,serif;line-height:1.35}
+html:lang(zh) body{font-family:Inter,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC","Noto Sans CJK SC",system-ui,sans-serif;line-height:1.8}
+html:lang(zh) :is(h1,h2,h3,.brand,.line b){font-family:Spectral,"Songti SC","Noto Serif SC","Noto Serif CJK SC","SimSun",serif;line-height:1.35}
+html:lang(zh) p,html:lang(zh) li{text-align:justify;line-break:strict}
