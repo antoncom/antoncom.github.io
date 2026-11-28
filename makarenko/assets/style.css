@@ -80,6 +80,11 @@ nav#TOC ul ul li { font-weight: normal; margin: 1pt 0; }
 .pager small { display: block; color: #888; font-size: 8.5pt; }
 ol.examples li { margin-bottom: 6pt; }
 ol > li > p:first-child { margin-top: 0; }
+.fig { margin: 10pt 0 14pt; text-align: center; }
+.fig img { max-width: 100%; height: auto; border: 1px solid #e2ddf2; border-radius: 6px; }
+.fig.narrow img { max-width: 460px; }
+.fig.icons img { border: none; max-width: 420px; }
+.fig figcaption { font-size: 9pt; color: #666; margin-top: 4pt; }
 .site-foot { margin-top: 36px; padding-top: 10px; border-top: 1px solid #e2ddf2; font-size: 8.8pt; color: #777; }
 /* landing */
 body.landing { padding-top: 0; display: flex; min-height: 100vh; align-items: center; }
