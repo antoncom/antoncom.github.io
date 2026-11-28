@@ -3,7 +3,7 @@
 GitHub Pages site: https://antoncom.github.io/makarenko/
 
 - `index.html` — landing page with language choice
-- `<lang>/index.html` — the document (ru, en, de, es, hi)
+- `<lang>/index.html` — the document (ru, en, de, es, hi, zh, ko)
 - `<lang>/<dir>/*.html` — full texts of the team policies (`ru/polozheniya`, others `policies`)
 - `assets/` — shared CSS, JS and images
 

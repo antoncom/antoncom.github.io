@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>马卡连柯模式在厂长工作中的应用</title>
+<meta name="description" content="A.S. 马卡连柯的管理模式在分布式研发团队中的应用：最大限度的尊重与最大限度的要求。">
+<link rel="alternate" hreflang="ru" href="https://antoncom.github.io/makarenko/ru/">
+<link rel="alternate" hreflang="en" href="https://antoncom.github.io/makarenko/en/">
+<link rel="alternate" hreflang="de" href="https://antoncom.github.io/makarenko/de/">
+<link rel="alternate" hreflang="es" href="https://antoncom.github.io/makarenko/es/">
+<link rel="alternate" hreflang="hi" href="https://antoncom.github.io/makarenko/hi/">
+<link rel="alternate" hreflang="zh-CN" href="https://antoncom.github.io/makarenko/zh/">
+<link rel="alternate" hreflang="ko" href="https://antoncom.github.io/makarenko/ko/">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<nav class="topnav" id="topnav">
+  <a class="brand" href="#top">马卡连柯模式</a>
+  <a class="sec" data-s="TOC" href="#TOC">目录</a>
+  <a class="sec" data-s="history" href="#history">1. 历史</a>
+  <a class="sec" data-s="overview" href="#overview">2. 概述</a>
+  <a class="sec" data-s="today" href="#today">3. 百年之后</a>
+  <div class="dd" id="ddpol"><a class="sec" data-s="rules" href="#rules">4. 规章 ▾</a><div class="ddmenu">
+    <span class="grp">团队规定</span>
+    <a href="#pol-culture">企业文化</a>
+    <a href="#pol-ssh">Six Sun Hours</a>
+    <a href="#pol-reports">每日报告</a>
+    <a href="#pol-chat">交流时段 15:00</a>
+    <a href="#pol-ritm">“节奏”例会</a>
+    <a href="#pol-plan">月度工作计划</a>
+    <a href="#pol-intern">实习 2025</a>
+    <span class="grp">薪酬与员工计划</span>
+    <a href="#pol-accel">TeamTime 加速制</a>
+    <a href="#pol-infl">通胀系数</a>
+    <a href="#pol-offline">线下项目</a>
+    <a href="#pol-sport">“运动”计划</a>
+    <a href="#pol-istlit">史文俱乐部</a>
+  </div></div>
+  <a class="sec" data-s="where" href="#where">5. 应用</a>
+  <a class="up" href="#top" title="返回顶部">↑</a>
+  <div class="dd langdd"><a class="lang" href="../" title="语言 / Language">ZH ▾</a><div class="ddmenu">
+    <a href="../ru/" lang="ru">Русский</a>
+    <a href="../en/" lang="en">English</a>
+    <a href="../de/" lang="de">Deutsch</a>
+    <a href="../es/" lang="es">Español</a>
+    <a href="../hi/" lang="hi">हिन्दी</a>
+    <a href="../zh/" lang="zh-CN">中文</a>
+    <a href="../ko/" lang="ko">한국어</a>
+  </div></div>
+</nav>
+<a id="top"></a>
+<div class="cover">
+  <p class="t1">马卡连柯模式<br>在厂长工作中的应用</p>
+  <p class="t2">“最大限度的尊重与最大限度的要求”原则<br>从1930年代的劳动公社到分布式研发团队</p>
+  <div class="formula">max(R) = max(D)<small>对人尽可能多地要求，对人尽可能多地尊重 —— A.S. 马卡连柯</small></div>
+  <div class="meta">作者：安东·加夫里柳克（Anton Gavrilyuk）<br>2026年11月</div>
+</div>
+
+<nav id="TOC" role="doc-toc">
+<div class="toc-title">目录</div>
+<ul>
+<li><a href="#about">关于本文件</a></li>
+<li><a href="#history">1. 简要历史背景</a>
+  <ul>
+  <li><a href="#h-gorky">高尔基工学团（1920–1928）</a></li>
+  <li><a href="#h-commune">捷尔任斯基公社（1927–1935）</a></li>
+  <li><a href="#h-fed">公社的工厂：FD-1 与 FED</a></li>
+  <li><a href="#h-results">成果：取得了什么</a></li>
+  </ul></li>
+<li><a href="#overview">2. 模式概述</a>
+  <ul>
+  <li><a href="#o-principle">核心原则</a></li>
+  <li><a href="#o-elements">体系要素</a></li>
+  <li><a href="#o-adults">为何适用于成年人</a></li>
+  </ul></li>
+<li><a href="#today">3. 百年之后如何运作</a>
+  <ul>
+  <li><a href="#t-map">对照：公社 → 研发团队</a></li>
+  <li><a href="#t-director">这对厂长意味着什么</a></li>
+  </ul></li>
+<li><a href="#rules">4. 团队协作规章</a>
+  <ul>
+  <li><a href="#pol-culture">企业文化规章</a></li>
+  <li><a href="#pol-ssh">Six Sun Hours</a></li>
+  <li><a href="#pol-reports">每日报告</a></li>
+  <li><a href="#pol-chat">交流时段 15:00</a></li>
+  <li><a href="#pol-ritm">“节奏”例会</a></li>
+  <li><a href="#pol-plan">月度工作计划</a></li>
+  <li><a href="#pol-intern">实习 2025</a></li>
+  <li><a href="#pol-accel">TeamTime 加速制</a></li>
+  <li><a href="#pol-infl">通胀系数</a></li>
+  <li><a href="#pol-offline">线下项目</a></li>
+  <li><a href="#pol-sport">“运动”计划</a></li>
+  <li><a href="#pol-istlit">史文俱乐部</a></li>
+  </ul></li>
+<li><a href="#where">5. 已在何处应用</a></li>
+<li><a href="#sources">资料来源</a></li>
+</ul>
+</nav>
+
+<h1 id="about">关于本文件</h1>
+<p>本文件记录了作者从 A.S. 马卡连柯的著作中提炼、并在实践中检验过的一种管理模式：2008–2012 年在作者自己的网络工作室中，自 2022 年起在一家工业企业的分布式研发团队中。文件总结了已取得的成果，并提出了进一步发展该模式的方案，可作为管理者（团队负责人、部门主管、技术总监、组织发展经理）开展工作的基础。</p>
+<p>本文件同时也是“无线 LTE/4G 路由器”创业项目五年工作的总结，以及对“罗斯托夫电子厂”有限责任公司领导层的感谢——感谢他们的信任、耐心与支持，没有这些，这段经历是不可能实现的。</p>
+
+<!-- ============================ 1 ============================ -->
+<h1 id="history">1. 简要历史背景</h1>
+
+<p>安东·谢苗诺维奇·马卡连柯（1888–1939）以教育家身份载入史册，但在 1920–1930 年代，他实际上承担的是厂长的工作：从零开始组建集体、建立生产，并对财务和成果负责。他的经验之所以对管理者有价值，是因为它不是在课堂上，而是在经济活动中——在运转中的企业里——经受了检验。</p>
+
+<h2 id="h-gorky">高尔基工学团（1920–1928）</h2>
+<p>1920 年 9 月，马卡连柯在波尔塔瓦附近着手创建并领导一所少年再教育机构——后来它被命名为马克西姆·高尔基劳动工学团。自 1923 年起，工学团成为乌克兰苏维埃社会主义共和国教育人民委员部的实验示范机构；1926 年春迁至哈尔科夫附近的库里亚日。</p>
+<p>正是在这里，体系的主要工具逐渐成形：分队与队长、队长会议、混合分队，以及作为集体最高机构的全体大会。马卡连柯后来在《教育诗》（1935）中描述了这段经历。</p>
+
+<h2 id="h-commune">捷尔任斯基公社（1927–1935）</h2>
+<p>F.E. 捷尔任斯基儿童劳动公社在新哈尔科夫镇创建，资金来自乌克兰契卡工作人员自愿从工资中捐出的款项，于 1927 年 12 月 29 日隆重开幕。马卡连柯受邀领导公社；集体的骨干是高尔基工学团的原学员。马卡连柯领导公社直至 1935 年。</p>
+<p>公社的关键特点是学习与生产劳动相结合：先在作坊里，后来在真正的工厂车间里。1930 年，公社开设了哈尔科夫机械制造学院的工农速成部，1934 年又开办了十年制学校。</p>
+
+<h2 id="h-fed">公社的工厂：FD-1 与 FED</h2>
+<ul class="timeline">
+<li><b>1927 年</b> —— 公社成立；小型作坊。</li>
+<li><b>1930 年</b> —— 第一批生产车间投产。</li>
+<li><b>1932 年 1 月</b> —— 公社开设电动工具厂；它为国家生产了第一台苏联电钻 <b>FD-1</b>，当时这种产品极为紧缺。</li>
+<li><b>1932–1934 年</b> —— 掌握了小画幅胶片相机的生产。第一批 <b>FED</b> 相机（F.E. 捷尔任斯基姓名首字母缩写）于 1933 年问世，1934 年开始批量生产；这是苏联第一款便携式胶片相机。</li>
+<li><b>1938 年</b> —— 公社的两家工厂合并为一个联合企业；1941 年移交航空工业。</li>
+</ul>
+<p>FED 相机一直批量生产到大约 1996 年，而由公社作坊发展而来的企业至今仍在哈尔科夫存在。</p>
+
+<h2 id="h-results">成果：取得了什么</h2>
+<div class="grid2">
+<div class="card"><h4>自给自足</h4><p>公社不仅自负盈亏，还建立了相机和电动工具的生产；据文献中引用的估算，它每年向国家上缴约 450 万卢布。</p></div>
+<div class="card"><h4>高科技产品</h4><p>由流浪少年组成的集体在短短几年内掌握了精密仪器制造——产品达到欧洲最佳样品的水平。</p></div>
+<div class="card"><h4>人才</h4><p>工农速成部和十年制学校把生产变成了学校：公社社员同时工作、学习并准备升入大学。</p></div>
+<div class="card"><h4>方法</h4><p>提出并在实践中检验了尊重与要求相统一的原则，以及集体自治体系。</p></div>
+</div>
+<p class="src">马卡连柯的著作《三十年代进行曲》（1932）、《FD-1》和《塔上旗》（1938）都是写公社工作的。</p>
+
+<!-- ============================ 2 ============================ -->
+<h1 id="overview">2. 模式概述</h1>
+
+<h2 id="o-principle">核心原则</h2>
+<blockquote class="motto">“对人尽可能多地要求，对人尽可能多地尊重。”</blockquote>
+<p>这不是宽松与严格之间的折中，而是同一个论断：对人提出高要求，本身就是对他的尊重；而没有要求的尊重，则是一种冷漠。由此得出我们团队使用的公式：<code>max(R) = max(D)</code> —— 最大限度的尊重（Respect）与最大限度的要求（Demands）。只有当要求可以做到且清晰明确时，要求才成为尊重。</p>
+
+<h2 id="o-elements">体系要素</h2>
+<table>
+<tbody><tr><th style="width:28%">要素</th><th>要点</th></tr>
+<tr><td><b>集体作为工具</b></td><td>人在集体中、通过集体得到成长。领导者不是逐个与人打交道，而是与集体打交道，由集体本身向其成员提出要求。</td></tr>
+<tr><td><b>生产劳动</b></td><td>劳动不是“职业疗法”，而是有计划、质量、成本以及对客户负责的真正经营。</td></tr>
+<tr><td><b>按生产原则组建分队</b></td><td>基层集体是分队，它同时也是生产单位。在成熟的集体中有混龄分队，年长者教年幼者。</td></tr>
+<tr><td><b>自治</b></td><td>队长会议和全体大会；为 1–2 周的具体任务组建由临时队长带领的混合分队；值日制度以及领导与服从角色的轮换。</td></tr>
+<tr><td><b>前景线</b></td><td>每个人和集体都有看得见的“明天的快乐”：近期、中期和远期前景——成长、新的生产、新的水平。</td></tr>
+<tr><td><b>平行影响</b></td><td>领导者通过集体而非直接施压来影响个人；对工作的公开评价比私下评价更有分量。</td></tr>
+<tr><td><b>传统与作风</b></td><td>稳定的生活秩序——作息、仪式、报告、集体出行——是教育的主要因素。规则成文，对所有人一视同仁。</td></tr>
+<tr><td><b>教育者集体</b></td><td>没有一个团结的领导者集体，就无法培养出执行者集体：领导者要诚实、公正、有学识，没有嫉妒，也不“追求下属的喜爱”。</td></tr>
+</tbody></table>
+
+<h2 id="o-adults">为何适用于成年人</h2>
+<p>马卡连柯面对的是少年，因此将他的模式用于成年专业人员需要加以说明。我们从中借鉴的不是“教育”，而是<b>集体的结构</b>：透明、规则清晰、人人要求相同、有成长前景，以及经验从资深者向新人的传递。</p>
+<p>模式的力量取决于员工的级别：对实习生和初级工程师而言，它首先是一所学校；对中级和高级工程师而言，它是伙伴关系和自主性。</p>
+<p>改造一个习惯已经定型的成年集体，比组建一个新集体难得多——因此，该模式最容易在新团队或相对独立的团队中扎根。</p>
+
+<!-- ============================ 3 ============================ -->
+<h1 id="today">3. 百年之后如何运作</h1>
+<p>一百年后，条件已截然不同：取代哈尔科夫郊区公社的，是一个分布式研发团队，工程师们生活在不同的城市和时区，可能多年未曾见面。正因如此，马卡连柯的机制几乎可以原样移植——改变的只是工具——这一点尤为值得注意。</p>
+
+<h2 id="t-map">对照：公社 → 研发团队</h2>
+<table>
+<tbody><tr><th style="width:33%">在捷尔任斯基公社</th><th style="width:33%">在今天的分布式团队</th><th>规章</th></tr>
+<tr><td>分队长的每日报告</td><td>TeamTime 中的每日报告：做了什么、怎么做、为什么、用了多少时间</td><td><a href="#pol-reports">每日报告</a></td></tr>
+<tr><td>公社严格的作息制度</td><td>白天至少 6 个工作小时</td><td><a href="#pol-ssh">Six Sun Hours</a></td></tr>
+<tr><td>队长会议、全体大会</td><td>每两周一次的“节奏”例会，讨论月度计划</td><td><a href="#pol-ritm">“节奏”</a>、<a href="#pol-plan">月度计划</a></td></tr>
+<tr><td>值日队长、职能轮换</td><td>轮值的“节奏”秘书：准备议程并撰写纪要</td><td><a href="#pol-ritm">“节奏”</a></td></tr>
+<tr><td>为具体任务组建的混合分队</td><td>临时项目组、技术委员会、线下项目小组</td><td><a href="#pol-offline">线下项目</a></td></tr>
+<tr><td>混龄分队，年长者教年幼者</td><td>导师制：高级 → 中级 → 初级 → 实习生</td><td><a href="#pol-culture">企业文化</a>、<a href="#pol-intern">实习</a></td></tr>
+<tr><td>前景线</td><td>每年可晋升一级的职业等级；时薪随经证实的经验增长</td><td><a href="#pol-accel">TeamTime 加速制</a></td></tr>
+<tr><td>经济核算，按公社社员的实际劳动付酬</td><td>底薪 + 按实际工时计算的浮动部分；按通胀调整</td><td><a href="#pol-accel">加速制</a>、<a href="#pol-infl">通胀系数</a></td></tr>
+<tr><td>工厂里的工农速成部和学校</td><td>三阶段实习、读书报告俱乐部、在岗再培训</td><td><a href="#pol-intern">实习</a>、<a href="#pol-istlit">史文俱乐部</a></td></tr>
+<tr><td>公社社员的夏季远足、体育锻炼</td><td>每年两周的线下集中工作；有偿运动时间</td><td><a href="#pol-offline">线下项目</a>、<a href="#pol-sport">“运动”</a></td></tr>
+<tr><td>纪律是自由的条件</td><td>交流时段：为保持专注，在 15:00–17:00 之外有权不回复</td><td><a href="#pol-chat">交流时段 15:00</a></td></tr>
+</tbody></table>
+
+<h2 id="t-director">这对厂长意味着什么</h2>
+<ul>
+<li><b>管理生活秩序，而不是逐个管人。</b>厂长设计规则、节奏和传统；此后由集体自身维持这些要求。成文的规章即使在厂长不在场时也能发挥作用。</li>
+<li><b>以透明建立信任。</b>无法“站在身后”监督远程员工。全队可见的报告取代了监督，也消除了“我花钱雇你干什么”之类的冲突。</li>
+<li><b>对结果要求，对人尊重。</b>因客观原因错过期限不应受责备，只要报告如实记录；而未能及时预警则应受责备。</li>
+<li><b>可预期的收入。</b>按统一公式涨薪和自动调整，消除了讨价还价，也让工资不再取决于“会不会开口要”。</li>
+<li><b>人人有前景。</b>实习生看得到通往初级的路，初级看得到通往中级的路；导师不怕培养接班人，因为前方总有空间。</li>
+<li><b>可度量。</b>TeamTime BPM 把规则变成数据：记录的工时、报告、月度承诺的完成情况。</li>
+</ul>
+
+<!-- ============================ 4 ============================ -->
+<h1 id="rules">4. 团队协作规章</h1>
+<p>以下是本企业现行及已批准的团队规章（2026 年）。第一组是<b>团队规定</b>（操作规则，max(D)）；第二组是<b>薪酬与员工计划</b>（max(R) 的体现）。每项规章均以摘要形式给出，并附全文链接。</p>
+
+<h2 class="pol" id="pol-culture">企业文化规章：max(R) = max(D) <span class="tag ok">现行</span></h2>
+<p>工作关系的文化可以用一句话概括：<b>“最大限度的尊重与最大限度的要求”</b>。在规定未涵盖的新情况下，所有人都以这一原则为准。</p>
+<div class="grid2">
+<div class="card"><h4>max(R) —— 企业对员工的责任</h4><p>
+1. <b>筹措资金的人</b>对投资者承担责任，争取各种保障，甚至拿自己的财产冒险，以确保按时发放工资。<br>
+2. <b>编写技术任务书的人</b>确认任务有技术解决方案，不提出不可能完成的要求。<br>
+3. <b>导师</b>分享经验，不怕失去自己的位置：培养接班人是对企业的尊重。<br>
+4. <b>高级、中级、初级工程师</b>：工作一年后可晋升到下一级——这是对个人抱负的尊重。<br>
+5. <b>实习生</b>：不对任何人“试用考验”——我们邀请新人相互了解，共同决定彼此能否互惠。</p></div>
+<div class="card"><h4>max(D) —— 企业的要求</h4><p>
+1. Six Sun Hours（SSH）规章<br>
+2. 每日报告规章<br>
+3. “交流时段 15:00”规章<br>
+4. “节奏”例会规章<br>
+5. 月度工作计划规章<br>
+6. 实习 2025 规章</p></div>
+</div>
+<p class="src">全文：<a href="policies/culture.html">企业文化规章</a></p>
+
+<h3>为什么要求严格</h3>
+<p>规章中严格的措辞来自切身经验，其本身就是一种尊重。企业为员工有意识地投入工作的全部实际时间付酬，包括实验、验证假设和纠正错误。</p>
+<p>没有人必须以最快的高级工程师的速度工作——重要的是对高质量成果的追求和守信（说到就要做到）。作为交换，只要求一件事：这些工作时间是可见的。</p>
+
+<h2 class="pol" id="pol-ssh">Six Sun Hours（SSH）规章 <span class="tag ok">现行</span></h2>
+<ul>
+<li>团队在白天工作。无法把作息调整到白天的人，不适合这种合作。</li>
+<li><b>全职：</b>在本人所在时区的白天至少工作 6 小时。工作日若在 TeamTime 中没有任何报告，视为无薪休假一天。</li>
+<li><b>兼职和实习生：</b>每周须在 TeamTime 中记录约定数量的实际工时。一周没有报告，视为无薪休假。</li>
+</ul>
+<p class="src">全文：<a href="policies/ssh.html">Six Sun Hours</a></p>
+
+<h2 class="pol" id="pol-reports">每日报告规章 <span class="tag ok">现行</span></h2>
+<p>大多数员工远程工作，工作建立在信任之上：无论团队负责人还是厂长，都不愿站在任何人身后。相互理解来自每个人定期、简要地汇报自己负责的工作——这就是<b>报告</b>。</p>
+<blockquote><b>报告</b>是一段简短、准确、有依据的陈述：你做了什么、怎么做的、为什么，以及花了多少时间。</blockquote>
+<table>
+<tbody><tr><th style="width:30%">常见错误</th><th>正确做法</th></tr>
+<tr><td>没有已完成的动作（“正在分析”）</td><td>使用表示完成的动词：“已分析”“已完成”。</td></tr>
+<tr><td>缺乏条理</td><td>我做了什么 → 发现了哪些事实 → 下一步打算做什么。</td></tr>
+<tr><td>缺乏依据</td><td>附上证据：截图、收据、寄件单、链接；用“因为……”解释决定。</td></tr>
+<tr><td>看不出问题在哪</td><td>如果晚上没来得及想清楚，就第二天早上头脑清醒时再写。</td></tr>
+<tr><td>两周的“长篇大论”</td><td>每进行 45、90、180 或 360 分钟脑力工作汇报一次；管理者只有 3–5 分钟阅读——简要展示已完成的成果。</td></tr>
+</tbody></table>
+<p class="src">含示例的全文：<a href="policies/daily-reports.html">每日报告</a></p>
+
+<h2 class="pol" id="pol-chat">“交流时段 15:00”规章 <span class="tag ok">现行</span></h2>
+<ul>
+<li>工作日<b>莫斯科时间 15:00 至 17:00</b>，员工在私聊和视频会议中互相提出工作问题。</li>
+<li>在此时段之外，每个人都有权不回复，以保持专注，并记住自己完成月度计划的承诺。</li>
+<li>交流时间记录在 TeamTime 中，并附上所讨论问题的简要总结。</li>
+<li>交流时段到岗：全职员工<b>必须</b>，实习生和兼职员工建议到岗。</li>
+</ul>
+<p class="src">全文：<a href="policies/chat-time.html">交流时段 15:00</a></p>
+
+<h2 class="pol" id="pol-ritm">“节奏”例会规章 <span class="tag ok">现行</span></h2>
+<p>“节奏”减少了在工作周内打扰同事的理由：职位越重要，这个人的注意力就越宝贵。</p>
+<ul>
+<li>问题分为<b>紧急</b>和<b>不紧急</b>两类。不紧急的问题记下来，留到“节奏”例会上讨论。</li>
+<li>提出紧急问题之前先问自己：“Google/AI 能回答我吗？”如果不能——先准备好一半答案，最好是几个解决方案，只问该选哪一个。</li>
+<li>“节奏”<b>每两周举行一次，恰好 20 分钟</b>：用一分钟说明问题要点，用 1–2 分钟回答；复杂议题放到例会之外讨论。</li>
+<li>每次“节奏”都指定一名<b>秘书</b>：提前收集议程，会后在自己的报告中写纪要。</li>
+</ul>
+<p class="src">全文：<a href="policies/ritm.html">“节奏”例会</a></p>
+
+<h2 class="pol" id="pol-plan">月度工作计划规章 <span class="tag ok">现行</span></h2>
+<ul>
+<li>每月初在“节奏”例会上讨论任务清单；每个人回答是否愿意承诺在月底前完成计划。</li>
+<li>这一承诺与按时发放工资同样具有约束力。</li>
+<li>项目经理必须在月初前为每个人准备好详细的任务。</li>
+<li><b>因客观原因</b>（期限不现实、意外的技术困难）<b>未能按期完成</b>——不受责备，只要报告认真记录、没有空转。</li>
+<li><b>因主观原因</b>（个人情况）<b>未能按期完成</b>——不受责备，只要及时告知。</li>
+</ul>
+<p class="src">全文：<a href="policies/plan.html">月度工作计划</a></p>
+
+<h2 class="pol" id="pol-intern">实习 2025 规章 <span class="tag ok">现行</span></h2>
+<table>
+<tbody><tr><th style="width:22%">阶段</th><th style="width:20%">时长</th><th>内容</th></tr>
+<tr><td><b>1. 熟悉期</b></td><td>2–3 周</td><td>完成几项小任务来熟悉工作。不以金钱支付——以陪同您的资深工程师的时间支付。双方的目标：了解能否建立长期合作。</td></tr>
+<tr><td><b>2. 实习</b>（学徒合同）</td><td>3–6 个月至一年</td><td>津贴：固定部分 + 浮动部分，金额取决于入职级别和费率。任务接近真实客户订单；目标是在导师最少的帮助下完成。</td></tr>
+<tr><td><b>3. 正式录用</b></td><td>—</td><td>以劳动合同取代学徒合同；薪酬与级别（初级、中级、高级）相符。</td></tr>
+</tbody></table>
+<p class="src">全文：<a href="policies/internship.html">实习 2025</a></p>
+
+<h2 class="pol" id="pol-accel">TeamTime 加速制 <span class="tag ok">招聘时适用</span></h2>
+<p>一种薪酬制度：工资随经每日报告证实的专业经验稳步增长。目标是让增长可预期、透明。</p>
+<ul>
+<li>薪酬 = <b>底薪</b>（固定、不会减少的部分）+ <b>浮动部分</b>（实际完成并经带时间的报告证实的工作）。</li>
+<li>浮动部分按合同中的时薪计算；时薪按统一公式确定。</li>
+</ul>
+<pre><code>hRate = Rbase × Kedu × Ktenure
+
+Rbase   = Rlevel + (Rnext − Rlevel) × (skillHours − Hlevel) / (Hnext − Hlevel)
+Kedu    = 1 + 0.02 × eduYears × (eduQuality − 3) / 2      // 优秀毕业的大学文凭 → 1.10
+Ktenure = 1 + 0.01 × min(timerecordMonths / 12; 5)        // 在本企业工作 5 年最多 +5%</code></pre>
+<table>
+<tbody><tr><th>级别</th><th>skillHours</th><th>示例路径</th></tr>
+<tr><td>实习生</td><td>0–719</td><td>6 个月 × 120 小时 = 720 小时 → 初级</td></tr>
+<tr><td>初级</td><td>720–1439</td><td>再约半年 → 中级</td></tr>
+<tr><td>中级</td><td>1440–2879</td><td>再约一年 → 高级</td></tr>
+<tr><td>高级</td><td>2880 起</td><td>进一步增长由主管决定</td></tr>
+</tbody></table>
+<p>skillHours 只计入经报告证实的工时，因此涨薪与实际完成的工作挂钩。此前经验和面试决定 skillHours 的初始值。费率表和系数由管理层批准。</p>
+<p class="src">全文：<a href="policies/acceleration.html">TeamTime 加速制</a></p>
+
+<h2 class="pol" id="pol-infl">通胀系数规章 <span class="tag pause">曾经实施</span></h2>
+<p>工资按月自动调整。它消除了利益冲突：不好意思要求加薪的员工会不辞而别；经常争取到加薪的员工把时间花在谈判上；同级别员工的工资开始取决于讨价还价的本事。</p>
+<pre><code>Kmonth = (1 + 年利率)^(1/12)
+当月工资 = 上月工资 × Kmonth
+// 关键利率为 14.5% 时 → Kmonth ≈ 1.01135（每月 +1.13%）</code></pre>
+<ul>
+<li>基准为批准系数之日俄罗斯银行的关键利率；至少每年复核一次。</li>
+<li>遇到财务困难时，可提前通知后暂停调整；已达到的工资不降低；情况恢复后重新调整。</li>
+</ul>
+<p class="src">全文：<a href="policies/inflation.html">通胀系数</a></p>
+
+<h2 class="pol" id="pol-offline">“线下项目：面对面团队协作”规章 <span class="tag ok">已批准</span></h2>
+<p>远程员工可能共事多年却从未见面——这会削弱信任。每年在某个夏季月份，一组工程师在因诺波利斯集中<b>两周</b>，在波波夫科技园的开放式办公室里共同完成生产任务；组内资深成员向新人传授经验。</p>
+<table>
+<tbody><tr><th>方案</th><th>任务示例</th></tr>
+<tr><td>1 号——网络工程师</td><td>模拟技术支持请求、网络演示台、公益项目（例如为乡村学校或博物馆接入互联网）、团队协作。</td></tr>
+<tr><td>2 号——电子、嵌入式</td><td>使用示波器和焊台、电子演示台、关于自动化系统的公开讲座、团队协作。</td></tr>
+<tr><td>3 号——IoT/IIoT 网页开发</td><td>交流网页界面经验、设备监控服务器、为乡村博物馆制作简介网站、团队协作。</td></tr>
+</tbody></table>
+<p>自愿参加；人员和任务至少提前两个月商定。行程按出差办理：企业承担交通和住宿费用。结束后向管理层汇报并由参与者填写问卷。</p>
+<p class="src">全文：<a href="policies/offline.html">线下项目</a></p>
+
+<h2 class="pol" id="pol-sport">“运动”计划规章 <span class="tag ok">已批准</span></h2>
+<ul>
+<li>目标是远程员工的身体健康——没有通勤，他们活动得更少。</li>
+<li>员工自行选择运动项目、时间和地点。公司在计划工作量之外，每月支付 <b>10 小时</b>，以报告为凭。</li>
+<li>时薪为初级员工月薪的 1%。这些小时像带薪休假一样记入报告。</li>
+<li>自愿参加，适用于所有合同类型；六个月后评估结果。</li>
+</ul>
+<p class="src">全文：<a href="policies/sport.html">“运动”计划</a></p>
+
+<h2 class="pol" id="pol-istlit">“史文俱乐部”计划规章 <span class="tag ok">已批准</span></h2>
+<ul>
+<li>开阔视野，培养工作需要却很少练习的能力：钻研陌生主题、筛选资料、向同事简要陈述结论；同时为分布式团队提供聊聊工作以外话题的机会。</li>
+<li>参与者自选主题，利用业余时间阅读相关的文学、纪实或历史著作，然后准备一个报告。</li>
+<li>聚会每月最多一次，每次 45 分钟；每位参与者计 1 小时工时。</li>
+<li>年底由参与者投票，报告人可获一、二、三等奖：分别为 15000、10000 和 5000 卢布。</li>
+</ul>
+<p class="src">全文：<a href="policies/istlit.html">史文俱乐部</a></p>
+
+<!-- ============================ 5 ============================ -->
+<h1 id="where">5. 已在何处应用</h1>
+<div class="grid2">
+<div class="card"><h4>“罗斯托夫电子厂”有限责任公司 · 自 2022 年起</h4><p>该模式是分布式研发团队企业文化的基础。第 4 节所述规章已发布在 Confluence 中，适用于研发部门的全体员工。</p></div>
+<div class="card"><h4>个体企业主 A.N. 加夫里柳克（“Media Publish”）· 自 2012 年起</h4><p>该模式的最初原则奠定于小型网络工作室“Media Publish”，在那里开发了实施马卡连柯模式的自有工具——TeamTime BPM。</p><p style="margin-top:6pt">TeamTime BPM 是一套远程的项目、任务和业务流程管理系统，它把团队的日常劳动变成可度量的数据。</p></div>
+</div>
+
+<h2 id="sources">资料来源</h2>
+<ul class="src">
+<li>俄罗斯大百科全书：<a href="https://bigenc.ru/c/makarenko-anton-semionovich-02c9a2">马卡连柯，安东·谢苗诺维奇</a>（俄文）</li>
+<li>苏联大百科全书：<a href="https://www.booksite.ru/fulltext/1/001/008/063/340.htm">F.E. 捷尔任斯基公社</a>（俄文）</li>
+<li>FED 企业历史：<a href="https://fed.com.ua/en/history1.html">1927–1945</a>（英文）</li>
+<li>现代乌克兰百科全书：<a href="https://www.esu.com.ua/pdf/file/4417.pdf">“Komunar”</a>（乌克兰文）</li>
+<li>《国民教育》杂志，2003 年第 2 期：<a href="https://narodnoe.org/downloads/states/3741">“工学团主任”传记片段</a>（俄文）</li>
+<li>Mel：<a href="https://mel.fm/zhizn/istorii/6937508-makarenko">马卡连柯如何教育流浪儿童</a>（俄文）</li>
+<li>A.S. 马卡连柯：<a href="https://www.marxists.org/russkij/russian/makarenko/works/1936/metodika_organizacii_vospitatelnogo_processa/index.html">教育过程组织方法</a>（1936，俄文）</li>
+<li>Wikipedia：<a href="https://en.wikipedia.org/wiki/FED_(camera)">FED (camera)</a>（英文）</li>
+</ul>
+<div class="site-foot">© Anton Gavrilyuk（安东·加夫里柳克），2026 · <a href="https://github.com/antoncom">github.com/antoncom</a></div>
+<script src="../assets/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>공장장의 업무에 적용한 A.S. 마카렌코 모델</title>
+<meta name="description" content="분산형 R&D 팀에서 A.S. 마카렌코의 관리 모델: 최대한의 존중과 최대한의 요구.">
+<link rel="alternate" hreflang="ru" href="https://antoncom.github.io/makarenko/ru/">
+<link rel="alternate" hreflang="en" href="https://antoncom.github.io/makarenko/en/">
+<link rel="alternate" hreflang="de" href="https://antoncom.github.io/makarenko/de/">
+<link rel="alternate" hreflang="es" href="https://antoncom.github.io/makarenko/es/">
+<link rel="alternate" hreflang="hi" href="https://antoncom.github.io/makarenko/hi/">
+<link rel="alternate" hreflang="zh-CN" href="https://antoncom.github.io/makarenko/zh/">
+<link rel="alternate" hreflang="ko" href="https://antoncom.github.io/makarenko/ko/">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<nav class="topnav" id="topnav">
+  <a class="brand" href="#top">마카렌코 모델</a>
+  <a class="sec" data-s="TOC" href="#TOC">목차</a>
+  <a class="sec" data-s="history" href="#history">1. 역사</a>
+  <a class="sec" data-s="overview" href="#overview">2. 개요</a>
+  <a class="sec" data-s="today" href="#today">3. 100년 후</a>
+  <div class="dd" id="ddpol"><a class="sec" data-s="rules" href="#rules">4. 규정 ▾</a><div class="ddmenu">
+    <span class="grp">팀 규칙</span>
+    <a href="#pol-culture">기업 문화</a>
+    <a href="#pol-ssh">Six Sun Hours</a>
+    <a href="#pol-reports">일일 보고</a>
+    <a href="#pol-chat">채팅 타임 15:00</a>
+    <a href="#pol-ritm">‘리듬’ 회의</a>
+    <a href="#pol-plan">월간 업무 계획</a>
+    <a href="#pol-intern">인턴십 2025</a>
+    <span class="grp">보수 및 직원 프로그램</span>
+    <a href="#pol-accel">TeamTime 가속제</a>
+    <a href="#pol-infl">인플레이션 계수</a>
+    <a href="#pol-offline">오프라인 프로젝트</a>
+    <a href="#pol-sport">‘스포츠’ 프로그램</a>
+    <a href="#pol-istlit">히스트릿 클럽</a>
+  </div></div>
+  <a class="sec" data-s="where" href="#where">5. 적용 사례</a>
+  <a class="up" href="#top" title="맨 위로">↑</a>
+  <div class="dd langdd"><a class="lang" href="../" title="언어 / Language">KO ▾</a><div class="ddmenu">
+    <a href="../ru/" lang="ru">Русский</a>
+    <a href="../en/" lang="en">English</a>
+    <a href="../de/" lang="de">Deutsch</a>
+    <a href="../es/" lang="es">Español</a>
+    <a href="../hi/" lang="hi">हिन्दी</a>
+    <a href="../zh/" lang="zh-CN">中文</a>
+    <a href="../ko/" lang="ko">한국어</a>
+  </div></div>
+</nav>
+<a id="top"></a>
+<div class="cover">
+  <p class="t1">공장장의 업무에 적용한<br>A.S. 마카렌코 모델</p>
+  <p class="t2">‘최대한의 존중과 최대한의 요구’ 원칙<br>1930년대 노동 코뮌에서 분산형 R&amp;D 팀까지</p>
+  <div class="formula">max(R) = max(D)<small>사람에게 가능한 한 많이 요구하고, 사람을 가능한 한 많이 존중하라 — A.S. 마카렌코</small></div>
+  <div class="meta">저자: 안톤 가브릴류크(Anton Gavrilyuk)<br>2026년 11월</div>
+</div>
+
+<nav id="TOC" role="doc-toc">
+<div class="toc-title">목차</div>
+<ul>
+<li><a href="#about">이 문서에 대하여</a></li>
+<li><a href="#history">1. 간략한 역사적 배경</a>
+  <ul>
+  <li><a href="#h-gorky">고리키 콜로니(1920–1928)</a></li>
+  <li><a href="#h-commune">제르진스키 코뮌(1927–1935)</a></li>
+  <li><a href="#h-fed">코뮌의 공장: FD-1과 FED</a></li>
+  <li><a href="#h-results">성과: 무엇을 이루었나</a></li>
+  </ul></li>
+<li><a href="#overview">2. 모델 개요</a>
+  <ul>
+  <li><a href="#o-principle">핵심 원칙</a></li>
+  <li><a href="#o-elements">체계의 요소</a></li>
+  <li><a href="#o-adults">왜 성인에게 적용되는가</a></li>
+  </ul></li>
+<li><a href="#today">3. 100년 후 어떻게 작동하는가</a>
+  <ul>
+  <li><a href="#t-map">대응 관계: 코뮌 → R&amp;D 팀</a></li>
+  <li><a href="#t-director">공장장에게 주는 의미</a></li>
+  </ul></li>
+<li><a href="#rules">4. 팀워크 규정</a>
+  <ul>
+  <li><a href="#pol-culture">기업 문화 규정</a></li>
+  <li><a href="#pol-ssh">Six Sun Hours</a></li>
+  <li><a href="#pol-reports">일일 보고</a></li>
+  <li><a href="#pol-chat">채팅 타임 15:00</a></li>
+  <li><a href="#pol-ritm">‘리듬’ 회의</a></li>
+  <li><a href="#pol-plan">월간 업무 계획</a></li>
+  <li><a href="#pol-intern">인턴십 2025</a></li>
+  <li><a href="#pol-accel">TeamTime 가속제</a></li>
+  <li><a href="#pol-infl">인플레이션 계수</a></li>
+  <li><a href="#pol-offline">오프라인 프로젝트</a></li>
+  <li><a href="#pol-sport">‘스포츠’ 프로그램</a></li>
+  <li><a href="#pol-istlit">히스트릿 클럽</a></li>
+  </ul></li>
+<li><a href="#where">5. 이미 적용된 곳</a></li>
+<li><a href="#sources">출처</a></li>
+</ul>
+</nav>
+
+<h1 id="about">이 문서에 대하여</h1>
+<p>이 문서는 저자가 A.S. 마카렌코의 저작에서 도출하여 실제로 검증한 관리 모델을 정리한 것입니다. 2008–2012년에는 저자 자신의 웹 스튜디오에서, 2022년부터는 한 산업 기업의 분산형 R&amp;D 팀에서 검증했습니다. 문서는 지금까지의 성과를 기록하고, 관리자(팀 리더, 부서장, 기술 이사, 조직개발 매니저)의 업무 기반이 될 모델 발전 프로그램을 제안합니다.</p>
+<p>이 문서는 또한 ‘무선 LTE/4G 라우터’ 스타트업에서 보낸 5년간의 작업을 정리한 것이자, 신뢰와 인내와 지원을 보내 준 ‘로스토프 전자 공장’ 유한회사 경영진에 대한 감사의 표시입니다. 그 지원이 없었다면 이 경험은 불가능했을 것입니다.</p>
+
+<!-- ============================ 1 ============================ -->
+<h1 id="history">1. 간략한 역사적 배경</h1>
+
+<p>안톤 세묘노비치 마카렌코(1888–1939)는 교육자로 역사에 이름을 남겼지만, 1920–1930년대에 그는 사실상 공장장의 일을 했습니다. 무에서 집단을 만들고, 생산을 일으키고, 재무와 성과를 책임졌습니다. 그의 경험이 관리자에게 가치 있는 이유는 강의실이 아니라 경제 현장, 즉 실제로 돌아가는 기업에서 검증되었기 때문입니다.</p>
+
+<h2 id="h-gorky">고리키 콜로니(1920–1928)</h2>
+<p>1920년 9월 마카렌코는 폴타바 근처에서 청소년 재교육 기관을 세우고 이끄는 일을 맡았습니다. 이 기관은 훗날 막심 고리키 노동 콜로니라는 이름을 얻었습니다. 1923년부터 콜로니는 우크라이나 소비에트 사회주의 공화국 교육인민위원부의 실험·시범 기관이 되었고, 1926년 봄 하르키우 근교의 쿠랴시로 옮겨졌습니다.</p>
+<p>바로 이곳에서 체계의 주요 도구가 형성되었습니다. 분대와 분대장, 분대장 회의, 혼성 분대, 그리고 집단의 최고 기관인 총회입니다. 마카렌코는 훗날 이 경험을 『교육시』(1935)에 담았습니다.</p>
+
+<h2 id="h-commune">제르진스키 코뮌(1927–1935)</h2>
+<p>F.E. 제르진스키 아동 노동 코뮌은 우크라이나 체카 요원들이 급여에서 자발적으로 낸 기금으로 노비 하르코프 마을에 세워졌고, 1927년 12월 29일 개소식을 가졌습니다. 마카렌코가 운영을 맡도록 초빙되었고, 집단의 핵심은 고리키 콜로니 출신 원생들이었습니다. 마카렌코는 1935년까지 코뮌을 이끌었습니다.</p>
+<p>코뮌의 핵심적인 특징은 학습과 생산 노동의 결합이었습니다. 처음에는 작업장에서, 나중에는 실제 공장 작업동에서 이루어졌습니다. 1930년 코뮌에 하르키우 기계공학대학의 노동자 학부가 개설되었고, 1934년에는 10년제 학교가 문을 열었습니다.</p>
+
+<h2 id="h-fed">코뮌의 공장: FD-1과 FED</h2>
+<ul class="timeline">
+<li><b>1927년</b> — 코뮌 개소, 소규모 작업장.</li>
+<li><b>1930년</b> — 첫 생산 작업동 가동.</li>
+<li><b>1932년 1월</b> — 코뮌에 전동공구 공장이 문을 열었습니다. 이 공장은 당시 극히 부족했던 소련 최초의 전기 드릴 <b>FD-1</b>을 생산했습니다.</li>
+<li><b>1932–1934년</b> — 소형 필름 카메라 생산에 성공했습니다. <b>FED</b> 카메라(F.E. 제르진스키의 이니셜)의 첫 시리즈가 1933년에 나왔고, 1934년부터 양산이 시작되었습니다. 소련 최초의 휴대용 필름 카메라였습니다.</li>
+<li><b>1938년</b> — 코뮌의 두 공장이 하나의 콤비나트로 통합되었고, 1941년 항공 산업으로 이관되었습니다.</li>
+</ul>
+<p>FED 카메라는 1996년 무렵까지 양산되었으며, 코뮌의 작업장에서 성장한 기업은 오늘날에도 하르키우에 존재합니다.</p>
+
+<h2 id="h-results">성과: 무엇을 이루었나</h2>
+<div class="grid2">
+<div class="card"><h4>자립 경영</h4><p>코뮌은 스스로를 유지했을 뿐 아니라 카메라와 전동공구 생산을 일으켰습니다. 문헌에 인용된 추정에 따르면 매년 약 450만 루블을 국가에 납부했습니다.</p></div>
+<div class="card"><h4>첨단 기술 제품</h4><p>거리의 청소년들로 이루어진 집단이 불과 몇 년 만에 정밀 기기 제조를 익혔습니다. 유럽 최고 수준에 견줄 만한 제품이었습니다.</p></div>
+<div class="card"><h4>인재</h4><p>노동자 학부와 10년제 학교는 생산 현장을 학교로 바꾸었습니다. 코뮌 단원들은 일하고 배우며 대학 진학을 동시에 준비했습니다.</p></div>
+<div class="card"><h4>방법</h4><p>존중과 요구의 통일이라는 원칙, 그리고 집단 자치 체계가 정립되고 실제로 검증되었습니다.</p></div>
+</div>
+<p class="src">마카렌코의 저서 『30년의 행진』(1932), 『FD-1』, 『탑 위의 깃발』(1938)은 코뮌의 활동을 다룹니다.</p>
+
+<!-- ============================ 2 ============================ -->
+<h1 id="overview">2. 모델 개요</h1>
+
+<h2 id="o-principle">핵심 원칙</h2>
+<blockquote class="motto">“사람에게 가능한 한 많이 요구하고, 사람을 가능한 한 많이 존중하라.”</blockquote>
+<p>이것은 관대함과 엄격함 사이의 타협이 아니라 하나의 명제입니다. 사람에게 높은 요구를 하는 것은 그 사람에 대한 존중의 한 형태이며, 요구 없는 존중은 무관심의 한 형태입니다. 여기서 우리 팀이 사용하는 공식이 나옵니다: <code>max(R) = max(D)</code> — 최대한의 존중(Respect)과 최대한의 요구(Demands). 요구는 실현 가능하고 명확할 때에만 존중이 됩니다.</p>
+
+<h2 id="o-elements">체계의 요소</h2>
+<table>
+<tbody><tr><th style="width:28%">요소</th><th>핵심</th></tr>
+<tr><td><b>도구로서의 집단</b></td><td>사람은 집단 안에서, 집단을 통해 성장합니다. 리더는 개인을 하나하나 상대하지 않고 집단과 일하며, 집단이 스스로 구성원에게 요구합니다.</td></tr>
+<tr><td><b>생산 노동</b></td><td>노동은 ‘작업 치료’가 아니라 계획, 품질, 원가, 고객에 대한 책임이 있는 진짜 경영입니다.</td></tr>
+<tr><td><b>생산 원리에 따른 분대</b></td><td>기초 집단은 분대이며, 분대는 생산 단위이기도 합니다. 성숙한 집단에는 연장자가 연소자를 가르치는 혼합 연령 분대가 있습니다.</td></tr>
+<tr><td><b>자치</b></td><td>분대장 회의와 총회, 1–2주짜리 구체적 과제를 위해 임시 분대장이 이끄는 혼성 분대, 당번 제도와 지휘·복종 역할의 교대.</td></tr>
+<tr><td><b>전망선</b></td><td>개인과 집단 모두에게 눈에 보이는 ‘내일의 기쁨’이 있습니다. 가까운, 중간, 먼 전망 — 성장, 새로운 생산, 새로운 수준.</td></tr>
+<tr><td><b>병행 작용</b></td><td>리더는 직접적인 압박이 아니라 집단을 통해 개인에게 영향을 줍니다. 업무에 대한 공개 평가가 사적인 평가보다 무게가 있습니다.</td></tr>
+<tr><td><b>전통과 스타일</b></td><td>일과, 의식, 보고, 함께하는 여행 같은 안정된 생활 질서가 교육의 주된 요인입니다. 규칙은 문서화되어 있고 모두에게 같습니다.</td></tr>
+<tr><td><b>교육자 집단</b></td><td>단결된 리더 집단 없이는 실무자 집단을 키울 수 없습니다. 리더는 정직하고 공정하며 교양 있고, 시기심이나 ‘부하의 호감을 얻으려는 경쟁’에서 자유로워야 합니다.</td></tr>
+</tbody></table>
+
+<h2 id="o-adults">왜 성인에게 적용되는가</h2>
+<p>마카렌코는 청소년과 일했기 때문에, 그의 모델을 성인 전문가에게 옮기려면 단서가 필요합니다. 우리가 가져오는 것은 ‘훈육’이 아니라 <b>집단의 구조</b>입니다. 투명성, 명확한 규칙, 모두에게 같은 요구, 성장 전망, 그리고 선배에서 후배로의 경험 전수입니다.</p>
+<p>모델의 힘은 직원의 수준에 따라 다릅니다. 인턴과 주니어에게는 무엇보다 학교이고, 미들과 시니어에게는 파트너십과 자율성입니다.</p>
+<p>습관이 굳은 성인 집단을 다시 바꾸는 것은 새 집단을 만드는 것보다 훨씬 어렵습니다. 그래서 이 모델은 새로운 팀이나 독립된 팀에서 가장 잘 뿌리내립니다.</p>
+
+<!-- ============================ 3 ============================ -->
+<h1 id="today">3. 100년 후 어떻게 작동하는가</h1>
+<p>100년이 지난 지금 조건은 완전히 다릅니다. 하르키우 교외의 코뮌 대신, 엔지니어들이 서로 다른 도시와 시간대에 살며 몇 년씩 얼굴을 보지 못할 수도 있는 분산형 R&amp;D 팀이 있습니다. 그런데도 마카렌코의 메커니즘이 거의 그대로 옮겨진다는 점이 더욱 주목할 만합니다. 바뀌는 것은 도구뿐입니다.</p>
+
+<h2 id="t-map">대응 관계: 코뮌 → R&amp;D 팀</h2>
+<table>
+<tbody><tr><th style="width:33%">제르진스키 코뮌에서</th><th style="width:33%">오늘날 분산형 팀에서</th><th>규정</th></tr>
+<tr><td>분대장의 일일 보고</td><td>TeamTime 일일 보고: 무엇을, 어떻게, 왜 했고 시간이 얼마나 걸렸는지</td><td><a href="#pol-reports">일일 보고</a></td></tr>
+<tr><td>코뮌의 엄격한 일과</td><td>낮 시간에 최소 6시간 근무</td><td><a href="#pol-ssh">Six Sun Hours</a></td></tr>
+<tr><td>분대장 회의, 총회</td><td>2주마다 열리는 ‘리듬’ 회의, 월간 계획 논의</td><td><a href="#pol-ritm">‘리듬’</a>, <a href="#pol-plan">월간 계획</a></td></tr>
+<tr><td>당번 분대장, 역할 교대</td><td>순환하는 ‘리듬’ 서기: 안건을 준비하고 요약을 작성</td><td><a href="#pol-ritm">‘리듬’</a></td></tr>
+<tr><td>구체적 과제를 위한 혼성 분대</td><td>임시 프로젝트 그룹, 기술 위원회, 오프라인 프로젝트 그룹</td><td><a href="#pol-offline">오프라인 프로젝트</a></td></tr>
+<tr><td>혼합 연령 분대, 연장자가 연소자를 가르침</td><td>멘토링: 시니어 → 미들 → 주니어 → 인턴</td><td><a href="#pol-culture">기업 문화</a>, <a href="#pol-intern">인턴십</a></td></tr>
+<tr><td>전망선</td><td>1년에 한 번 승급하는 경력 단계, 검증된 경험에 따라 오르는 시간당 단가</td><td><a href="#pol-accel">TeamTime 가속제</a></td></tr>
+<tr><td>독립 채산, 코뮌 단원의 실제 노동에 대한 보수</td><td>기본급 + 실제 근무 시간에 따른 변동급, 인플레이션 연동</td><td><a href="#pol-accel">가속제</a>, <a href="#pol-infl">인플레이션 계수</a></td></tr>
+<tr><td>공장 안의 노동자 학부와 학교</td><td>3단계 인턴십, 발표 클럽, 업무 병행 재교육</td><td><a href="#pol-intern">인턴십</a>, <a href="#pol-istlit">히스트릿 클럽</a></td></tr>
+<tr><td>코뮌 단원의 여름 여행, 체육</td><td>매년 2주간의 대면 근무, 운동을 위한 유급 시간</td><td><a href="#pol-offline">오프라인 프로젝트</a>, <a href="#pol-sport">‘스포츠’</a></td></tr>
+<tr><td>자유의 조건으로서의 규율</td><td>채팅 타임: 집중을 위해 15:00–17:00 이외에는 답하지 않을 권리</td><td><a href="#pol-chat">채팅 타임 15:00</a></td></tr>
+</tbody></table>
+
+<h2 id="t-director">공장장에게 주는 의미</h2>
+<ul>
+<li><b>사람을 하나하나가 아니라 생활 질서를 관리하라.</b> 공장장은 규칙, 리듬, 전통을 설계하고, 그 뒤에는 집단이 스스로 요구를 유지합니다. 문서화된 규정은 공장장이 곁에 없어도 작동합니다.</li>
+<li><b>투명성을 통한 신뢰.</b> 원격 직원을 ‘어깨 너머로’ 감시할 수는 없습니다. 팀 전체가 볼 수 있는 보고가 감독을 대신하고 “내가 왜 당신에게 월급을 주는가” 같은 갈등을 없앱니다.</li>
+<li><b>결과에는 요구를, 사람에게는 존중을.</b> 객관적인 이유로 놓친 마감은 보고를 정직하게 했다면 비난받지 않습니다. 제때 알리지 않은 것은 비난받습니다.</li>
+<li><b>예측 가능한 보수.</b> 단일 공식에 따른 임금 인상과 자동 연동은 흥정과 ‘요구하는 능력’에 따른 임금 차이를 없앱니다.</li>
+<li><b>모두에게 전망을.</b> 인턴은 주니어까지의 길을, 주니어는 미들까지의 길을 봅니다. 멘토는 후임을 키우는 것을 두려워하지 않습니다. 앞으로 나아갈 자리는 언제나 있기 때문입니다.</li>
+<li><b>측정 가능성.</b> TeamTime BPM은 규칙을 데이터로 바꿉니다. 기록된 시간, 보고, 월간 약속의 이행.</li>
+</ul>
+
+<!-- ============================ 4 ============================ -->
+<h1 id="rules">4. 팀워크 규정</h1>
+<p>아래는 본 기업에서 시행 중이거나 승인된 팀 규정(2026년)입니다. 첫 번째 그룹은 <b>팀 규칙</b>(운영 규칙, max(D))이고, 두 번째 그룹은 <b>보수 및 직원 프로그램</b>(max(R)의 구현)입니다. 각 규정은 요약과 함께 전문 링크를 제공합니다.</p>
+
+<h2 class="pol" id="pol-culture">기업 문화 규정: max(R) = max(D) <span class="tag ok">시행 중</span></h2>
+<p>근로 관계의 문화는 한 문장으로 설명됩니다: <b>“최대한의 존중과 최대한의 요구”</b>. 규칙에 없는 새로운 상황에서는 모두가 이 원칙을 따릅니다.</p>
+<div class="grid2">
+<div class="card"><h4>max(R) — 회사가 직원에게 지는 책임</h4><p>
+1. <b>자금을 조달하는 사람들</b>은 투자자에 대한 책임을 지고, 보장을 확보하며, 급여를 제때 지급하기 위해 자신의 재산까지 위험에 겁니다.<br>
+2. <b>기술 사양서를 작성하는 사람들</b>은 과제에 기술적 해결책이 있는지 확인하고, 불가능한 것을 요구하지 않습니다.<br>
+3. <b>멘토</b>는 자리를 잃을 걱정 없이 경험을 나눕니다. 후임을 키우는 것은 회사에 대한 존중입니다.<br>
+4. <b>시니어, 미들, 주니어</b>: 1년 근무 후 다음 단계로 승급할 수 있습니다 — 개인의 포부에 대한 존중입니다.<br>
+5. <b>인턴</b>: 누구도 ‘시험에 들게’ 하지 않습니다. 신입을 서로 알아 가는 자리에 초대하고, 서로에게 도움이 될 수 있을지 함께 결정합니다.</p></div>
+<div class="card"><h4>max(D) — 회사가 요구하는 것</h4><p>
+1. Six Sun Hours(SSH) 규정<br>
+2. 일일 보고 규정<br>
+3. ‘채팅 타임 15:00’ 규정<br>
+4. ‘리듬’ 회의 규정<br>
+5. 월간 업무 계획 규정<br>
+6. 인턴십 2025 규정</p></div>
+</div>
+<p class="src">전문: <a href="policies/culture.html">기업 문화 규정</a></p>
+
+<h3>요구가 엄격한 이유</h3>
+<p>규정의 엄격한 표현은 경험에서 나온 것이며, 그 자체가 존중의 한 형태입니다. 회사는 직원이 의식적으로 업무에 몰두한 실제 시간 전부에 대해 보수를 지급합니다. 실험, 가설 검증, 오류 수정도 포함됩니다.</p>
+<p>누구도 가장 빠른 시니어의 속도로 일할 의무는 없습니다. 중요한 것은 양질의 결과에 대한 관심과 신의(약속했으면 지킨다)입니다. 그 대가로 요구하는 것은 단 하나, 이 업무 시간이 보이도록 하는 것입니다.</p>
+
+<h2 class="pol" id="pol-ssh">Six Sun Hours(SSH) 규정 <span class="tag ok">시행 중</span></h2>
+<ul>
+<li>팀은 낮 시간에 일합니다. 생활 리듬을 낮 시간으로 바꿀 수 없는 사람에게는 이 협업이 맞지 않습니다.</li>
+<li><b>정규직:</b> 자신의 시간대 기준 낮 시간에 최소 6시간 근무합니다. TeamTime에 보고가 하나도 없는 평일은 무급 휴무로 간주됩니다.</li>
+<li><b>시간제 및 인턴:</b> 매주 합의한 실제 근무 시간을 TeamTime에 기록해야 합니다. 보고가 없는 주는 무급 휴가로 간주됩니다.</li>
+</ul>
+<p class="src">전문: <a href="policies/ssh.html">Six Sun Hours</a></p>
+
+<h2 class="pol" id="pol-reports">일일 보고 규정 <span class="tag ok">시행 중</span></h2>
+<p>대부분의 직원은 원격으로 일하며, 업무는 신뢰 위에 서 있습니다. 팀 리더도 공장장도 누군가의 뒤에 서 있고 싶어 하지 않습니다. 상호 이해는 각자가 자기 영역에서 일어나는 일을 정기적으로 간략하게 알리는 데서 생깁니다. 이것이 바로 <b>보고</b>입니다.</p>
+<blockquote><b>보고</b>란 무엇을, 어떻게, 왜 했으며 시간이 얼마나 걸렸는지에 대한 짧고 정확하며 근거 있는 진술입니다.</blockquote>
+<table>
+<tbody><tr><th style="width:30%">흔한 실수</th><th>올바른 방법</th></tr>
+<tr><td>완료된 행동이 없음(“분석 중”)</td><td>완료형 동사 사용: “분석했다”, “완료했다”.</td></tr>
+<tr><td>일관성 없음</td><td>무엇을 했는지 → 어떤 사실이 드러났는지 → 다음에 무엇을 할지.</td></tr>
+<tr><td>근거 부족</td><td>증거 첨부: 스크린샷, 영수증, 발송 전표, 링크. 결정은 “왜냐하면…”으로 설명.</td></tr>
+<tr><td>문제가 무엇인지 불분명</td><td>저녁에 정리하지 못했다면 아침에 맑은 머리로 쓴다.</td></tr>
+<tr><td>2주치 ‘장문’</td><td>45, 90, 180, 360분의 정신 노동마다 보고한다. 관리자가 읽을 시간은 3–5분뿐이니 완료된 결과를 간결하게 보여 준다.</td></tr>
+</tbody></table>
+<p class="src">예시가 포함된 전문: <a href="policies/daily-reports.html">일일 보고</a></p>
+
+<h2 class="pol" id="pol-chat">‘채팅 타임 15:00’ 규정 <span class="tag ok">시행 중</span></h2>
+<ul>
+<li>평일 <b>모스크바 시간 15:00부터 17:00까지</b> 직원들은 개인 채팅과 화상 통화로 서로 업무 질문을 합니다.</li>
+<li>이 시간 외에는 누구나 답하지 않을 권리가 있습니다. 집중력을 지키고 월간 계획을 완수하겠다는 약속을 기억하기 위해서입니다.</li>
+<li>소통 시간은 논의한 문제의 짧은 요약과 함께 TeamTime에 기록합니다.</li>
+<li>채팅 타임 참석: 정규직은 <b>필수</b>, 인턴과 시간제는 권장.</li>
+</ul>
+<p class="src">전문: <a href="policies/chat-time.html">채팅 타임 15:00</a></p>
+
+<h2 class="pol" id="pol-ritm">‘리듬’ 회의 규정 <span class="tag ok">시행 중</span></h2>
+<p>‘리듬’은 근무 주간 동안 동료를 방해할 이유를 줄여 줍니다. 직책이 중요할수록 그 사람의 주의력은 더 귀합니다.</p>
+<ul>
+<li>질문은 <b>긴급</b>과 <b>비긴급</b>으로 나눕니다. 비긴급 질문은 적어 두었다가 ‘리듬’에서 다룹니다.</li>
+<li>긴급한 질문을 하기 전에 스스로 물어보세요: “Google/AI가 답해 줄까?” 아니라면 답의 절반을 준비하고, 더 좋게는 해결 방안 몇 가지를 마련한 뒤 어느 것을 고를지만 물어보세요.</li>
+<li>‘리듬’은 <b>2주마다, 정확히 20분</b> 열립니다. 질문의 요점에 1분, 답변에 1–2분. 복잡한 주제는 회의 밖에서 다룹니다.</li>
+<li>매 ‘리듬’마다 <b>서기</b>를 지정합니다. 서기는 미리 안건을 모으고, 회의 후 자신의 보고에 요약을 작성합니다.</li>
+</ul>
+<p class="src">전문: <a href="policies/ritm.html">‘리듬’ 회의</a></p>
+
+<h2 class="pol" id="pol-plan">월간 업무 계획 규정 <span class="tag ok">시행 중</span></h2>
+<ul>
+<li>매월 초 ‘리듬’에서 과제 목록을 논의하고, 각자 월말까지 계획을 완수하겠다고 약속할 준비가 되었는지 답합니다.</li>
+<li>이 약속은 급여를 제때 지급하는 것만큼 구속력이 있습니다.</li>
+<li>프로젝트 매니저는 월초까지 모든 사람의 상세 과제를 준비해야 합니다.</li>
+<li><b>객관적 이유로 인한 마감 미준수</b>(비현실적 일정, 예기치 못한 기술적 어려움)는 보고를 성실히 하고 공백이 없었다면 비난받지 않습니다.</li>
+<li><b>주관적 이유로 인한 마감 미준수</b>(개인 사정)는 제때 알렸다면 비난받지 않습니다.</li>
+</ul>
+<p class="src">전문: <a href="policies/plan.html">월간 업무 계획</a></p>
+
+<h2 class="pol" id="pol-intern">인턴십 2025 규정 <span class="tag ok">시행 중</span></h2>
+<table>
+<tbody><tr><th style="width:22%">단계</th><th style="width:20%">기간</th><th>내용</th></tr>
+<tr><td><b>1. 적응 기간</b></td><td>2–3주</td><td>업무를 익히기 위한 작은 과제 몇 가지. 금전으로 보상하지 않고, 동행하는 숙련 엔지니어의 시간으로 보상합니다. 양측의 목표: 장기 협력이 가능한지 파악하는 것.</td></tr>
+<tr><td><b>2. 인턴십</b>(도제 계약)</td><td>3–6개월에서 1년</td><td>장려금: 고정분 + 변동분, 금액은 입사 수준과 단가에 따름. 과제는 실제 고객 주문에 가깝고, 목표는 멘토의 도움을 최소화해 완수하는 것.</td></tr>
+<tr><td><b>3. 정식 채용</b></td><td>—</td><td>도제 계약 대신 근로 계약, 보수는 단계(주니어, 미들, 시니어)에 상응.</td></tr>
+</tbody></table>
+<p class="src">전문: <a href="policies/internship.html">인턴십 2025</a></p>
+
+<h2 class="pol" id="pol-accel">TeamTime 가속제 <span class="tag ok">채용 시 적용</span></h2>
+<p>일일 보고로 검증된 전문 경험에 따라 급여가 꾸준히 오르는 보수 체계입니다. 목표는 성장을 예측 가능하고 투명하게 만드는 것입니다.</p>
+<ul>
+<li>보수 = <b>기본급</b>(고정되어 줄어들지 않는 부분) + <b>변동급</b>(시간이 기록된 보고로 확인된 실제 수행 업무).</li>
+<li>변동급은 계약서의 시간당 단가로 계산하며, 단가는 모두에게 같은 공식으로 정합니다.</li>
+</ul>
+<pre><code>hRate = Rbase × Kedu × Ktenure
+
+Rbase   = Rlevel + (Rnext − Rlevel) × (skillHours − Hlevel) / (Hnext − Hlevel)
+Kedu    = 1 + 0.02 × eduYears × (eduQuality − 3) / 2      // 우등 졸업 대학 학위 → 1.10
+Ktenure = 1 + 0.01 × min(timerecordMonths / 12; 5)        // 회사 근속 5년에 최대 +5%</code></pre>
+<table>
+<tbody><tr><th>단계</th><th>skillHours</th><th>경로 예시</th></tr>
+<tr><td>인턴</td><td>0–719</td><td>6개월 × 120시간 = 720시간 → 주니어</td></tr>
+<tr><td>주니어</td><td>720–1439</td><td>약 6개월 더 → 미들</td></tr>
+<tr><td>미들</td><td>1440–2879</td><td>약 1년 더 → 시니어</td></tr>
+<tr><td>시니어</td><td>2880 이상</td><td>이후 성장은 관리자가 결정</td></tr>
+</tbody></table>
+<p>skillHours에는 보고로 확인된 시간만 포함되므로 임금 인상은 실제 수행한 업무와 연결됩니다. 이전 경력과 면접이 skillHours의 초기값을 정합니다. 단가표와 계수는 경영진이 승인합니다.</p>
+<p class="src">전문: <a href="policies/acceleration.html">TeamTime 가속제</a></p>
+
+<h2 class="pol" id="pol-infl">인플레이션 계수 규정 <span class="tag pause">적용되었음</span></h2>
+<p>급여의 월별 자동 연동입니다. 이해 충돌을 없앱니다. 인상을 요청하기 어려워하는 직원은 예고 없이 떠나고, 정기적으로 인상을 얻어 내는 직원은 협상에 시간을 쓰며, 같은 단계의 급여가 흥정 능력에 좌우되기 시작합니다.</p>
+<pre><code>Kmonth = (1 + 연이율)^(1/12)
+이번 달 급여 = 지난달 급여 × Kmonth
+// 기준금리 14.5%일 때 → Kmonth ≈ 1.01135 (매월 +1.13%)</code></pre>
+<ul>
+<li>기준은 계수 승인일의 러시아 중앙은행 기준금리이며, 최소 연 1회 재검토합니다.</li>
+<li>재정적 어려움이 있을 때는 사전 통지 후 연동을 중단할 수 있습니다. 이미 도달한 급여는 깎이지 않으며, 상황이 회복되면 연동을 재개합니다.</li>
+</ul>
+<p class="src">전문: <a href="policies/inflation.html">인플레이션 계수</a></p>
+
+<h2 class="pol" id="pol-offline">‘오프라인 프로젝트: 대면 팀워크’ 규정 <span class="tag ok">승인됨</span></h2>
+<p>원격 직원은 몇 년을 함께 일하고도 서로 얼굴을 모를 수 있으며, 이는 신뢰를 약화시킵니다. 매년 여름 중 한 달, 엔지니어 그룹이 <b>2주간</b> 이노폴리스에 모여 포포프 테크노파크의 개방형 사무실에서 함께 생산 과제를 수행합니다. 그룹의 선배가 후배에게 경험을 전합니다.</p>
+<table>
+<tbody><tr><th>프로그램</th><th>과제 예시</th></tr>
+<tr><td>1번 — 네트워크 엔지니어</td><td>기술 지원 요청 시뮬레이션, 네트워크 데모 스탠드, 공익 프로젝트(예: 시골 학교나 박물관에 인터넷 연결), 팀워크.</td></tr>
+<tr><td>2번 — 전자, 임베디드</td><td>오실로스코프와 납땜 스테이션 실습, 전자 데모 스탠드, 자동화 시스템에 관한 공개 세미나, 팀워크.</td></tr>
+<tr><td>3번 — IoT/IIoT 웹 개발자</td><td>웹 인터페이스 경험 공유, 장치 모니터링 서버, 시골 박물관 소개 웹사이트, 팀워크.</td></tr>
+</tbody></table>
+<p>참여는 자발적이며, 구성과 과제는 최소 두 달 전에 합의합니다. 출장으로 처리되어 회사가 교통비와 숙박비를 부담합니다. 이후 경영진 보고와 참가자 설문을 진행합니다.</p>
+<p class="src">전문: <a href="policies/offline.html">오프라인 프로젝트</a></p>
+
+<h2 class="pol" id="pol-sport">‘스포츠’ 프로그램 규정 <span class="tag ok">승인됨</span></h2>
+<ul>
+<li>목표는 출퇴근이 없어 움직임이 줄어든 원격 직원의 신체 건강입니다.</li>
+<li>직원이 종목, 시간, 장소를 직접 고릅니다. 회사는 계획된 업무량 외에 <b>월 10시간</b>을 보고 확인 시 지급합니다.</li>
+<li>시간당 단가는 주니어 직원 월급의 1%입니다. 이 시간은 유급 휴무처럼 보고에 기록됩니다.</li>
+<li>참여는 자발적이며 모든 계약 형태에 열려 있습니다. 6개월 후 결과를 평가합니다.</li>
+</ul>
+<p class="src">전문: <a href="policies/sport.html">‘스포츠’ 프로그램</a></p>
+
+<h2 class="pol" id="pol-istlit">‘히스트릿 클럽’ 프로그램 규정 <span class="tag ok">승인됨</span></h2>
+<ul>
+<li>시야를 넓히고, 업무에 필요하지만 업무 중에는 잘 단련되지 않는 능력을 기릅니다. 낯선 주제를 파악하고, 자료를 고르고, 동료 앞에서 결론을 짧게 발표하는 능력입니다. 또한 분산형 팀에 업무 외 대화의 계기를 줍니다.</li>
+<li>참가자는 주제를 스스로 정하고 여가 시간에 그에 관한 문학, 논픽션, 역사서를 읽은 뒤 발표를 준비합니다.</li>
+<li>모임은 한 달에 최대 한 번, 45분간 열리며 참가자마다 1시간분이 지급됩니다.</li>
+<li>연말에 참가자 투표로 발표자에게 1등, 2등, 3등 상금을 지급합니다: 각각 15,000, 10,000, 5,000루블.</li>
+</ul>
+<p class="src">전문: <a href="policies/istlit.html">히스트릿 클럽</a></p>
+
+<!-- ============================ 5 ============================ -->
+<h1 id="where">5. 이미 적용된 곳</h1>
+<div class="grid2">
+<div class="card"><h4>‘로스토프 전자 공장’ 유한회사 · 2022년부터</h4><p>이 모델은 분산형 R&amp;D 팀의 기업 문화의 기반입니다. 4절의 규정은 Confluence에 게시되어 개발 부서의 모든 직원에게 적용됩니다.</p></div>
+<div class="card"><h4>개인사업자 A.N. 가브릴류크(‘Media Publish’) · 2012년부터</h4><p>이 모델의 초기 원칙은 작은 웹 스튜디오 ‘Media Publish’에서 마련되었으며, 그곳에서 마카렌코 모델을 구현하는 자체 도구 TeamTime BPM이 개발되었습니다.</p><p style="margin-top:6pt">TeamTime BPM은 프로젝트, 과제, 비즈니스 프로세스를 관리하는 원격 시스템으로, 팀의 일상 노동을 측정 가능한 데이터로 바꿉니다.</p></div>
+</div>
+
+<h2 id="sources">출처</h2>
+<ul class="src">
+<li>러시아 대백과사전: <a href="https://bigenc.ru/c/makarenko-anton-semionovich-02c9a2">마카렌코, 안톤 세묘노비치</a>(러시아어)</li>
+<li>소비에트 대백과사전: <a href="https://www.booksite.ru/fulltext/1/001/008/063/340.htm">F.E. 제르진스키 코뮌</a>(러시아어)</li>
+<li>FED 기업의 역사: <a href="https://fed.com.ua/en/history1.html">1927–1945</a>(영어)</li>
+<li>현대 우크라이나 백과사전: <a href="https://www.esu.com.ua/pdf/file/4417.pdf">‘Komunar’</a>(우크라이나어)</li>
+<li>『국민 교육』 잡지, 2003년 제2호: <a href="https://narodnoe.org/downloads/states/3741">‘콜로니 원장’의 전기에서</a>(러시아어)</li>
+<li>Mel: <a href="https://mel.fm/zhizn/istorii/6937508-makarenko">마카렌코는 어떻게 거리의 아이들을 가르쳤나</a>(러시아어)</li>
+<li>A.S. 마카렌코: <a href="https://www.marxists.org/russkij/russian/makarenko/works/1936/metodika_organizacii_vospitatelnogo_processa/index.html">교육 과정 조직 방법론</a>(1936, 러시아어)</li>
+<li>Wikipedia: <a href="https://en.wikipedia.org/wiki/FED_(camera)">FED (camera)</a>(영어)</li>
+</ul>
+<div class="site-foot">© 안톤 가브릴류크(Anton Gavrilyuk), 2026 · <a href="https://github.com/antoncom">github.com/antoncom</a></div>
+<script src="../assets/nav.js"></script>
+</body>
+</html>
