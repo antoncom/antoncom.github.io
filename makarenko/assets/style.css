@@ -69,7 +69,10 @@ nav#TOC ul ul li { font-weight: normal; margin: 1pt 0; }
 }
 
 /* ---- site additions ---- */
+html[lang="hi"] body { font-family: 'Noto Sans Devanagari', 'Nirmala UI', 'Mangal', 'DejaVu Sans', sans-serif; line-height: 1.7; }
 .topnav .lang { font-weight: bold; margin-left: 4px; border: 1px solid rgba(255,255,255,.35); padding: 4px 8px; }
+.topnav .langdd { margin-left: 4px; }
+.topnav .langdd .ddmenu { grid-template-columns: 1fr; right: 8px; left: auto; }
 .crumbs { font-size: 9.5pt; color: #666; margin: 22px 0 0; }
 .crumbs a { color: #4b1fb0; }
 .doc-head h1 { break-before: auto; margin-top: 8px; }
@@ -81,16 +84,17 @@ nav#TOC ul ul li { font-weight: normal; margin: 1pt 0; }
 ol.examples li { margin-bottom: 6pt; }
 ol > li > p:first-child { margin-top: 0; }
 .fig { margin: 10pt 0 14pt; text-align: left; }
-.fig img { max-width: 100%; height: auto; border: 1px solid #e2ddf2; border-radius: 6px; }
-.fig.narrow img { max-width: 460px; }
-.fig.icons img { border: none; max-width: 420px; }
+.fig img { display: block; width: auto; max-width: 100%; height: auto; border: 1px solid #e2ddf2; border-radius: 6px; }
+.fig.narrow img { max-width: min(100%, 460px); }
+.fig.icons img { border: none; width: 100%; max-width: min(100%, 420px); }
 .fig figcaption { font-size: 9pt; color: #666; margin-top: 4pt; text-align: left; }
 .site-foot { margin-top: 36px; padding-top: 10px; border-top: 1px solid #e2ddf2; font-size: 8.8pt; color: #777; }
+table { display: block; overflow-x: auto; }
+@media (min-width: 601px) { table { display: table; } }
 /* landing */
 body.landing { padding-top: 0; display: flex; min-height: 100vh; align-items: center; }
 .landing .wrap { width: 100%; padding: 40px 0; }
 .landing .langs { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
 .landing .btn { display: inline-block; padding: 12px 22px; border-radius: 8px; background: #2b0a6e; color: #fff; font-size: 12pt; font-weight: bold; text-decoration: none; }
 .landing .btn:hover { background: #4b1fb0; text-decoration: none; }
-.landing .btn.off { background: #e9e5f5; color: #8a80a8; cursor: default; font-weight: normal; }
 .landing .lead { font-size: 12pt; color: #333; max-width: 640px; }
