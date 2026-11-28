@@ -2,7 +2,7 @@ T = [
 "TeamTime BPM — measuring work in time and managing a team with the Makarenko model",
 "TeamTime BPM — a system for time tracking, reports and business processes for small and distributed teams. An hour of confirmed work as the measure of a useful result. A tool for A.S. Makarenko's model of “maximum respect with maximum demands”.",
 "Measuring work in time. Processes, tasks and reports. A tool of the Makarenko model for team leaders.",
-"TeamTime BPM — back to top",
+"TeamTime BPM — home page",
 "Origins",
 "Concept",
 "How it works",

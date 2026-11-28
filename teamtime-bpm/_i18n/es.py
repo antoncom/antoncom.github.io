@@ -2,7 +2,7 @@ T = [
 "TeamTime BPM — medir el trabajo en tiempo y dirigir un equipo con el modelo de Makárenko",
 "TeamTime BPM — un sistema de registro de tiempo, informes y procesos de negocio para equipos pequeños y distribuidos. La hora de trabajo confirmado como medida del resultado útil. Una herramienta del modelo de A.S. Makárenko: «máximo respeto con máxima exigencia».",
 "Medir el trabajo en tiempo. Procesos, tareas e informes. Una herramienta del modelo de Makárenko para quien dirige un equipo.",
-"TeamTime BPM — volver al inicio",
+"TeamTime BPM — página de inicio",
 "Origen",
 "Concepto",
 "Cómo funciona",
