@@ -93,6 +93,12 @@ ol > li > p:first-child { margin-top: 0; }
 .site-foot { margin-top: 36px; padding-top: 10px; border-top: 1px solid #e2ddf2; font-size: 8.8pt; color: #777; }
 table { display: block; overflow-x: auto; }
 @media (min-width: 601px) { table { display: table; } }
+.topnav .home-ico { display: none; }
+@media (max-width: 600px) {
+  .topnav .brand { display: flex !important; align-items: center; margin-right: 2px; padding: 7px 8px; flex-shrink: 0; }
+  .topnav .brand .brand-txt { display: none; }
+  .topnav .brand .home-ico { display: block; }
+}
 /* landing */
 body.landing { padding-top: 0; display: flex; min-height: 100vh; align-items: center; }
 .landing .wrap { width: 100%; padding: 40px 0; }
