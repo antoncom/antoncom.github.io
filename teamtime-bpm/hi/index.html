@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TeamTime BPM — श्रम को समय में मापना और माकारेंको मॉडल से टीम का प्रबंधन</title>
+<meta name="description" content="TeamTime BPM — छोटी और वितरित टीमों के लिए समय-लेखा, रिपोर्ट और व्यावसायिक प्रक्रियाओं की प्रणाली। पुष्टि किए गए श्रम का एक घंटा उपयोगी परिणाम का माप है। ए.एस. माकारेंको के मॉडल “अधिकतम माँग के साथ अधिकतम सम्मान” का उपकरण।">
+<meta property="og:title" content="TeamTime BPM">
+<meta property="og:description" content="श्रम को समय में मापना। प्रक्रियाएँ, कार्य और रिपोर्ट। टीम प्रमुख के लिए माकारेंको मॉडल का उपकरण।">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="hi_IN">
+<link rel="icon" href="../assets/img/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Fira+Sans+Condensed:wght@500;600;700&family=PT+Serif:ital,wght@1,400;1,700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="TeamTime BPM — शुरुआत पर जाएँ"><img src="../assets/img/logo-wordmark.png" alt="TeamTime"></a>
+    <ul class="menu">
+      <li><a href="#origin">उत्पत्ति</a></li>
+      <li><a href="#concept">अवधारणा</a></li>
+      <li><a href="#how">कैसे काम करता है</a></li>
+      <li><a href="#modules">मॉड्यूल</a></li>
+      <li><a href="#makarenko">माकारेंको मॉडल</a></li>
+      <li><a href="#deploy">लागू करना</a></li>
+    </ul>
+    <details class="lang-switch">
+      <summary>HI</summary>
+      <ul>
+        <li><a href="../ru/" lang="ru">Русский</a></li>
+        <li><a href="../en/" lang="en">English</a></li>
+        <li><a href="../de/" lang="de">Deutsch</a></li>
+        <li><a href="../es/" lang="es">Español</a></li>
+        <li><a href="../hi/" lang="hi" class="current">हिन्दी</a></li>
+        <li><a href="../zh/" lang="zh">中文</a></li>
+        <li><a href="../ko/" lang="ko">한국어</a></li>
+      </ul>
+    </details>
+    <button class="nav-toggle" aria-label="मेनू">☰</button>
+  </div>
+</nav>
+
+<div class="sheet">
+
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">टीम के काम के प्रबंधन की प्रणाली</div>
+      <h1>TeamTime BPM</h1>
+      <p class="lead">श्रम को <b>पैसे में नहीं, समय में</b> मापा जाता है। प्रक्रियाएँ, कार्य और रिपोर्ट एक ही प्रणाली में — ताकि प्रबंधक टीम का वास्तविक काम देखे और हर कर्मचारी अपना योगदान और अपनी प्रगति देखे।</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#how">यह कैसे काम करता है →</a>
+        <a class="btn btn-ghost" href="#deploy">लागू करने के विकल्प</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <img class="logo-big" src="../assets/img/logo-teamtime-en.png" alt="TeamTime — Small business BPM">
+      <p class="formula">max(R) = max(D)</p>
+      <p class="formula-cap">अधिकतम माँग के साथ अधिकतम सम्मान —<br>ए.एस. माकारेंको का मॉडल, एक उपकरण में</p>
+    </div>
+  </div>
+  <div class="wrap facts-wrap">
+    <div class="facts">
+      <div class="fact"><b>2009 से</b><span>टीमों के दैनिक काम में</span></div>
+      <div class="fact"><b>2022 से</b><span>OOO “रोस्तोव इलेक्ट्रॉनिक्स प्लांट” की दूरस्थ R&amp;D टीम का प्रबंधन</span></div>
+      <div class="fact"><b>5 मॉड्यूल</b><span>लेखा, कैलेंडर, BPM, करियर, औपचारिकताएँ</span></div>
+      <div class="fact"><b>SaaS / अपना सर्वर</b><span>क्लाउड या उद्यम का आंतरिक नेटवर्क</span></div>
+    </div>
+  </div>
+</header>
+
+
+<section id="origin">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">1</div>
+      <h2>TeamTime क्यों और कैसे बना</h2>
+      <p>TeamTime “बाज़ार के लिए” नहीं बनाया गया। यह एक छोटी टीम के प्रमुख की ज़रूरत से निकला: यह देखना कि वास्तव में क्या किया गया, हर व्यक्ति के श्रम का निष्पक्ष मूल्यांकन करना — और नियंत्रण में न डूबना।</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="reveal">
+        <h3>कौन-सी समस्या हल की गई</h3>
+        <ul class="check">
+          <li><b>काम अदृश्य है।</b> टास्क-ट्रैकर दिखाता है कि कार्य बंद हो गया, पर यह नहीं कि उसमें कितना श्रम लगा और काम किस रास्ते से हुआ।</li>
+          <li><b>पैसा एक कमज़ोर माप है।</b> दरें अलग होती हैं, कीमतें बदलती हैं, और “इस काम की कीमत क्या है” की बात जल्दी ही परिणाम की चर्चा के बजाय मोलभाव बन जाती है।</li>
+          <li><b>नियंत्रण प्रबंधक को खा जाता है।</b> प्रणाली के बिना निदेशक को हर व्यक्ति से खुद पूछना पड़ता है — समय भी जाता है और भरोसा भी कमज़ोर होता है।</li>
+          <li><b>लेखा प्रणालियाँ छोटे व्यवसाय के लिए भारी हैं।</b> कार्य-समापन प्रमाणपत्र जारी करने और भुगतान की गणना के लिए अलग लेखा सॉफ़्टवेयर की ज़रूरत नहीं होनी चाहिए।</li>
+        </ul>
+        <div class="quote">ऐसे उपकरण की ज़रूरत थी जिसमें काम से माँग और कर्मचारी के प्रति सम्मान एक ही क्रिया हो।
+          <small>अंतोन गव्रिल्युक, TeamTime के लेखक</small></div>
+      </div>
+
+      <div class="timeline reveal">
+        <div class="tl">
+          <div class="year">2008</div>
+          <div><h4>वेब-स्टूडियो “Media Publish”</h4><p>टीम “सम्मान + माँग” के सिद्धांत पर काम करती है। हर व्यक्ति के काम को दर्ज करने की ज़रूरत पैदा होती है: कार्य, रिपोर्ट, घंटे।</p></div>
+        </div>
+        <div class="tl">
+          <div class="year">2009</div>
+          <div><h4>TeamTime का पहला संस्करण</h4><p>लेखा, कैलेंडर, BPM प्रक्रिया-संपादक, करियर, औपचारिकताएँ और ग्राहक पोर्टल। प्रणाली स्टूडियो का मुख्य उपकरण बन जाती है।</p></div>
+        </div>
+        <div class="tl">
+          <div class="year">2012</div>
+          <div><h4>एकल उद्यमी ए.एन. गव्रिल्युक</h4><p>TeamTime BPM आज भी परियोजना-प्रबंधन उपकरण के रूप में काम कर रहा है।</p></div>
+        </div>
+        <div class="tl now">
+          <div class="year">2022</div>
+          <div><h4>वितरित R&amp;D टीम</h4><p>TeamTime BPM का कार्यशील प्रोटोटाइप OOO “रोस्तोव इलेक्ट्रॉनिक्स प्लांट” की दूरस्थ एम्बेडेड-सॉफ़्टवेयर टीम के काम का प्रबंधन करता है।</p></div>
+        </div>
+        <div class="tl now">
+          <div class="year">2026</div>
+          <div><h4>नया संस्करण</h4><p>अवधारणा माकारेंको मॉडल के उपकरण के रूप में तैयार होती है; प्रक्रियाओं में रोबोट और AI-एजेंट निष्पादक के रूप में जुड़ते हैं।</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="concept" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">2</div>
+      <h2>पैसा नहीं, समय — उपयोगी श्रम का समतुल्य</h2>
+      <p>TeamTime में काम का माप है <b>पुष्टि किए गए उपयोगी श्रम का एक घंटा</b>। पैसा एक व्युत्पन्न मात्रा है: इसकी गणना घंटों से होती है, उल्टा नहीं।</p>
+    </div>
+
+    <div class="equation reveal">
+      <div class="eq-box"><b>नियोजित घंटे</b><span>काम शुरू होने से पहले प्रबंधक कार्य का अनुमान लगाता है</span></div>
+      <div class="eq-op">→</div>
+      <div class="eq-box"><b>वास्तविक घंटे</b><span>समय-गणक और निष्पादक की रिपोर्ट</span></div>
+      <div class="eq-op">→</div>
+      <div class="eq-box accent"><b>पुष्टि किए गए घंटे</b><span>परिणाम के आधार पर प्रबंधक द्वारा स्वीकृत</span></div>
+      <div class="eq-op">×</div>
+      <div class="eq-box"><b>स्तर की प्रति घंटा दर</b><span>योग्यता पर निर्भर (करियर मॉड्यूल)</span></div>
+    </div>
+
+    <div class="grid-3">
+      <div class="card reveal">
+        <h4>सबके लिए समान रूप से स्पष्ट</h4>
+        <p>काम का एक घंटा निदेशक, इंजीनियर और ग्राहक — सभी समझते हैं। घंटों पर पहले से सहमति हो सकती है, उन्हें योजना से मिलाया जा सकता है और बिना मोलभाव के चर्चा की जा सकती है।</p>
+      </div>
+      <div class="card reveal">
+        <h4>मूल्य नहीं घटता</h4>
+        <p>कीमतें और विनिमय दरें बदलती हैं, पर श्रम का घंटा घंटा ही रहता है। कर्मचारी का संचित अनुभव घंटों में व्यक्त होता है और वर्षों तक अर्थपूर्ण रहता है।</p>
+      </div>
+      <div class="card reveal">
+        <h4>केवल उपयोगी काम गिना जाता है</h4>
+        <p>घंटा तभी गिना जाता है जब उसके पीछे रिपोर्ट और स्वीकृत परिणाम हो। प्रणाली में “सिर्फ़ उपस्थित रहना” भुगतान में नहीं बदलता।</p>
+      </div>
+      <div class="card reveal">
+        <h4>पेशों के बीच तुलनीय</h4>
+        <p>प्रोग्रामर, डिज़ाइनर और प्रशासक एक ही माप में काम करते हैं। योग्यता का अंतर प्रति घंटा दर में झलकता है, अलग लेखा-तर्क में नहीं।</p>
+      </div>
+      <div class="card reveal">
+        <h4>व्यक्ति के साथ बढ़ता है</h4>
+        <p>किसी विशेषज्ञता में पुष्टि किए गए घंटे ही वास्तविक अनुभव हैं। अनुभव जमा किया — ऊँची प्रति घंटा दर वाले अगले स्तर पर पहुँचे।</p>
+      </div>
+      <div class="card reveal">
+        <h4>ईमानदार अर्थशास्त्र</h4>
+        <p>परियोजना या प्रक्रिया की लागत वास्तविक घंटों से गिनी जाती है (Activity Based Costing), अंदाज़े से नहीं।</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">3</div>
+      <h2>TeamTime कैसे काम करता है</h2>
+      <p>पाँच सिद्धांत जिन पर प्रणाली टिकी है। स्क्रीनशॉट इंटरफ़ेस के पहले, रूसी-भाषी संस्करण के हैं; उनके पीछे का तर्क नहीं बदला।</p>
+    </div>
+
+    
+    <div class="feature">
+      <div class="f-text reveal">
+        <div class="f-tag">3.1</div>
+        <h3>समय-लेखा और रिपोर्ट</h3>
+        <p>कर्मचारी कार्य खोलता है और “शुरू करें” दबाता है — समय-गणक चलने लगता है। काम पूरा होने पर वह छोटी रिपोर्ट लिखता है: क्या किया, परिणाम क्या है, कितना समय लगा।</p>
+        <ul class="check">
+          <li>रिपोर्ट दिन का मुख्य दस्तावेज़ है: संक्षिप्त, सटीक, समय के साथ।</li>
+          <li>“हम क्या कर रहे हैं?” फ़ीड टीम की रिपोर्टें वास्तविक समय में दिखाती है।</li>
+          <li>हर कार्य, परियोजना और कर्मचारी के लिए नियोजित / वास्तविक घंटे दिखते हैं।</li>
+          <li>प्रबंधक रिपोर्टों से प्रबंधन करता है, पूछताछ से नहीं।</li>
+        </ul>
+      </div>
+      <figure class="reveal">
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/uchet-cabinet.jpg" alt="कर्मचारी पोर्टल: कार्य, कार्य-विवरण और रिपोर्ट फ़ीड" loading="lazy"></div>
+        <figcaption>कर्मचारी पोर्टल: कार्य, कार्य का पाठ और टीम की रिपोर्ट फ़ीड</figcaption>
+      </figure>
+    </div>
+
+    
+    <div class="feature rev">
+      <div class="f-text reveal">
+        <div class="f-tag">3.2</div>
+        <h3>प्रक्रियाएँ, परियोजनाएँ, कार्य — योजना और लेखा की मूल इकाइयाँ</h3>
+        <div class="units">
+          <div class="unit"><b>परियोजना</b><span>किसके लिए और क्यों काम करते हैं</span></div>
+          <div class="unit"><b>प्रक्रिया</b><span>BPMN आरेख: कौन, किस क्रम में</span></div>
+          <div class="unit"><b>कार्य</b><span>दिया गया · आवश्यक · निर्देश</span></div>
+          <div class="unit"><b>रिपोर्ट</b><span>परिणाम और वास्तविक घंटे</span></div>
+        </div>
+        <p>दोहराए जाने वाले काम को एक बार प्रक्रिया के रूप में लिखा जाता है और फिर टेम्पलेट-सूची से शुरू किया जाता है। हर कार्य तकनीकी विवरण की तरह लिखा जाता है: <b>क्या दिया गया है, क्या आवश्यक है, कैसे करना है</b>। प्रणाली में अस्पष्ट निर्देश नहीं होते।</p>
+      </div>
+      <div class="shots-2 reveal">
+        <figure>
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/bpm-processes.jpg" alt="स्थिति सहित प्रक्रियाओं की सूची" loading="lazy"></div>
+          <figcaption>प्रक्रियाएँ और उनकी स्थिति</figcaption>
+        </figure>
+        <figure>
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/creport-task.jpg" alt="“दिया गया / आवश्यक / निर्देश” प्रारूप में कार्य" loading="lazy"></div>
+          <figcaption>कार्य: दिया गया / आवश्यक / निर्देश</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    
+    <div class="feature">
+      <div class="f-text reveal">
+        <div class="f-tag">3.3</div>
+        <h3>सही जानकारी, सही समय पर, सही व्यक्ति तक</h3>
+        <p>प्रक्रिया खुद काम को श्रृंखला में आगे बढ़ाती है: जब एक प्रतिभागी रिपोर्ट जमा करता है, तो अगले को अपना कार्य मिलता है — निर्देशों और इनपुट डेटा के साथ।</p>
+        <ul class="check">
+          <li><b>कर्मचारी</b> केवल अपने कार्य और वे प्रक्रियाएँ देखता है जिनमें वह भाग लेता है, और साप्ताहिक कार्य-योजना पाता है।</li>
+          <li><b>प्रबंधक</b> परियोजनाओं, काम के प्रकारों और लोगों के अनुसार रिपोर्टें और सारांश पाता है।</li>
+          <li><b>ग्राहक</b> अपने पोर्टल (C-Report) में काम की प्रगति, रिपोर्टें और नियोजित / वास्तविक घंटे देखता है।</li>
+        </ul>
+      </div>
+      <figure class="reveal">
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/calendar-weekly.jpg" alt="कर्मचारी को ईमेल से भेजी गई साप्ताहिक कार्य-योजना" loading="lazy" style="max-height:560px;object-fit:cover;object-position:top"></div>
+        <figcaption>कर्मचारी को ईमेल से भेजी गई साप्ताहिक कार्य-योजना</figcaption>
+      </figure>
+    </div>
+
+    
+    <div class="feature rev">
+      <div class="f-text reveal">
+        <div class="f-tag">3.4</div>
+        <h3>प्रक्रियाओं की पारदर्शिता</h3>
+        <p>TeamTime में प्रक्रिया एक जीवंत आरेख है, फ़ोल्डर में रखा नियम नहीं। आरेख में दिखता है कि हर चरण का निष्पादक कौन है, काम अभी कहाँ है और कितने घंटे नियोजित और खर्च हुए।</p>
+        <ul class="check">
+          <li>सरल BPMN संकेतन — 10 मानक तत्व, बिना प्रशिक्षण के समझ में आने वाले।</li>
+          <li>वास्तविक घंटों के आधार पर प्रक्रिया का लागत विश्लेषण।</li>
+          <li>तुरंत दिखता है कि किस चरण पर कठिनाई या त्रुटि हुई।</li>
+          <li>पूरी हुई प्रक्रियाओं का संग्रह — काम वास्तव में कैसे हुआ, इसका इतिहास।</li>
+        </ul>
+      </div>
+      <figure class="reveal">
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/bpm-diagram.jpg" alt="TeamTime BPM संपादक में प्रक्रिया आरेख, निष्पादकों और नियोजित/वास्तविक घंटों के साथ" loading="lazy"></div>
+        <figcaption>प्रक्रिया “डोमेन नाम पंजीकृत करें”: निष्पादकों की लेन, योजना 10.5 घं / वास्तविक 11.5 घं</figcaption>
+      </figure>
+    </div>
+
+    
+    <div class="feature">
+      <div class="f-text reveal">
+        <div class="f-tag">3.5</div>
+        <h3>रोबोट और AI के लिए कार्य — प्रक्रियाओं का हिस्सा</h3>
+        <p>TeamTime का कार्य-प्रारूप — “दिया गया · आवश्यक · निर्देश” — मूलतः AI-एजेंट के लिए तैयार कार्य-विवरण है। इसलिए रोबोट प्रक्रिया का एक और प्रतिभागी बन जाता है: आरेख पर उसकी अपनी लेन, अपने कार्य और अपनी रिपोर्टें होती हैं।</p>
+        <ul class="check">
+          <li>नियमित चरण (डेटा संग्रह, दस्तावेज़ों के मसौदे, जाँच) एजेंट करता है।</li>
+          <li>एजेंट उसी प्रारूप में रिपोर्ट देता है जैसे मनुष्य — काम पारदर्शी रहता है।</li>
+          <li>निर्णय और गुणवत्ता नियंत्रण मनुष्य के पास रहते हैं।</li>
+          <li>दिखता है कि स्वचालन ने कर्मचारियों का कितना समय बचाया।</li>
+        </ul>
+      </div>
+      <figure class="reveal">
+        <div class="ai-flow">
+          <svg viewBox="0 0 640 330" xmlns="http://www.w3.org/2000/svg" font-family="Fira Sans, sans-serif" font-size="13">
+            <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1d3f9b"/></marker></defs>
+            <g fill="#f4f7fe" stroke="#dfe5f1"><rect x="0" y="0" width="640" height="110"/><rect x="0" y="110" width="640" height="110"/><rect x="0" y="220" width="640" height="110"/></g>
+            <g fill="#e8eefc"><rect x="0" y="0" width="34" height="330"/></g>
+            <g fill="#0a1f63" font-weight="700" font-size="12">
+              <text transform="translate(22 92) rotate(-90)">प्रबंधक</text>
+              <text transform="translate(22 196) rotate(-90)" fill="#950909">AI-एजेंट</text>
+              <text transform="translate(22 300) rotate(-90)">इंजीनियर</text>
+            </g>
+            <circle cx="70" cy="55" r="18" fill="#fff" stroke="#1d3f9b" stroke-width="2"/><text x="70" y="59" text-anchor="middle" font-size="11">Start</text>
+            <g><rect x="110" y="25" width="140" height="60" rx="8" fill="#fff" stroke="#5d9b2f" stroke-width="2"/><rect x="110" y="25" width="140" height="18" rx="8" fill="#5d9b2f"/><text x="120" y="38" fill="#fff" font-size="11">प्रबंधक</text><text x="120" y="60">कार्य सौंपें:</text><text x="120" y="76" fill="#5b667a" font-size="11">दिया गया · आवश्यक</text></g>
+            <g><rect x="200" y="135" width="150" height="60" rx="8" fill="#fff" stroke="#950909" stroke-width="2"/><rect x="200" y="135" width="150" height="18" rx="8" fill="#950909"/><text x="210" y="148" fill="#fff" font-size="11">AI-एजेंट</text><text x="210" y="170">डेटा जुटाएँ,</text><text x="210" y="186">मसौदा + रिपोर्ट</text></g>
+            <g><rect x="320" y="245" width="168" height="60" rx="8" fill="#fff" stroke="#5d9b2f" stroke-width="2"/><rect x="320" y="245" width="168" height="18" rx="8" fill="#5d9b2f"/><text x="330" y="258" fill="#fff" font-size="11">इंजीनियर</text><text x="330" y="280">जाँचें, सुधारें</text><text x="330" y="296" fill="#5b667a" font-size="11">रिपोर्ट, वास्तविक घंटे</text></g>
+            <g><rect x="434" y="25" width="156" height="60" rx="8" fill="#fff" stroke="#5d9b2f" stroke-width="2"/><rect x="434" y="25" width="156" height="18" rx="8" fill="#5d9b2f"/><text x="444" y="38" fill="#fff" font-size="11">प्रबंधक</text><text x="444" y="60">गुणवत्ता नियंत्रण,</text><text x="444" y="76" fill="#5b667a" font-size="11">घंटे स्वीकारें</text></g>
+            <circle cx="612" cy="55" r="18" fill="#fff" stroke="#0a1f63" stroke-width="3"/><text x="612" y="59" text-anchor="middle" font-size="11">End</text>
+            <g stroke="#1d3f9b" stroke-width="1.6" fill="none" marker-end="url(#ar)">
+              <path d="M88 55H108"/><path d="M180 85V165H198"/><path d="M350 165H395V243"/><path d="M488 275H510V87"/><path d="M590 55H592"/>
+            </g>
+          </svg>
+        </div>
+        <figcaption>उदाहरण प्रक्रिया: एक चरण का निष्पादक AI-एजेंट है</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+
+<section id="modules" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">4</div>
+      <h2>सॉफ़्टवेयर मॉड्यूल</h2>
+      <p>मॉड्यूल कर्मचारियों, परियोजनाओं और कार्यों के साझा आधार पर काम करते हैं। इन्हें धीरे-धीरे लागू किया जा सकता है: लेखा से शुरू करें और बाकी ज़रूरत के अनुसार जोड़ें।</p>
+    </div>
+
+    <div class="modules reveal" role="tablist">
+      <button class="mod-tab active" data-target="m-uchet" role="tab" aria-selected="true"><img src="../assets/img/ic-uchet.png" alt=""><b>लेखा</b><span>कर्मचारी, परियोजनाएँ, रिपोर्ट</span></button>
+      <button class="mod-tab" data-target="m-calendar" role="tab" aria-selected="false"><img src="../assets/img/ic-calendar.png" alt=""><b>Calendar</b><span>कार्य कैलेंडर</span></button>
+      <button class="mod-tab" data-target="m-bpm" role="tab" aria-selected="false"><img src="../assets/img/ic-bpm.png" alt=""><b>BPM</b><span>प्रक्रिया संपादक</span></button>
+      <button class="mod-tab" data-target="m-career" role="tab" aria-selected="false"><img src="../assets/img/ic-career.png" alt=""><b>करियर</b><span>अनुभव और विकास</span></button>
+      <button class="mod-tab" data-target="m-formal" role="tab" aria-selected="false"><img src="../assets/img/ic-doc.png" alt=""><b>औपचारिकताएँ</b><span>टेम्पलेट से दस्तावेज़</span></button>
+    </div>
+
+    <div class="mod-panel active" id="m-uchet">
+      <div>
+        <h3>TeamTime लेखा</h3>
+        <p>प्रणाली का केंद्र: कर्मचारी, परियोजनाएँ, काम के प्रकार, कार्य और रिपोर्ट, सारांश रिपोर्ट।</p>
+        <h4>कर्मचारी पोर्टल</h4>
+        <ul class="check">
+          <li>कार्य निष्पादन का समय-गणक।</li>
+          <li>कार्य का पाठ तकनीकी विवरण के रूप में।</li>
+          <li>रिपोर्ट दर्ज करना; स्थिति, तात्कालिकता और परियोजना के अनुसार कार्यों का फ़िल्टर।</li>
+        </ul>
+        <h4>प्रबंधक पोर्टल</h4>
+        <ul class="check">
+          <li>परियोजनाओं, काम के प्रकारों और कर्मचारियों के अनुसार समय और वित्तीय लागत।</li>
+          <li>कर्मचारियों की रिपोर्ट और अवधि की सारांश रिपोर्ट।</li>
+        </ul>
+        <h4>ग्राहक पोर्टल (C-Report)</h4>
+        <ul class="check">
+          <li>परियोजना का कार्य-लॉग, रिपोर्ट और नियोजित / वास्तविक घंटे।</li>
+          <li>मध्यवर्ती परिणाम, सामग्री और निर्देश।</li>
+        </ul>
+      </div>
+      <figure>
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/creport-journal.jpg" alt="कार्य-लॉग और काम के प्रकार तथा निष्पादक के अनुसार आँकड़े" loading="lazy"></div>
+        <figcaption>कार्य-लॉग: रिपोर्ट, नियोजित / वास्तविक घंटे, काम के प्रकार और निष्पादक के अनुसार आँकड़े</figcaption>
+      </figure>
+    </div>
+
+    <div class="mod-panel" id="m-calendar">
+      <div>
+        <h3>TeamTime Calendar</h3>
+        <p>टीम का कार्य कैलेंडर: कौन, क्या और कब करता है।</p>
+        <ul class="check">
+          <li>माह / सप्ताह / दिन दृश्य, माउस से कार्य खिसकाना।</li>
+          <li>कर्मचारी, परियोजना, काम के प्रकार और प्रक्रिया के अनुसार फ़िल्टर।</li>
+          <li>उप-कार्य और उन्हें शामिल करते हुए नियोजित / वास्तविक घंटों का नियंत्रण।</li>
+          <li>दोहराए जाने वाले कार्य: दैनिक, साप्ताहिक, मासिक, वार्षिक।</li>
+          <li>हर कर्मचारी को ईमेल से साप्ताहिक कार्य-योजना।</li>
+        </ul>
+      </div>
+      <figure>
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/calendar.jpg" alt="माह दृश्य में टीम का कार्य कैलेंडर" loading="lazy"></div>
+        <figcaption>टीम का कार्य कैलेंडर, “माह” दृश्य</figcaption>
+      </figure>
+    </div>
+
+    <div class="mod-panel" id="m-bpm">
+      <div>
+        <h3>TeamTime BPM</h3>
+        <p>व्यावसायिक प्रक्रियाओं का संपादक, जिसमें आरेख एक साथ कार्यों की सूची भी है और उनके निष्पादन की व्यवस्था भी।</p>
+        <ul class="check">
+          <li>10 मानक तत्वों वाला सरल BPMN संकेतन।</li>
+          <li>आरेख की हर क्रिया एक कार्य है — निष्पादक, नियोजित घंटों और निर्देशों के साथ।</li>
+          <li>प्रक्रिया शुरू करना: कार्य अपने-आप एक निष्पादक से अगले तक जाते हैं।</li>
+          <li>लागत विश्लेषण (ABC), टेम्पलेट सूची, संग्रह, गतिविधि क्षेत्र।</li>
+          <li>किसी चरण का निष्पादक मनुष्य, रोबोट या AI-एजेंट हो सकता है।</li>
+        </ul>
+      </div>
+      <figure>
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/bpm-diagram.jpg" alt="TeamTime BPM प्रक्रिया संपादक" loading="lazy"></div>
+        <figcaption>प्रक्रिया संपादक: निष्पादकों की लेन, कार्य, घटनाएँ</figcaption>
+      </figure>
+    </div>
+
+    <div class="mod-panel" id="m-career">
+      <div>
+        <h3>TeamTime करियर</h3>
+        <p>विशेषज्ञता के अनुसार वास्तविक अनुभव का लेखा और हर कर्मचारी के लिए विकास कार्यक्रम।</p>
+        <ul class="check">
+          <li><b>लक्ष्य-सदिश।</b> नियुक्ति के समय प्रबंधक और कर्मचारी मिलकर कंपनी के लक्ष्यों से मेल खाते पेशेवर लक्ष्य तय करते हैं।</li>
+          <li><b>वास्तविक अनुभव।</b> कार्यों के पुष्टि किए गए घंटे अपने-आप कौशल और विशेषज्ञता के अनुसार जमा होते हैं।</li>
+          <li><b>स्तर और प्रति घंटा दर।</b> पारदर्शी वेतन-ढाँचा — प्रशिक्षु से प्रबंधक तक; पुष्टि किए गए घंटों से स्तर में वृद्धि।</li>
+          <li><b>पुनर्प्रशिक्षण।</b> व्यक्तिगत शिक्षण मार्ग: पाठ्यक्रम BPMN प्रक्रिया के रूप में, रिपोर्ट सहित शैक्षिक कार्य और अंत में कौशल मूल्यांकन पत्र।</li>
+        </ul>
+      </div>
+      <div class="shots-2">
+        <figure>
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/career-table.jpg" alt="लक्ष्य-सदिश: विशेषज्ञताएँ, कौशल और प्रति घंटा दर" loading="lazy"></div>
+          <figcaption>लक्ष्य-सदिश: कौशल और प्रति घंटा दर</figcaption>
+        </figure>
+        <figure>
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/career-balance.jpg" alt="लक्ष्य-सदिश का संतुलन — कौशल के अनुसार प्रतिशत में प्रगति" loading="lazy"></div>
+          <figcaption>लक्ष्य-सदिश का संतुलन: कौशल के अनुसार प्रगति</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="mod-panel" id="m-formal">
+      <div>
+        <h3>TeamTime औपचारिकताएँ</h3>
+        <p>टेम्पलेट से दस्तावेज़ बनाना — उसी डेटा से जो प्रणाली में पहले से है: प्रक्रियाएँ, रिपोर्टें, ग्राहकों का विवरण और कर्मचारियों का डेटा।</p>
+        <ul class="check">
+          <li>ग्राहक के लिए: अनुमान, कार्य-समापन प्रमाणपत्र, बिल, मानक अनुबंध।</li>
+          <li>कर्मचारी के लिए: अनुबंध, नकद भुगतान आदेश, वेतन गणना।</li>
+          <li>संभावित ग्राहक के लिए: वेबसाइट पर ऑनलाइन सेवा-कैलकुलेटर, प्रक्रिया के आधार पर बना।</li>
+          <li>चर (variables) वाले अपने टेम्पलेट।</li>
+        </ul>
+      </div>
+      <div>
+        <figure>
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/formal-flow.jpg" alt="आरेख: BPM और लेखा के डेटा से ग्राहक, कर्मचारी और संभावित ग्राहक के लिए दस्तावेज़ बनते हैं" loading="lazy"></div>
+          <figcaption>दस्तावेज़ कहाँ से आते हैं</figcaption>
+        </figure>
+        <figure style="margin-top:20px">
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/formal-table.jpg" alt="बनाए गए दस्तावेज़ों की सूची: प्रमाणपत्र, बिल, अनुमान, नकद आदेश" loading="lazy"></div>
+          <figcaption>बनाए गए दस्तावेज़ों का रजिस्टर</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="makarenko" class="mk">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">5</div>
+      <h2>TeamTime — सामूहिक के प्रबंधन में माकारेंको मॉडल का उपकरण</h2>
+      <p>ए.एस. माकारेंको का मॉडल सामूहिक की संरचना पर टिका है, प्रबंधक के व्यक्तिगत गुणों पर नहीं। TeamTime इस संरचना को रोज़मर्रा का अभ्यास बनाता है: मॉडल के हर सिद्धांत के लिए प्रणाली में एक ठोस तंत्र है।</p>
+    </div>
+
+    <div class="mk-formula reveal">
+      <p class="formula">max(R) = max(D)</p>
+      <p style="margin:0">व्यक्ति से ऊँची माँग उसके प्रति सम्मान व्यक्त करती है, और माँग के बिना सम्मान का अर्थ उदासीनता है। TeamTime में माँग और सम्मान एक ही क्रिया हैं: <b>स्पष्ट रूप से दिया गया कार्य और ईमानदारी से गिना गया श्रम</b>।</p>
+    </div>
+
+    <table class="mk-table reveal">
+      <thead><tr><th>मॉडल का सिद्धांत</th><th>TeamTime इसे कैसे लागू करता है</th></tr></thead>
+      <tbody>
+        <tr><td>अधिकतम माँग</td><td>हर कार्य — “दिया गया · आवश्यक · निर्देश”, नियोजित घंटों के साथ। परिणाम गुणवत्ता नियंत्रण से गुज़रता है; केवल पुष्टि किया गया श्रम गिना जाता है।</td></tr>
+        <tr><td>अधिकतम सम्मान</td><td>माइक्रोमैनेजमेंट नहीं: प्रबंधक रिपोर्टों से काम देखता है। भुगतान पूर्वानुमेय है और घंटों से गिना जाता है; हर व्यक्ति का योगदान टीम को दिखता है।</td></tr>
+        <tr><td>कमांडर की रिपोर्ट<small>कम्यून में — दैनिक</small></td><td>कर्मचारी की दैनिक रिपोर्ट: संक्षिप्त, तर्कसंगत, समय के साथ। पूछताछ की जगह “हम क्या कर रहे हैं?” फ़ीड।</td></tr>
+        <tr><td>उपकरण के रूप में सामूहिक</td><td>प्रक्रियाएँ लोगों को जोड़ती हैं: एक का परिणाम दूसरे का इनपुट है। साझा कार्य-लॉग टीम को स्वयं के लिए दृश्यमान बनाता है।</td></tr>
+        <tr><td>भविष्य की रेखाएँ</td><td>करियर मॉड्यूल में लक्ष्य-सदिश: निकट भविष्य — अगला स्तर, दूर का भविष्य — नई विशेषज्ञता।</td></tr>
+        <tr><td>समानांतर प्रभाव</td><td>प्रबंधक कार्य-पद्धति — प्रक्रियाओं और टेम्पलेट — का प्रबंधन करता है, हर व्यक्ति का अलग-अलग नहीं।</td></tr>
+        <tr><td>उत्पादक श्रम और शिक्षा</td><td>शैक्षिक कार्य भी प्रक्रिया के सामान्य कार्य हैं, रिपोर्ट और घंटों के साथ; व्यक्तिगत शिक्षण मार्ग उसी प्रणाली में चलता है।</td></tr>
+        <tr><td>परंपराएँ</td><td>प्रक्रिया-टेम्पलेट की सूची सहेजती है कि “हमारे यहाँ काम कैसे होता है”, और इसे नए कर्मचारियों तक पहुँचाती है।</td></tr>
+      </tbody>
+    </table>
+
+    <div class="mk-link reveal">
+      <div><h4 style="margin:0 0 4px">मॉडल के बारे में विस्तार से</h4><span style="color:rgba(255,255,255,.75)">कॉलोनी और कम्यून का इतिहास, सामूहिक काम के नियम, 2008 से मॉडल के उपयोग का अनुभव</span></div>
+      <a class="btn btn-primary" href="https://antoncom.github.io/makarenko/hi/" target="_blank" rel="noopener">“निदेशक के कार्य में ए.एस. माकारेंको का मॉडल” →</a>
+    </div>
+  </div>
+</section>
+
+
+<section id="deploy">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">6</div>
+      <h2>लागू करने के विकल्प</h2>
+      <p>दोनों विकल्पों में कार्यक्षमता एक जैसी है। अंतर यह है कि डेटा कहाँ रखा जाता है और सर्वर की देखभाल कौन करता है।</p>
+    </div>
+    <div class="deploy">
+      <div class="plan featured reveal">
+        <span class="badge">तुरंत शुरुआत</span>
+        <h3>SaaS</h3>
+        <p class="sub">क्लाउड होस्टिंग में TeamTime</p>
+        <ul class="check">
+          <li>तुरंत काम शुरू करें — बिना सर्वर और प्रशासक के।</li>
+          <li>अपडेट, बैकअप और सहायता — डेवलपर की ओर से।</li>
+          <li>कर्मचारियों, प्रबंधक और ग्राहकों के लिए कहीं से भी ब्राउज़र द्वारा पहुँच।</li>
+          <li>वितरित और दूरस्थ टीमों के लिए सुविधाजनक।</li>
+        </ul>
+        <p class="for">उपयुक्त: छोटी कंपनियों, स्टूडियो, परियोजना और दूरस्थ टीमों के लिए।</p>
+      </div>
+      <div class="plan reveal">
+        <h3>Personal server</h3>
+        <p class="sub">उद्यम के आंतरिक नेटवर्क में</p>
+        <ul class="check">
+          <li>काम, लोगों और प्रक्रियाओं का डेटा उद्यम की सीमा से बाहर नहीं जाता।</li>
+          <li>ग्राहक के सर्वर पर स्थापना; बंद नेटवर्क में काम।</li>
+          <li>आंतरिक प्रणालियों और अपने AI-एजेंटों के साथ एकीकरण।</li>
+          <li>उद्यम के नियमों के अनुसार प्रक्रिया और दस्तावेज़ टेम्पलेट।</li>
+        </ul>
+        <p class="for">उपयुक्त: विनिर्माण उद्यमों, R&amp;D विभागों और सूचना-सुरक्षा आवश्यकताओं वाले संगठनों के लिए।</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="contact" id="contact">
+  <div class="wrap reveal">
+    <h2>लागू करने पर चर्चा करें</h2>
+    <p class="muted" style="max-width:640px;margin:0 auto">मैं कार्यशील प्रोटोटाइप दिखाऊँगा, दूरस्थ टीम के प्रबंधन का अनुभव बताऊँगा और लागू करने का विकल्प चुनने में मदद करूँगा।</p>
+    <div class="cta">
+      <a class="btn btn-blue" href="https://t.me/antongavrilyuk" target="_blank" rel="noopener">Telegram @antongavrilyuk</a>
+      <a class="btn btn-primary" href="mailto:amigoalt@gmail.com">amigoalt@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>TeamTime BPM · लेखक: अंतोन गव्रिल्युक · 2026</span>
+    <span><a href="https://antoncom.github.io/makarenko/hi/">ए.एस. माकारेंको का मॉडल</a> · <a href="https://github.com/antoncom">GitHub</a></span>
+  </div>
+</footer>
+
+</div>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

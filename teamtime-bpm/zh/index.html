@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TeamTime BPM —— 以时间计量劳动，用马卡连柯模式管理团队</title>
+<meta name="description" content="TeamTime BPM —— 面向小型和分布式团队的工时记录、工作报告与业务流程系统。以一小时经确认的劳动作为有用成果的计量单位。A.S. 马卡连柯“最大限度的尊重与最大限度的要求”模式的工具。">
+<meta property="og:title" content="TeamTime BPM">
+<meta property="og:description" content="以时间计量劳动。流程、任务与报告。供团队负责人使用的马卡连柯模式工具。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_CN">
+<link rel="icon" href="../assets/img/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Fira+Sans+Condensed:wght@500;600;700&family=PT+Serif:ital,wght@1,400;1,700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="TeamTime BPM —— 返回顶部"><img src="../assets/img/logo-wordmark.png" alt="TeamTime"></a>
+    <ul class="menu">
+      <li><a href="#origin">由来</a></li>
+      <li><a href="#concept">理念</a></li>
+      <li><a href="#how">工作原理</a></li>
+      <li><a href="#modules">模块</a></li>
+      <li><a href="#makarenko">马卡连柯模式</a></li>
+      <li><a href="#deploy">部署</a></li>
+    </ul>
+    <details class="lang-switch">
+      <summary>ZH</summary>
+      <ul>
+        <li><a href="../ru/" lang="ru">Русский</a></li>
+        <li><a href="../en/" lang="en">English</a></li>
+        <li><a href="../de/" lang="de">Deutsch</a></li>
+        <li><a href="../es/" lang="es">Español</a></li>
+        <li><a href="../hi/" lang="hi">हिन्दी</a></li>
+        <li><a href="../zh/" lang="zh" class="current">中文</a></li>
+        <li><a href="../ko/" lang="ko">한국어</a></li>
+      </ul>
+    </details>
+    <button class="nav-toggle" aria-label="菜单">☰</button>
+  </div>
+</nav>
+
+<div class="sheet">
+
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">团队工作管理系统</div>
+      <h1>TeamTime BPM</h1>
+      <p class="lead">劳动<b>以时间而非金钱</b>计量。流程、任务和报告集中在一个系统中 —— 让负责人看到团队的真实工作，让每位员工看到自己的贡献与成长。</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#how">了解工作原理 →</a>
+        <a class="btn btn-ghost" href="#deploy">部署方案</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <img class="logo-big" src="../assets/img/logo-teamtime-en.png" alt="TeamTime — Small business BPM">
+      <p class="formula">max(R) = max(D)</p>
+      <p class="formula-cap">最大限度的尊重与最大限度的要求 ——<br>把 A.S. 马卡连柯模式变成工具</p>
+    </div>
+  </div>
+  <div class="wrap facts-wrap">
+    <div class="facts">
+      <div class="fact"><b>自 2009 年</b><span>用于团队的日常工作</span></div>
+      <div class="fact"><b>自 2022 年</b><span>管理罗斯托夫电子厂的远程研发团队</span></div>
+      <div class="fact"><b>5 个模块</b><span>记账、日历、BPM、职业发展、文书</span></div>
+      <div class="fact"><b>SaaS / 自有服务器</b><span>云端或企业内网</span></div>
+    </div>
+  </div>
+</header>
+
+
+<section id="origin">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">1</div>
+      <h2>TeamTime 的缘起</h2>
+      <p>TeamTime 不是为“市场”而发明的。它源于一位小团队负责人的需求：看清实际完成了什么，公正评价每个人的劳动，同时不被管控工作淹没。</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="reveal">
+        <h3>要解决的问题</h3>
+        <ul class="check">
+          <li><b>工作是看不见的。</b>任务跟踪工具只显示任务已关闭，却不显示投入了多少劳动、工作是怎样完成的。</li>
+          <li><b>金钱不是好的尺度。</b>费率各不相同，价格不断变化，“这项工作值多少钱”的讨论很快变成讨价还价，而不是对结果的讨论。</li>
+          <li><b>管控吞噬管理者。</b>没有系统，主管只能逐个当面询问 —— 既浪费时间，又损害信任。</li>
+          <li><b>会计系统对小企业来说太重。</b>开具验收单和计算报酬，不应该需要一套单独的会计软件。</li>
+        </ul>
+        <div class="quote">我们需要这样一种工具：对工作的要求与对员工的尊重是同一个动作。
+          <small>安东·加夫里柳克（Anton Gavrilyuk），TeamTime 作者</small></div>
+      </div>
+
+      <div class="timeline reveal">
+        <div class="tl">
+          <div class="year">2008</div>
+          <div><h4>网络工作室 “Media Publish”</h4><p>团队按照“尊重 + 要求”的原则工作。由此产生了记录每个人工作的需要：任务、报告、工时。</p></div>
+        </div>
+        <div class="tl">
+          <div class="year">2009</div>
+          <div><h4>TeamTime 第一版</h4><p>记账、日历、BPM 流程编辑器、职业发展、文书以及客户门户。该系统成为工作室的主要工具。</p></div>
+        </div>
+        <div class="tl">
+          <div class="year">2012</div>
+          <div><h4>个体经营者 A.N. 加夫里柳克</h4><p>TeamTime BPM 至今仍作为项目管理工具在使用。</p></div>
+        </div>
+        <div class="tl now">
+          <div class="year">2022</div>
+          <div><h4>分布式研发团队</h4><p>TeamTime BPM 的可用原型管理着罗斯托夫电子厂远程嵌入式软件团队的工作。</p></div>
+        </div>
+        <div class="tl now">
+          <div class="year">2026</div>
+          <div><h4>新版本</h4><p>理念被明确为马卡连柯模式的工具；机器人和 AI 智能体作为执行者加入流程。</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="concept" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">2</div>
+      <h2>是时间，而不是金钱 —— 有用劳动的等价物</h2>
+      <p>在 TeamTime 中，工作的尺度是<b>一小时经确认的有用劳动</b>。金钱是派生量：它由工时计算得出，而不是反过来。</p>
+    </div>
+
+    <div class="equation reveal">
+      <div class="eq-box"><b>计划工时</b><span>负责人在开工前评估任务</span></div>
+      <div class="eq-op">→</div>
+      <div class="eq-box"><b>实际工时</b><span>计时器与执行者的报告</span></div>
+      <div class="eq-op">→</div>
+      <div class="eq-box accent"><b>确认工时</b><span>负责人根据结果验收</span></div>
+      <div class="eq-op">×</div>
+      <div class="eq-box"><b>级别小时费率</b><span>取决于资质（职业发展模块）</span></div>
+    </div>
+
+    <div class="grid-3">
+      <div class="card reveal">
+        <h4>对每个人都一样清楚</h4>
+        <p>主管、工程师和客户都能理解一小时的工作。工时可以事先约定、与计划对比，并在不讨价还价的情况下讨论。</p>
+      </div>
+      <div class="card reveal">
+        <h4>不会贬值</h4>
+        <p>价格和汇率会变，但一小时劳动始终是一小时。员工积累的经验以工时表示，多年后依然有意义。</p>
+      </div>
+      <div class="card reveal">
+        <h4>只计入有用的劳动</h4>
+        <p>只有当一小时背后有报告和被验收的结果时，它才被计入。在系统中“只是在场”不会变成报酬。</p>
+      </div>
+      <div class="card reveal">
+        <h4>不同职业之间可比</h4>
+        <p>程序员、设计师和管理员使用同一尺度。资质差异体现在小时费率上，而不是不同的核算逻辑。</p>
+      </div>
+      <div class="card reveal">
+        <h4>与人一同成长</h4>
+        <p>某一专业的确认工时就是真实经验。积累经验 —— 升入小时费率更高的下一级别。</p>
+      </div>
+      <div class="card reveal">
+        <h4>诚实的经济账</h4>
+        <p>项目和流程的成本按真实工时计算（作业成本法，Activity Based Costing），而不是凭感觉估算。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">3</div>
+      <h2>TeamTime 如何运作</h2>
+      <p>系统所依托的五项原则。截图来自第一版（俄语）界面；其背后的逻辑没有改变。</p>
+    </div>
+
+    
+    <div class="feature">
+      <div class="f-text reveal">
+        <div class="f-tag">3.1</div>
+        <h3>工时记录与报告</h3>
+        <p>员工打开任务，点击“开始”—— 计时器开始运行。完成后写一份简短报告：做了什么，结果如何，用了多少时间。</p>
+        <ul class="check">
+          <li>报告是一天中最重要的文件：简短、切题、注明时间。</li>
+          <li>“我们在做什么？”动态实时显示团队的报告。</li>
+          <li>每个任务、项目和员工的计划 / 实际工时一目了然。</li>
+          <li>负责人依据报告管理，而不是靠询问。</li>
+        </ul>
+      </div>
+      <figure class="reveal">
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/uchet-cabinet.jpg" alt="员工门户：任务、任务说明和报告动态" loading="lazy"></div>
+        <figcaption>员工门户：任务、任务文本和团队报告动态</figcaption>
+      </figure>
+    </div>
+
+    
+    <div class="feature rev">
+      <div class="f-text reveal">
+        <div class="f-tag">3.2</div>
+        <h3>流程、项目、任务 —— 计划与核算的基本单位</h3>
+        <div class="units">
+          <div class="unit"><b>项目</b><span>为谁工作，为何工作</span></div>
+          <div class="unit"><b>流程</b><span>BPMN 图：谁，按什么顺序</span></div>
+          <div class="unit"><b>任务</b><span>已知 · 要求 · 说明</span></div>
+          <div class="unit"><b>报告</b><span>结果与实际工时</span></div>
+        </div>
+        <p>重复性工作只需描述一次流程，之后从模板目录中启动。每个任务都写成技术任务书：<b>已知什么、要求什么、怎么做</b>。系统中没有含糊的指派。</p>
+      </div>
+      <div class="shots-2 reveal">
+        <figure>
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/bpm-processes.jpg" alt="带状态的流程列表" loading="lazy"></div>
+          <figcaption>流程及其状态</figcaption>
+        </figure>
+        <figure>
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/creport-task.jpg" alt="“已知 / 要求 / 说明”格式的任务" loading="lazy"></div>
+          <figcaption>任务：已知 / 要求 / 说明</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    
+    <div class="feature">
+      <div class="f-text reveal">
+        <div class="f-tag">3.3</div>
+        <h3>在正确的时间，把信息送给正确的人</h3>
+        <p>流程会自动沿链条传递工作：一位参与者提交报告后，下一位就会收到自己的任务 —— 附带说明和输入数据。</p>
+        <ul class="check">
+          <li><b>员工</b>只看到自己的任务和自己参与的流程，并收到每周工作计划。</li>
+          <li><b>负责人</b>收到按项目、工作类型和人员汇总的报告。</li>
+          <li><b>客户</b>在自己的门户（C-Report）中查看工作进度、报告以及计划 / 实际工时。</li>
+        </ul>
+      </div>
+      <figure class="reveal">
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/calendar-weekly.jpg" alt="通过邮件发送给员工的每周工作计划" loading="lazy" style="max-height:560px;object-fit:cover;object-position:top"></div>
+        <figcaption>通过邮件发送给员工的每周工作计划</figcaption>
+      </figure>
+    </div>
+
+    
+    <div class="feature rev">
+      <div class="f-text reveal">
+        <div class="f-tag">3.4</div>
+        <h3>流程透明</h3>
+        <p>TeamTime 中的流程是一张活的图，而不是放在文件夹里的规章。图上可以看到每一步由谁执行、工作当前进行到哪里、计划和实际耗用了多少工时。</p>
+        <ul class="check">
+          <li>简化的 BPMN 表示法 —— 10 种标准元素，无需培训即可理解。</li>
+          <li>按实际工时进行流程成本分析。</li>
+          <li>一眼就能看出哪一步遇到了困难或出现了错误。</li>
+          <li>已完成流程的归档 —— 记录工作实际是如何完成的。</li>
+        </ul>
+      </div>
+      <figure class="reveal">
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/bpm-diagram.jpg" alt="TeamTime BPM 编辑器中的流程图，含执行者和计划/实际工时" loading="lazy"></div>
+        <figcaption>流程“注册域名”：执行者泳道，计划 10.5 小时 / 实际 11.5 小时</figcaption>
+      </figure>
+    </div>
+
+    
+    <div class="feature">
+      <div class="f-text reveal">
+        <div class="f-tag">3.5</div>
+        <h3>给机器人和 AI 的任务 —— 也是流程的一部分</h3>
+        <p>TeamTime 的任务格式 ——“已知 · 要求 · 说明”—— 本质上就是给 AI 智能体的现成任务描述。因此机器人成为流程中的又一名参与者：它在图上有自己的泳道、自己的任务和自己的报告。</p>
+        <ul class="check">
+          <li>例行步骤（收集数据、起草文件、检查）由智能体完成。</li>
+          <li>智能体以与人相同的格式提交报告 —— 工作依然透明。</li>
+          <li>决策和质量控制仍由人负责。</li>
+          <li>可以看到自动化为员工节省了多少时间。</li>
+        </ul>
+      </div>
+      <figure class="reveal">
+        <div class="ai-flow">
+          <svg viewBox="0 0 640 330" xmlns="http://www.w3.org/2000/svg" font-family="Fira Sans, sans-serif" font-size="13">
+            <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1d3f9b"/></marker></defs>
+            <g fill="#f4f7fe" stroke="#dfe5f1"><rect x="0" y="0" width="640" height="110"/><rect x="0" y="110" width="640" height="110"/><rect x="0" y="220" width="640" height="110"/></g>
+            <g fill="#e8eefc"><rect x="0" y="0" width="34" height="330"/></g>
+            <g fill="#0a1f63" font-weight="700" font-size="12">
+              <text transform="translate(22 92) rotate(-90)">负责人</text>
+              <text transform="translate(22 196) rotate(-90)" fill="#950909">AI 智能体</text>
+              <text transform="translate(22 300) rotate(-90)">工程师</text>
+            </g>
+            <circle cx="70" cy="55" r="18" fill="#fff" stroke="#1d3f9b" stroke-width="2"/><text x="70" y="59" text-anchor="middle" font-size="11">Start</text>
+            <g><rect x="110" y="25" width="140" height="60" rx="8" fill="#fff" stroke="#5d9b2f" stroke-width="2"/><rect x="110" y="25" width="140" height="18" rx="8" fill="#5d9b2f"/><text x="120" y="38" fill="#fff" font-size="11">负责人</text><text x="120" y="60">布置任务：</text><text x="120" y="76" fill="#5b667a" font-size="11">已知 · 要求</text></g>
+            <g><rect x="200" y="135" width="150" height="60" rx="8" fill="#fff" stroke="#950909" stroke-width="2"/><rect x="200" y="135" width="150" height="18" rx="8" fill="#950909"/><text x="210" y="148" fill="#fff" font-size="11">AI 智能体</text><text x="210" y="170">收集数据，</text><text x="210" y="186">草稿 + 报告</text></g>
+            <g><rect x="320" y="245" width="168" height="60" rx="8" fill="#fff" stroke="#5d9b2f" stroke-width="2"/><rect x="320" y="245" width="168" height="18" rx="8" fill="#5d9b2f"/><text x="330" y="258" fill="#fff" font-size="11">工程师</text><text x="330" y="280">审核、完善</text><text x="330" y="296" fill="#5b667a" font-size="11">报告、实际工时</text></g>
+            <g><rect x="434" y="25" width="156" height="60" rx="8" fill="#fff" stroke="#5d9b2f" stroke-width="2"/><rect x="434" y="25" width="156" height="18" rx="8" fill="#5d9b2f"/><text x="444" y="38" fill="#fff" font-size="11">负责人</text><text x="444" y="60">质量控制，</text><text x="444" y="76" fill="#5b667a" font-size="11">确认工时</text></g>
+            <circle cx="612" cy="55" r="18" fill="#fff" stroke="#0a1f63" stroke-width="3"/><text x="612" y="59" text-anchor="middle" font-size="11">End</text>
+            <g stroke="#1d3f9b" stroke-width="1.6" fill="none" marker-end="url(#ar)">
+              <path d="M88 55H108"/><path d="M180 85V165H198"/><path d="M350 165H395V243"/><path d="M488 275H510V87"/><path d="M590 55H592"/>
+            </g>
+          </svg>
+        </div>
+        <figcaption>流程示例：AI 智能体执行其中一个步骤</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+
+<section id="modules" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">4</div>
+      <h2>软件模块</h2>
+      <p>各模块共用一套员工、项目和任务数据。可以逐步部署：先从记账开始，再根据需要添加其他模块。</p>
+    </div>
+
+    <div class="modules reveal" role="tablist">
+      <button class="mod-tab active" data-target="m-uchet" role="tab" aria-selected="true"><img src="../assets/img/ic-uchet.png" alt=""><b>记账</b><span>员工、项目、报告</span></button>
+      <button class="mod-tab" data-target="m-calendar" role="tab" aria-selected="false"><img src="../assets/img/ic-calendar.png" alt=""><b>Calendar</b><span>任务日历</span></button>
+      <button class="mod-tab" data-target="m-bpm" role="tab" aria-selected="false"><img src="../assets/img/ic-bpm.png" alt=""><b>BPM</b><span>流程编辑器</span></button>
+      <button class="mod-tab" data-target="m-career" role="tab" aria-selected="false"><img src="../assets/img/ic-career.png" alt=""><b>职业发展</b><span>经验与成长</span></button>
+      <button class="mod-tab" data-target="m-formal" role="tab" aria-selected="false"><img src="../assets/img/ic-doc.png" alt=""><b>文书</b><span>按模板生成文件</span></button>
+    </div>
+
+    <div class="mod-panel active" id="m-uchet">
+      <div>
+        <h3>TeamTime 记账</h3>
+        <p>系统核心：员工、项目、工作类型、任务与报告、汇总报表。</p>
+        <h4>员工门户</h4>
+        <ul class="check">
+          <li>任务执行计时器。</li>
+          <li>以技术任务书形式呈现的任务文本。</li>
+          <li>填写报告；按状态、紧急程度、项目筛选任务。</li>
+        </ul>
+        <h4>负责人门户</h4>
+        <ul class="check">
+          <li>按项目、工作类型和员工统计的时间与费用支出。</li>
+          <li>员工报告和阶段汇总报表。</li>
+        </ul>
+        <h4>客户门户（C-Report）</h4>
+        <ul class="check">
+          <li>项目的工作日志、报告和计划 / 实际工时。</li>
+          <li>阶段成果、资料和说明。</li>
+        </ul>
+      </div>
+      <figure>
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/creport-journal.jpg" alt="工作日志及按工作类型和执行者的统计" loading="lazy"></div>
+        <figcaption>工作日志：报告、计划 / 实际工时、按工作类型和执行者的统计</figcaption>
+      </figure>
+    </div>
+
+    <div class="mod-panel" id="m-calendar">
+      <div>
+        <h3>TeamTime Calendar</h3>
+        <p>团队任务日历：谁、做什么、何时做。</p>
+        <ul class="check">
+          <li>月 / 周 / 日视图，可用鼠标拖动任务。</li>
+          <li>按员工、项目、工作类型、流程筛选。</li>
+          <li>子任务，以及计入子任务的计划 / 实际工时控制。</li>
+          <li>周期性任务：每日、每周、每月、每年。</li>
+          <li>每周通过邮件向每位员工发送工作计划。</li>
+        </ul>
+      </div>
+      <figure>
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/calendar.jpg" alt="月视图下的团队任务日历" loading="lazy"></div>
+        <figcaption>团队工作日历，“月”视图</figcaption>
+      </figure>
+    </div>
+
+    <div class="mod-panel" id="m-bpm">
+      <div>
+        <h3>TeamTime BPM</h3>
+        <p>业务流程编辑器：流程图既是任务清单，也是任务执行的调度安排。</p>
+        <ul class="check">
+          <li>由 10 种标准元素组成的简化 BPMN 表示法。</li>
+          <li>图上的每个动作都是一个任务，带有执行者、计划工时和说明。</li>
+          <li>启动流程：任务自动从一位执行者传递到下一位。</li>
+          <li>成本分析（ABC）、模板目录、归档、业务领域。</li>
+          <li>步骤的执行者可以是人、机器人或 AI 智能体。</li>
+        </ul>
+      </div>
+      <figure>
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/bpm-diagram.jpg" alt="TeamTime BPM 流程编辑器" loading="lazy"></div>
+        <figcaption>流程编辑器：执行者泳道、任务、事件</figcaption>
+      </figure>
+    </div>
+
+    <div class="mod-panel" id="m-career">
+      <div>
+        <h3>TeamTime 职业发展</h3>
+        <p>按专业记录真实经验，为每位员工制定成长计划。</p>
+        <ul class="check">
+          <li><b>目标向量。</b>入职时，负责人与员工共同制定与公司目标一致的职业目标。</li>
+          <li><b>真实经验。</b>任务中的确认工时会按技能和专业自动累积。</li>
+          <li><b>级别与小时费率。</b>透明的薪酬等级 —— 从实习生到负责人；依据确认工时晋级。</li>
+          <li><b>再培训。</b>个人学习路径：以 BPMN 流程形式的教学计划、带报告的学习任务，以及结业时的技能评估表。</li>
+        </ul>
+      </div>
+      <div class="shots-2">
+        <figure>
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/career-table.jpg" alt="目标向量：专业、技能和小时费率" loading="lazy"></div>
+          <figcaption>目标向量：技能和小时费率</figcaption>
+        </figure>
+        <figure>
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/career-balance.jpg" alt="目标向量平衡 —— 各项技能的进度百分比" loading="lazy"></div>
+          <figcaption>目标向量平衡：各项技能的进度</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="mod-panel" id="m-formal">
+      <div>
+        <h3>TeamTime 文书</h3>
+        <p>按模板生成文件 —— 使用系统中已有的数据：流程、报告、客户信息和员工数据。</p>
+        <ul class="check">
+          <li>给客户：预算、工作验收单、发票、标准合同。</li>
+          <li>给员工：合同、现金支出单、报酬计算。</li>
+          <li>给潜在客户：网站上根据流程生成的在线服务计算器。</li>
+          <li>带变量的自定义模板。</li>
+        </ul>
+      </div>
+      <div>
+        <figure>
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/formal-flow.jpg" alt="示意图：由 BPM 和记账数据生成给客户、员工和潜在客户的文件" loading="lazy"></div>
+          <figcaption>文件从何而来</figcaption>
+        </figure>
+        <figure style="margin-top:20px">
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/formal-table.jpg" alt="已生成文件列表：验收单、发票、预算、现金单据" loading="lazy"></div>
+          <figcaption>已生成文件登记簿</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="makarenko" class="mk">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">5</div>
+      <h2>TeamTime —— 用马卡连柯模式管理集体的工具</h2>
+      <p>A.S. 马卡连柯模式依靠的是集体的组织方式，而不是管理者的个人品质。TeamTime 把这种组织方式变成日常实践：模式的每一项原则在系统中都有具体的机制。</p>
+    </div>
+
+    <div class="mk-formula reveal">
+      <p class="formula">max(R) = max(D)</p>
+      <p style="margin:0">对人的高要求体现的是对人的尊重，而没有要求的尊重意味着漠不关心。在 TeamTime 中，要求和尊重是同一个动作：<b>明确布置的任务，加上诚实计算的劳动</b>。</p>
+    </div>
+
+    <table class="mk-table reveal">
+      <thead><tr><th>模式原则</th><th>TeamTime 如何实现</th></tr></thead>
+      <tbody>
+        <tr><td>最大限度的要求</td><td>每个任务都是“已知 · 要求 · 说明”，并带有计划工时。结果须经质量控制；只计入经确认的劳动。</td></tr>
+        <tr><td>最大限度的尊重</td><td>没有微观管理：负责人通过报告了解工作。报酬可预期，由工时计算；每个人的贡献整个团队都看得到。</td></tr>
+        <tr><td>指挥员的报告<small>在公社中 —— 每日</small></td><td>员工每日报告：简短、有据、注明时间。用“我们在做什么？”动态代替询问。</td></tr>
+        <tr><td>集体作为工具</td><td>流程把人联系在一起：一个人的成果就是另一个人的输入。共同的工作日志让团队看见自己。</td></tr>
+        <tr><td>前景线</td><td>职业发展模块中的目标向量：近期前景是下一级别，远期前景是新的专业。</td></tr>
+        <tr><td>平行影响</td><td>负责人管理的是工作方式 —— 流程和模板 —— 而不是逐个管理每个人。</td></tr>
+        <tr><td>生产劳动与学习</td><td>学习任务就是普通的流程任务，同样有报告和工时；个人学习路径在同一系统中进行。</td></tr>
+        <tr><td>传统</td><td>流程模板目录保存着“我们这里的做法”，并把它传给新员工。</td></tr>
+      </tbody>
+    </table>
+
+    <div class="mk-link reveal">
+      <div><h4 style="margin:0 0 4px">深入了解该模式</h4><span style="color:rgba(255,255,255,.75)">工学团与公社的历史、集体工作的规章、自 2008 年以来的应用经验</span></div>
+      <a class="btn btn-primary" href="https://antoncom.github.io/makarenko/zh/" target="_blank" rel="noopener">《马卡连柯模式在厂长工作中的应用》 →</a>
+    </div>
+  </div>
+</section>
+
+
+<section id="deploy">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">6</div>
+      <h2>部署方案</h2>
+      <p>两种方案功能相同，区别在于数据存放在哪里、由谁维护服务器。</p>
+    </div>
+    <div class="deploy">
+      <div class="plan featured reveal">
+        <span class="badge">快速上手</span>
+        <h3>SaaS</h3>
+        <p class="sub">云托管的 TeamTime</p>
+        <ul class="check">
+          <li>立即开始使用 —— 无需服务器和管理员。</li>
+          <li>更新、备份和技术支持由开发者负责。</li>
+          <li>员工、负责人和客户可随时随地通过浏览器访问。</li>
+          <li>适合分布式和远程团队。</li>
+        </ul>
+        <p class="for">适用于：小公司、工作室、项目团队和远程团队。</p>
+      </div>
+      <div class="plan reveal">
+        <h3>Personal server</h3>
+        <p class="sub">部署在企业内网</p>
+        <ul class="check">
+          <li>有关工作、人员和流程的数据不出企业边界。</li>
+          <li>安装在客户服务器上；在封闭网络中运行。</li>
+          <li>与内部系统及自有 AI 智能体集成。</li>
+          <li>根据企业规章定制流程和文件模板。</li>
+        </ul>
+        <p class="for">适用于：制造企业、研发部门以及有信息安全要求的组织。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="contact" id="contact">
+  <div class="wrap reveal">
+    <h2>洽谈部署</h2>
+    <p class="muted" style="max-width:640px;margin:0 auto">我将演示可用的原型，分享管理远程团队的实践经验，并帮助您选择部署方案。</p>
+    <div class="cta">
+      <a class="btn btn-blue" href="https://t.me/antongavrilyuk" target="_blank" rel="noopener">Telegram @antongavrilyuk</a>
+      <a class="btn btn-primary" href="mailto:amigoalt@gmail.com">amigoalt@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>TeamTime BPM · 作者：安东·加夫里柳克 · 2026</span>
+    <span><a href="https://antoncom.github.io/makarenko/zh/">A.S. 马卡连柯模式</a> · <a href="https://github.com/antoncom">GitHub</a></span>
+  </div>
+</footer>
+
+</div>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

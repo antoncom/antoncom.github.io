@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TeamTime BPM — Arbeit in Zeit messen und ein Team nach dem Makarenko-Modell führen</title>
+<meta name="description" content="TeamTime BPM — ein System für Zeiterfassung, Berichte und Geschäftsprozesse für kleine und verteilte Teams. Die Stunde bestätigter Arbeit als Maß für ein nützliches Ergebnis. Ein Werkzeug für das Modell von A.S. Makarenko: „maximaler Respekt bei maximalen Anforderungen“.">
+<meta property="og:title" content="TeamTime BPM">
+<meta property="og:description" content="Arbeit in Zeit messen. Prozesse, Aufgaben und Berichte. Ein Werkzeug des Makarenko-Modells für Teamleiter.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<link rel="icon" href="../assets/img/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Fira+Sans+Condensed:wght@500;600;700&family=PT+Serif:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="TeamTime BPM — zum Seitenanfang"><img src="../assets/img/logo-wordmark.png" alt="TeamTime"></a>
+    <ul class="menu">
+      <li><a href="#origin">Ursprung</a></li>
+      <li><a href="#concept">Konzept</a></li>
+      <li><a href="#how">Funktionsweise</a></li>
+      <li><a href="#modules">Module</a></li>
+      <li><a href="#makarenko">Makarenko-Modell</a></li>
+      <li><a href="#deploy">Einführung</a></li>
+    </ul>
+    <details class="lang-switch">
+      <summary>DE</summary>
+      <ul>
+        <li><a href="../ru/" lang="ru">Русский</a></li>
+        <li><a href="../en/" lang="en">English</a></li>
+        <li><a href="../de/" lang="de" class="current">Deutsch</a></li>
+        <li><a href="../es/" lang="es">Español</a></li>
+        <li><a href="../hi/" lang="hi">हिन्दी</a></li>
+        <li><a href="../zh/" lang="zh">中文</a></li>
+        <li><a href="../ko/" lang="ko">한국어</a></li>
+      </ul>
+    </details>
+    <button class="nav-toggle" aria-label="Menü">☰</button>
+  </div>
+</nav>
+
+<div class="sheet">
+
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">System zur Steuerung der Teamarbeit</div>
+      <h1>TeamTime BPM</h1>
+      <p class="lead">Arbeit wird <b>in Zeit gemessen, nicht in Geld</b>. Prozesse, Aufgaben und Berichte in einem System — damit die Leitung die tatsächliche Arbeit des Teams sieht und jeder Mitarbeiter seinen Beitrag und sein Wachstum.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#how">So funktioniert es →</a>
+        <a class="btn btn-ghost" href="#deploy">Einführungsvarianten</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <img class="logo-big" src="../assets/img/logo-teamtime-en.png" alt="TeamTime — Small business BPM">
+      <p class="formula">max(R) = max(A)</p>
+      <p class="formula-cap">Maximaler Respekt bei maximalen Anforderungen —<br>das Modell von A.S. Makarenko als Werkzeug</p>
+    </div>
+  </div>
+  <div class="wrap facts-wrap">
+    <div class="facts">
+      <div class="fact"><b>seit 2009</b><span>im täglichen Einsatz in Teams</span></div>
+      <div class="fact"><b>seit 2022</b><span>Steuerung des verteilten F&amp;E-Teams der OOO „Rostower Elektronikwerk“</span></div>
+      <div class="fact"><b>5 Module</b><span>Erfassung, Kalender, BPM, Karriere, Formalitäten</span></div>
+      <div class="fact"><b>SaaS / eigener Server</b><span>Cloud oder internes Netz des Unternehmens</span></div>
+    </div>
+  </div>
+</header>
+
+
+<section id="origin">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">1</div>
+      <h2>Wie TeamTime entstand</h2>
+      <p>TeamTime wurde nicht „für den Markt“ erfunden. Es entstand aus der Aufgabe eines Leiters eines kleinen Teams: sehen, was wirklich erledigt ist, die Arbeit jedes Einzelnen fair bewerten — und nicht in Kontrolle zu versinken.</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="reveal">
+        <h3>Welches Problem gelöst wurde</h3>
+        <ul class="check">
+          <li><b>Arbeit ist unsichtbar.</b> Ein Task-Tracker zeigt, dass eine Aufgabe geschlossen ist, aber nicht, wie viel Arbeit darin steckt und wie sie verlief.</li>
+          <li><b>Geld ist ein schlechtes Maß.</b> Stundensätze sind verschieden, Preise ändern sich, und die Frage „was ist diese Arbeit wert“ wird schnell zum Feilschen statt zum Gespräch über das Ergebnis.</li>
+          <li><b>Kontrolle frisst die Leitung auf.</b> Ohne System muss der Direktor jeden persönlich befragen — das kostet Zeit und untergräbt das Vertrauen.</li>
+          <li><b>Buchhaltungssysteme sind für kleine Firmen zu schwer.</b> Um eine Leistungsbestätigung auszustellen und den Lohn zu berechnen, sollte kein eigenes Buchhaltungspaket nötig sein.</li>
+        </ul>
+        <div class="quote">Gebraucht wurde ein Werkzeug, in dem die Anforderung an die Arbeit und der Respekt vor dem Menschen ein und dieselbe Handlung sind.
+          <small>Anton Gavrilyuk, Autor von TeamTime</small></div>
+      </div>
+
+      <div class="timeline reveal">
+        <div class="tl">
+          <div class="year">2008</div>
+          <div><h4>Webstudio „Media Publish“</h4><p>Das Team arbeitet nach dem Prinzip „Respekt + Anforderungen“. Es entsteht der Bedarf, die Arbeit jedes Einzelnen festzuhalten: Aufgaben, Berichte, Stunden.</p></div>
+        </div>
+        <div class="tl">
+          <div class="year">2009</div>
+          <div><h4>Erste Version von TeamTime</h4><p>Erfassung, Kalender, BPM-Prozesseditor, Karriere, Formalitäten und ein Kundenportal. Das System wird zum wichtigsten Werkzeug des Studios.</p></div>
+        </div>
+        <div class="tl">
+          <div class="year">2012</div>
+          <div><h4>Einzelunternehmer A.N. Gavrilyuk</h4><p>TeamTime BPM ist weiterhin als Projektmanagement-Werkzeug im Einsatz — bis heute.</p></div>
+        </div>
+        <div class="tl now">
+          <div class="year">2022</div>
+          <div><h4>Verteiltes F&amp;E-Team</h4><p>Ein funktionsfähiger Prototyp von TeamTime BPM steuert die Arbeit des verteilten Embedded-Software-Teams der OOO „Rostower Elektronikwerk“.</p></div>
+        </div>
+        <div class="tl now">
+          <div class="year">2026</div>
+          <div><h4>Neue Fassung</h4><p>Das Konzept wird als Werkzeug des Makarenko-Modells formuliert; Roboter und KI-Agenten kommen als Ausführende in die Prozesse.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="concept" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">2</div>
+      <h2>Zeit statt Geld — das Äquivalent nützlicher Arbeit</h2>
+      <p>In TeamTime ist das Maß der Arbeit <b>die Stunde bestätigter nützlicher Arbeit</b>. Geld ist eine abgeleitete Größe: Es wird aus Stunden berechnet, nicht umgekehrt.</p>
+    </div>
+
+    <div class="equation reveal">
+      <div class="eq-box"><b>Plan-Stunden</b><span>die Leitung schätzt die Aufgabe vor Arbeitsbeginn</span></div>
+      <div class="eq-op">→</div>
+      <div class="eq-box"><b>Ist-Stunden</b><span>Zeitzähler und Bericht des Ausführenden</span></div>
+      <div class="eq-op">→</div>
+      <div class="eq-box accent"><b>Bestätigte Stunden</b><span>von der Leitung nach dem Ergebnis angenommen</span></div>
+      <div class="eq-op">×</div>
+      <div class="eq-box"><b>Stundensatz der Stufe</b><span>abhängig von der Qualifikation (Modul Karriere)</span></div>
+    </div>
+
+    <div class="grid-3">
+      <div class="card reveal">
+        <h4>Für alle gleich verständlich</h4>
+        <p>Eine Arbeitsstunde verstehen Direktor, Ingenieur und Kunde gleichermaßen. Stunden lassen sich vorab vereinbaren, mit dem Plan vergleichen und ohne Feilschen besprechen.</p>
+      </div>
+      <div class="card reveal">
+        <h4>Verliert nicht an Wert</h4>
+        <p>Preise und Kurse ändern sich, eine Arbeitsstunde bleibt eine Stunde. Die gesammelte Erfahrung eines Mitarbeiters wird in Stunden ausgedrückt und behält ihren Sinn über Jahre.</p>
+      </div>
+      <div class="card reveal">
+        <h4>Nur Nützliches zählt</h4>
+        <p>Eine Stunde zählt, wenn ein Bericht und ein angenommenes Ergebnis dahinterstehen. Bloße „Anwesenheit“ im System wird nicht zu Lohn.</p>
+      </div>
+      <div class="card reveal">
+        <h4>Vergleichbar über Berufe hinweg</h4>
+        <p>Programmierer, Designer und Administrator arbeiten im selben Maß. Unterschiede der Qualifikation stecken im Stundensatz, nicht in einer anderen Erfassungslogik.</p>
+      </div>
+      <div class="card reveal">
+        <h4>Wächst mit dem Menschen</h4>
+        <p>Bestätigte Stunden in einem Fachgebiet sind echte Erfahrung. Wer Erfahrung sammelt, steigt in die nächste Stufe mit höherem Stundensatz auf.</p>
+      </div>
+      <div class="card reveal">
+        <h4>Ehrliche Wirtschaftlichkeit</h4>
+        <p>Die Kosten eines Projekts oder Prozesses werden aus realen Stunden berechnet (Activity Based Costing), nicht aus Schätzungen „über den Daumen“.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">3</div>
+      <h2>So funktioniert TeamTime</h2>
+      <p>Fünf Prinzipien, auf denen das System beruht. Die Screenshots stammen aus der ersten, russischsprachigen Version der Oberfläche; die Logik dahinter ist unverändert.</p>
+    </div>
+
+    
+    <div class="feature">
+      <div class="f-text reveal">
+        <div class="f-tag">3.1</div>
+        <h3>Zeiterfassung und Berichte</h3>
+        <p>Ein Mitarbeiter öffnet eine Aufgabe und klickt auf „Start“ — der Zeitzähler läuft. Danach schreibt er einen kurzen Bericht: was getan wurde, welches Ergebnis vorliegt, wie lange es gedauert hat.</p>
+        <ul class="check">
+          <li>Der Bericht ist das wichtigste Dokument des Tages: kurz, sachlich, mit Zeitangabe.</li>
+          <li>Der Feed „Was machen wir gerade?“ zeigt die Berichte des Teams in Echtzeit.</li>
+          <li>Plan- und Ist-Stunden sind für jede Aufgabe, jedes Projekt und jeden Mitarbeiter sichtbar.</li>
+          <li>Die Leitung führt über Berichte, nicht über Nachfragen.</li>
+        </ul>
+      </div>
+      <figure class="reveal">
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/uchet-cabinet.jpg" alt="Mitarbeiterportal: Aufgaben, Aufgabenbeschreibung und Berichts-Feed" loading="lazy"></div>
+        <figcaption>Mitarbeiterportal: Aufgaben, Aufgabentext und Berichts-Feed des Teams</figcaption>
+      </figure>
+    </div>
+
+    
+    <div class="feature rev">
+      <div class="f-text reveal">
+        <div class="f-tag">3.2</div>
+        <h3>Prozesse, Projekte, Aufgaben — die Grundeinheiten von Planung und Erfassung</h3>
+        <div class="units">
+          <div class="unit"><b>Projekt</b><span>für wen und wozu wir arbeiten</span></div>
+          <div class="unit"><b>Prozess</b><span>BPMN-Diagramm: wer, in welcher Reihenfolge</span></div>
+          <div class="unit"><b>Aufgabe</b><span>Gegeben · Gefordert · Anleitung</span></div>
+          <div class="unit"><b>Bericht</b><span>Ergebnis und Ist-Stunden</span></div>
+        </div>
+        <p>Wiederkehrende Arbeit wird einmal als Prozess beschrieben und danach aus einem Vorlagenkatalog gestartet. Jede Aufgabe ist als Pflichtenheft formuliert: <b>was gegeben ist, was gefordert ist, wie es zu tun ist</b>. Unklare Aufträge gibt es im System nicht.</p>
+      </div>
+      <div class="shots-2 reveal">
+        <figure>
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/bpm-processes.jpg" alt="Liste der Prozesse mit Status" loading="lazy"></div>
+          <figcaption>Prozesse und ihr Status</figcaption>
+        </figure>
+        <figure>
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/creport-task.jpg" alt="Aufgabe im Format Gegeben / Gefordert / Anleitung" loading="lazy"></div>
+          <figcaption>Aufgabe: Gegeben / Gefordert / Anleitung</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    
+    <div class="feature">
+      <div class="f-text reveal">
+        <div class="f-tag">3.3</div>
+        <h3>Die richtige Information zur richtigen Zeit an die richtige Person</h3>
+        <p>Der Prozess gibt die Arbeit selbst entlang der Kette weiter: Sobald ein Beteiligter seinen Bericht abgibt, erhält der nächste seine Aufgabe — mit Anleitung und Eingangsdaten.</p>
+        <ul class="check">
+          <li><b>Mitarbeiter</b> sehen nur ihre eigenen Aufgaben und die Prozesse, an denen sie beteiligt sind, und erhalten einen Wochenplan.</li>
+          <li><b>Die Leitung</b> erhält Berichte und Übersichten nach Projekten, Arbeitsarten und Personen.</li>
+          <li><b>Kunden</b> sehen in ihrem Portal (C-Report) den Arbeitsfortschritt, Berichte sowie Plan- und Ist-Stunden.</li>
+        </ul>
+      </div>
+      <figure class="reveal">
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/calendar-weekly.jpg" alt="Wöchentlicher Arbeitsplan per E-Mail an einen Mitarbeiter" loading="lazy" style="max-height:560px;object-fit:cover;object-position:top"></div>
+        <figcaption>Wöchentlicher Arbeitsplan per E-Mail an einen Mitarbeiter</figcaption>
+      </figure>
+    </div>
+
+    
+    <div class="feature rev">
+      <div class="f-text reveal">
+        <div class="f-tag">3.4</div>
+        <h3>Transparenz der Prozesse</h3>
+        <p>Ein Prozess in TeamTime ist ein lebendiges Diagramm, keine Vorschrift im Ordner. Im Diagramm sieht man, wer jeden Schritt ausführt, wo die Arbeit gerade steht und wie viele Stunden geplant und verbraucht sind.</p>
+        <ul class="check">
+          <li>Vereinfachte BPMN-Notation — 10 Standardelemente, verständlich ohne Schulung.</li>
+          <li>Kostenanalyse des Prozesses nach Ist-Stunden.</li>
+          <li>Man sieht sofort, bei welchem Schritt Schwierigkeiten oder Fehler auftraten.</li>
+          <li>Archiv abgeschlossener Prozesse — die Geschichte, wie die Arbeit tatsächlich gemacht wurde.</li>
+        </ul>
+      </div>
+      <figure class="reveal">
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/bpm-diagram.jpg" alt="Prozessdiagramm im TeamTime-BPM-Editor mit Ausführenden und Plan-/Ist-Stunden" loading="lazy"></div>
+        <figcaption>Prozess „Domainnamen registrieren“: Bahnen der Ausführenden, Plan 10,5 h / Ist 11,5 h</figcaption>
+      </figure>
+    </div>
+
+    
+    <div class="feature">
+      <div class="f-text reveal">
+        <div class="f-tag">3.5</div>
+        <h3>Aufgaben für Roboter und KI sind Teil der Prozesse</h3>
+        <p>Das TeamTime-Aufgabenformat — „Gegeben · Gefordert · Anleitung“ — ist im Grunde eine fertige Aufgabenstellung für einen KI-Agenten. Deshalb wird ein Roboter zu einem weiteren Prozessbeteiligten: mit eigener Bahn im Diagramm, eigenen Aufgaben und eigenen Berichten.</p>
+        <ul class="check">
+          <li>Routineschritte (Datensammlung, Dokumententwürfe, Prüfungen) erledigt ein Agent.</li>
+          <li>Der Agent liefert seinen Bericht im selben Format wie ein Mensch — die Arbeit bleibt transparent.</li>
+          <li>Entscheidung und Qualitätskontrolle bleiben beim Menschen.</li>
+          <li>Man sieht, wie viel Arbeitszeit die Automatisierung freigesetzt hat.</li>
+        </ul>
+      </div>
+      <figure class="reveal">
+        <div class="ai-flow">
+          <svg viewBox="0 0 640 330" xmlns="http://www.w3.org/2000/svg" font-family="Fira Sans, sans-serif" font-size="13">
+            <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1d3f9b"/></marker></defs>
+            <g fill="#f4f7fe" stroke="#dfe5f1"><rect x="0" y="0" width="640" height="110"/><rect x="0" y="110" width="640" height="110"/><rect x="0" y="220" width="640" height="110"/></g>
+            <g fill="#e8eefc"><rect x="0" y="0" width="34" height="330"/></g>
+            <g fill="#0a1f63" font-weight="700" font-size="12">
+              <text transform="translate(22 92) rotate(-90)">Leitung</text>
+              <text transform="translate(22 196) rotate(-90)" fill="#950909">KI-Agent</text>
+              <text transform="translate(22 300) rotate(-90)">Ingenieur</text>
+            </g>
+            <circle cx="70" cy="55" r="18" fill="#fff" stroke="#1d3f9b" stroke-width="2"/><text x="70" y="59" text-anchor="middle" font-size="11">Start</text>
+            <g><rect x="110" y="25" width="140" height="60" rx="8" fill="#fff" stroke="#5d9b2f" stroke-width="2"/><rect x="110" y="25" width="140" height="18" rx="8" fill="#5d9b2f"/><text x="120" y="38" fill="#fff" font-size="11">Leitung</text><text x="120" y="60">Aufgabe stellen:</text><text x="120" y="76" fill="#5b667a" font-size="11">Gegeben · Gefordert</text></g>
+            <g><rect x="200" y="135" width="150" height="60" rx="8" fill="#fff" stroke="#950909" stroke-width="2"/><rect x="200" y="135" width="150" height="18" rx="8" fill="#950909"/><text x="210" y="148" fill="#fff" font-size="11">KI-Agent</text><text x="210" y="170">Daten sammeln,</text><text x="210" y="186">Entwurf + Bericht</text></g>
+            <g><rect x="320" y="245" width="168" height="60" rx="8" fill="#fff" stroke="#5d9b2f" stroke-width="2"/><rect x="320" y="245" width="168" height="18" rx="8" fill="#5d9b2f"/><text x="330" y="258" fill="#fff" font-size="11">Ingenieur</text><text x="330" y="280">Prüfen, nachbessern</text><text x="330" y="296" fill="#5b667a" font-size="11">Bericht, Ist-Stunden</text></g>
+            <g><rect x="434" y="25" width="156" height="60" rx="8" fill="#fff" stroke="#5d9b2f" stroke-width="2"/><rect x="434" y="25" width="156" height="18" rx="8" fill="#5d9b2f"/><text x="444" y="38" fill="#fff" font-size="11">Leitung</text><text x="444" y="60">Qualitätskontrolle,</text><text x="444" y="76" fill="#5b667a" font-size="11">Stunden annehmen</text></g>
+            <circle cx="612" cy="55" r="18" fill="#fff" stroke="#0a1f63" stroke-width="3"/><text x="612" y="59" text-anchor="middle" font-size="11">End</text>
+            <g stroke="#1d3f9b" stroke-width="1.6" fill="none" marker-end="url(#ar)">
+              <path d="M88 55H108"/><path d="M180 85V165H198"/><path d="M350 165H395V243"/><path d="M488 275H510V87"/><path d="M590 55H592"/>
+            </g>
+          </svg>
+        </div>
+        <figcaption>Beispielprozess: ein KI-Agent führt einen der Schritte aus</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+
+<section id="modules" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">4</div>
+      <h2>Softwaremodule</h2>
+      <p>Die Module arbeiten auf einer gemeinsamen Basis von Mitarbeitern, Projekten und Aufgaben. Die Einführung kann schrittweise erfolgen: mit der Erfassung beginnen und die übrigen nach Bedarf ergänzen.</p>
+    </div>
+
+    <div class="modules reveal" role="tablist">
+      <button class="mod-tab active" data-target="m-uchet" role="tab" aria-selected="true"><img src="../assets/img/ic-uchet.png" alt=""><b>Erfassung</b><span>Mitarbeiter, Projekte, Berichte</span></button>
+      <button class="mod-tab" data-target="m-calendar" role="tab" aria-selected="false"><img src="../assets/img/ic-calendar.png" alt=""><b>Calendar</b><span>Aufgabenkalender</span></button>
+      <button class="mod-tab" data-target="m-bpm" role="tab" aria-selected="false"><img src="../assets/img/ic-bpm.png" alt=""><b>BPM</b><span>Prozesseditor</span></button>
+      <button class="mod-tab" data-target="m-career" role="tab" aria-selected="false"><img src="../assets/img/ic-career.png" alt=""><b>Karriere</b><span>Erfahrung und Wachstum</span></button>
+      <button class="mod-tab" data-target="m-formal" role="tab" aria-selected="false"><img src="../assets/img/ic-doc.png" alt=""><b>Formalitäten</b><span>Dokumente aus Vorlagen</span></button>
+    </div>
+
+    <div class="mod-panel active" id="m-uchet">
+      <div>
+        <h3>TeamTime Erfassung</h3>
+        <p>Der Kern des Systems: Mitarbeiter, Projekte, Arbeitsarten, Aufgaben und Berichte, Abschlussberichte.</p>
+        <h4>Mitarbeiterportal</h4>
+        <ul class="check">
+          <li>Zeitzähler für die Aufgabenbearbeitung.</li>
+          <li>Aufgabentext in Form eines Pflichtenhefts.</li>
+          <li>Berichtseingabe; Filter der Aufgaben nach Status, Dringlichkeit, Projekt.</li>
+        </ul>
+        <h4>Leitungsportal</h4>
+        <ul class="check">
+          <li>Zeit- und Kostenaufwand nach Projekten, Arbeitsarten und Mitarbeitern.</li>
+          <li>Berichte der Mitarbeiter und Abschlussberichte für einen Zeitraum.</li>
+        </ul>
+        <h4>Kundenportal (C-Report)</h4>
+        <ul class="check">
+          <li>Arbeitsjournal, Berichte sowie Plan- und Ist-Stunden je Projekt.</li>
+          <li>Zwischenergebnisse, Materialien und Anleitungen.</li>
+        </ul>
+      </div>
+      <figure>
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/creport-journal.jpg" alt="Arbeitsjournal und Statistik nach Arbeitsarten und Ausführenden" loading="lazy"></div>
+        <figcaption>Arbeitsjournal: Berichte, Plan-/Ist-Stunden, Statistik nach Arbeitsarten und Ausführenden</figcaption>
+      </figure>
+    </div>
+
+    <div class="mod-panel" id="m-calendar">
+      <div>
+        <h3>TeamTime Calendar</h3>
+        <p>Der Aufgabenkalender des Teams: wer was wann tut.</p>
+        <ul class="check">
+          <li>Ansichten Monat / Woche / Tag, Aufgaben per Drag-and-drop verschieben.</li>
+          <li>Filter nach Mitarbeitern, Projekten, Arbeitsarten, Prozessen.</li>
+          <li>Teilaufgaben und Kontrolle der Plan-/Ist-Stunden unter deren Berücksichtigung.</li>
+          <li>Wiederkehrende Aufgaben: täglich, wöchentlich, monatlich, jährlich.</li>
+          <li>Wöchentlicher Arbeitsplan per E-Mail an jeden Mitarbeiter.</li>
+        </ul>
+      </div>
+      <figure>
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/calendar.jpg" alt="Aufgabenkalender des Teams in der Monatsansicht" loading="lazy"></div>
+        <figcaption>Arbeitskalender des Teams, Ansicht „Monat“</figcaption>
+      </figure>
+    </div>
+
+    <div class="mod-panel" id="m-bpm">
+      <div>
+        <h3>TeamTime BPM</h3>
+        <p>Ein Editor für Geschäftsprozesse, in dem das Diagramm zugleich die Aufgabenliste und die Logistik ihrer Ausführung ist.</p>
+        <ul class="check">
+          <li>Vereinfachte BPMN-Notation aus 10 Standardelementen.</li>
+          <li>Jede Aktion im Diagramm ist eine Aufgabe mit Ausführendem, Plan-Stunden und Anleitung.</li>
+          <li>Prozessstart: Aufgaben gehen automatisch von einem Ausführenden zum nächsten.</li>
+          <li>Kostenanalyse (ABC), Vorlagenkatalog, Archiv, Tätigkeitsbereiche.</li>
+          <li>Ein Schritt kann von einem Menschen, einem Roboter oder einem KI-Agenten ausgeführt werden.</li>
+        </ul>
+      </div>
+      <figure>
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/bpm-diagram.jpg" alt="Prozesseditor TeamTime BPM" loading="lazy"></div>
+        <figcaption>Prozesseditor: Bahnen der Ausführenden, Aufgaben, Ereignisse</figcaption>
+      </figure>
+    </div>
+
+    <div class="mod-panel" id="m-career">
+      <div>
+        <h3>TeamTime Karriere</h3>
+        <p>Erfassung der tatsächlichen Erfahrung nach Fachgebieten und ein Entwicklungsprogramm für jeden Mitarbeiter.</p>
+        <ul class="check">
+          <li><b>Zielvektor.</b> Bei der Einstellung legen Leitung und Mitarbeiter gemeinsam berufliche Ziele fest, die mit den Zielen des Unternehmens abgestimmt sind.</li>
+          <li><b>Tatsächliche Erfahrung.</b> Bestätigte Stunden aus Aufgaben sammeln sich automatisch nach Fähigkeiten und Fachgebieten.</li>
+          <li><b>Stufen und Stundensatz.</b> Transparente Vergütung — vom Praktikanten bis zur Leitung; Aufstieg nach bestätigten Stunden.</li>
+          <li><b>Weiterbildung.</b> Ein individueller Lernpfad: Lehrplan als BPMN-Prozess, Lernaufgaben mit Berichten und ein Bewertungsbogen der Fähigkeiten zum Abschluss.</li>
+        </ul>
+      </div>
+      <div class="shots-2">
+        <figure>
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/career-table.jpg" alt="Zielvektor: Fachgebiete, Fähigkeiten und Stundensatz" loading="lazy"></div>
+          <figcaption>Zielvektor: Fähigkeiten und Stundensatz</figcaption>
+        </figure>
+        <figure>
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/career-balance.jpg" alt="Bilanz des Zielvektors — Fortschritt je Fähigkeit in Prozent" loading="lazy"></div>
+          <figcaption>Bilanz des Zielvektors: Fortschritt je Fähigkeit</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="mod-panel" id="m-formal">
+      <div>
+        <h3>TeamTime Formalitäten</h3>
+        <p>Erstellung von Dokumenten aus Vorlagen — aus den Daten, die schon im System sind: Prozesse, Berichte, Kundendaten und Mitarbeiterdaten.</p>
+        <ul class="check">
+          <li>Für Kunden: Kostenvoranschläge, Leistungsbestätigungen, Rechnungen, Standardverträge.</li>
+          <li>Für Mitarbeiter: Verträge, Auszahlungsbelege, Lohnberechnung.</li>
+          <li>Für Interessenten: ein Online-Leistungsrechner auf der Website, aufgebaut aus einem Prozess.</li>
+          <li>Eigene Vorlagen mit Variablen.</li>
+        </ul>
+      </div>
+      <div>
+        <figure>
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/formal-flow.jpg" alt="Schema: Aus BPM- und Erfassungsdaten entstehen Dokumente für Kunden, Mitarbeiter und Interessenten" loading="lazy"></div>
+          <figcaption>Woher die Dokumente kommen</figcaption>
+        </figure>
+        <figure style="margin-top:20px">
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/formal-table.jpg" alt="Liste erstellter Dokumente: Leistungsbestätigungen, Rechnungen, Kostenvoranschläge, Kassenbelege" loading="lazy"></div>
+          <figcaption>Verzeichnis erstellter Dokumente</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="makarenko" class="mk">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">5</div>
+      <h2>TeamTime — ein Werkzeug des Makarenko-Modells zur Führung eines Kollektivs</h2>
+      <p>Das Modell von A.S. Makarenko beruht auf der Ordnung des Kollektivs, nicht auf den persönlichen Eigenschaften der Leitung. TeamTime macht diese Ordnung zur täglichen Praxis: Jedes Prinzip des Modells hat im System einen konkreten Mechanismus.</p>
+    </div>
+
+    <div class="mk-formula reveal">
+      <p class="formula">max(R) = max(A)</p>
+      <p style="margin:0">Hohe Anforderungen an einen Menschen drücken Respekt vor ihm aus, Respekt ohne Anforderungen bedeutet Gleichgültigkeit. In TeamTime sind Anforderung und Respekt eine Handlung: <b>eine klar gestellte Aufgabe mit ehrlich erfasster Arbeit</b>.</p>
+    </div>
+
+    <table class="mk-table reveal">
+      <thead><tr><th>Prinzip des Modells</th><th>Wie TeamTime es umsetzt</th></tr></thead>
+      <tbody>
+        <tr><td>Maximale Anforderungen</td><td>Jede Aufgabe ist „Gegeben · Gefordert · Anleitung“ mit Plan-Stunden. Das Ergebnis durchläuft eine Qualitätskontrolle; gezählt wird nur bestätigte Arbeit.</td></tr>
+        <tr><td>Maximaler Respekt</td><td>Kein Mikromanagement: Die Leitung sieht die Arbeit über Berichte. Die Vergütung ist vorhersehbar und wird aus Stunden berechnet; der Beitrag jedes Einzelnen ist für das Team sichtbar.</td></tr>
+        <tr><td>Der Bericht des Kommandeurs<small>in der Kommune — täglich</small></td><td>Tagesbericht des Mitarbeiters: kurz, begründet, mit Zeitangabe. Der Feed „Was machen wir gerade?“ statt Nachfragen.</td></tr>
+        <tr><td>Das Kollektiv als Werkzeug</td><td>Prozesse verbinden Menschen: Das Ergebnis des einen ist die Eingabe des anderen. Ein gemeinsames Arbeitsjournal macht das Team für sich selbst sichtbar.</td></tr>
+        <tr><td>Perspektivlinien</td><td>Der Zielvektor im Modul Karriere: Die nahe Perspektive ist die nächste Stufe, die ferne ein neues Fachgebiet.</td></tr>
+        <tr><td>Parallele Einwirkung</td><td>Die Leitung steuert die Arbeitsweise — Prozesse und Vorlagen — statt jeden Menschen einzeln.</td></tr>
+        <tr><td>Produktive Arbeit und Lernen</td><td>Lernaufgaben sind normale Prozessaufgaben mit Berichten und Stunden; der individuelle Lernpfad läuft im selben System.</td></tr>
+        <tr><td>Traditionen</td><td>Der Katalog der Prozessvorlagen bewahrt, „wie man es bei uns macht“, und gibt es an neue Mitarbeiter weiter.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="mk-link reveal">
+      <div><h4 style="margin:0 0 4px">Mehr über das Modell</h4><span style="color:rgba(255,255,255,.75)">Die Geschichte der Kolonie und der Kommune, die Regeln der kollektiven Arbeit, Erfahrung mit dem Modell seit 2008</span></div>
+      <a class="btn btn-primary" href="https://antoncom.github.io/makarenko/de/" target="_blank" rel="noopener">„Das Modell von A.S. Makarenko in der Arbeit eines Direktors“ →</a>
+    </div>
+  </div>
+</section>
+
+
+<section id="deploy">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">6</div>
+      <h2>Einführungsvarianten</h2>
+      <p>Der Funktionsumfang ist in beiden Varianten gleich. Der Unterschied: wo die Daten liegen und wer den Server betreut.</p>
+    </div>
+    <div class="deploy">
+      <div class="plan featured reveal">
+        <span class="badge">Schnellstart</span>
+        <h3>SaaS</h3>
+        <p class="sub">TeamTime im Cloud-Hosting</p>
+        <ul class="check">
+          <li>Sofort loslegen — ohne Server und ohne Administrator.</li>
+          <li>Updates, Datensicherung und Support übernimmt der Entwickler.</li>
+          <li>Zugriff per Browser für Mitarbeiter, Leitung und Kunden von überall.</li>
+          <li>Ideal für verteilte und Remote-Teams.</li>
+        </ul>
+        <p class="for">Passt zu: kleinen Unternehmen, Studios, Projekt- und Remote-Teams.</p>
+      </div>
+      <div class="plan reveal">
+        <h3>Personal server</h3>
+        <p class="sub">Im internen Netz des Unternehmens</p>
+        <ul class="check">
+          <li>Daten über Arbeit, Menschen und Prozesse verlassen den Unternehmensperimeter nicht.</li>
+          <li>Installation auf dem Server des Kunden; Betrieb in einem geschlossenen Netz.</li>
+          <li>Integration mit internen Systemen und eigenen KI-Agenten.</li>
+          <li>Prozess- und Dokumentvorlagen nach den Vorschriften des Unternehmens.</li>
+        </ul>
+        <p class="for">Passt zu: Industrieunternehmen, F&amp;E-Abteilungen, Organisationen mit Anforderungen an die Informationssicherheit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="contact" id="contact">
+  <div class="wrap reveal">
+    <h2>Einführung besprechen</h2>
+    <p class="muted" style="max-width:640px;margin:0 auto">Ich zeige den funktionierenden Prototyp, berichte aus der Praxis der Führung eines verteilten Teams und helfe bei der Wahl der Einführungsvariante.</p>
+    <div class="cta">
+      <a class="btn btn-blue" href="https://t.me/antongavrilyuk" target="_blank" rel="noopener">Telegram @antongavrilyuk</a>
+      <a class="btn btn-primary" href="mailto:amigoalt@gmail.com">amigoalt@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>TeamTime BPM · Autor: Anton Gavrilyuk · 2026</span>
+    <span><a href="https://antoncom.github.io/makarenko/de/">Das Modell von A.S. Makarenko</a> · <a href="https://github.com/antoncom">GitHub</a></span>
+  </div>
+</footer>
+
+</div>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TeamTime BPM — учёт труда временем и управление коллективом по модели Макаренко</title>
+<meta name="description" content="TeamTime BPM — система учёта времени, рапортов и бизнес-процессов для небольших и распределённых команд. Час подтверждённого труда как мера полезного результата. Инструмент модели А.С. Макаренко «максимальное уважение при максимальной требовательности».">
+<meta property="og:title" content="TeamTime BPM">
+<meta property="og:description" content="Учёт труда временем. Процессы, задания и рапорты. Инструмент модели Макаренко для руководителя команды.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<link rel="icon" href="../assets/img/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Fira+Sans+Condensed:wght@500;600;700&family=PT+Serif:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<!-- ============ НАВИГАЦИЯ ============ -->
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="TeamTime BPM — в начало"><img src="../assets/img/logo-wordmark.png" alt="TeamTime"></a>
+    <ul class="menu">
+      <li><a href="#origin">Происхождение</a></li>
+      <li><a href="#concept">Концепция</a></li>
+      <li><a href="#how">Как устроен</a></li>
+      <li><a href="#modules">Модули</a></li>
+      <li><a href="#makarenko">Модель Макаренко</a></li>
+      <li><a href="#deploy">Внедрение</a></li>
+    </ul>
+    <details class="lang-switch">
+      <summary>RU</summary>
+      <ul>
+        <li><a href="../ru/" lang="ru" class="current">Русский</a></li>
+        <li><a href="../en/" lang="en">English</a></li>
+        <li><a href="../de/" lang="de">Deutsch</a></li>
+        <li><a href="../es/" lang="es">Español</a></li>
+        <li><a href="../hi/" lang="hi">हिन्दी</a></li>
+        <li><a href="../zh/" lang="zh">中文</a></li>
+        <li><a href="../ko/" lang="ko">한국어</a></li>
+      </ul>
+    </details>
+    <button class="nav-toggle" aria-label="Меню">☰</button>
+  </div>
+</nav>
+
+<div class="sheet">
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Система управления работами команды</div>
+      <h1>TeamTime BPM</h1>
+      <p class="lead">Учёт труда <b>временем, а не деньгами</b>. Процессы, задания и рапорты в одной системе — чтобы руководитель видел реальную работу команды, а каждый сотрудник видел свой вклад и свой рост.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#how">Как это устроено →</a>
+        <a class="btn btn-ghost" href="#deploy">Варианты внедрения</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <img class="logo-big" src="../assets/img/logo-teamtime.png" alt="TeamTime — BPM малого бизнеса">
+      <p class="formula">max(У) = max(Т)</p>
+      <p class="formula-cap">Максимальное уважение при максимальной требовательности —<br>модель А.С. Макаренко, встроенная в инструмент</p>
+    </div>
+  </div>
+  <div class="wrap facts-wrap">
+    <div class="facts">
+      <div class="fact"><b>с 2009</b><span>в ежедневной работе команд</span></div>
+      <div class="fact"><b>с 2022</b><span>управление дистанционной RnD-командой ООО «Ростовский завод электроники»</span></div>
+      <div class="fact"><b>5 модулей</b><span>Учёт, Календарь, BPM, Карьера, Формальности</span></div>
+      <div class="fact"><b>SaaS / свой сервер</b><span>облако или внутренний контур предприятия</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ 1. ПРОИСХОЖДЕНИЕ ============ -->
+<section id="origin">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">1</div>
+      <h2>Причины и происхождение TeamTime</h2>
+      <p>TeamTime не придуман «для рынка». Он вырос из задачи руководителя небольшой команды: видеть, что на самом деле сделано, честно оценивать труд каждого и не тонуть в контроле.</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="reveal">
+        <h3>Какую проблему решали</h3>
+        <ul class="check">
+          <li><b>Работа невидима.</b> Таск-трекер показывает, что задача закрыта, но не показывает, сколько труда в неё вложено и каким путём шла работа.</li>
+          <li><b>Деньги — плохая мера.</b> Ставки разные, цены меняются, а разговор «сколько стоит эта работа» быстро превращается в торг вместо разговора о результате.</li>
+          <li><b>Контроль съедает руководителя.</b> Без системы директор вынужден опрашивать каждого лично — и теряет время, и подрывает доверие.</li>
+          <li><b>Учётные системы тяжелы для малого бизнеса.</b> Чтобы выписать акт и начислить оплату, не должен требоваться отдельный бухгалтерский комплекс.</li>
+        </ul>
+        <div class="quote">Нужен был инструмент, в котором требование к работе и уважение к работнику — одно и то же действие.
+          <small>Антон Гаврилюк, автор TeamTime</small></div>
+      </div>
+
+      <div class="timeline reveal">
+        <div class="tl">
+          <div class="year">2008</div>
+          <div><h4>Веб-студия «Медиа Паблиш»</h4><p>Команда работает по принципу «уважение + требовательность». Возникает потребность фиксировать работу каждого: задания, рапорты, часы.</p></div>
+        </div>
+        <div class="tl">
+          <div class="year">2009</div>
+          <div><h4>Первая версия TeamTime</h4><p>Учёт, Календарь, BPM-редактор процессов, Карьера, Формальности и кабинет заказчика. Система становится основным инструментом студии.</p></div>
+        </div>
+        <div class="tl">
+          <div class="year">2012</div>
+          <div><h4>ИП Гаврилюк А.Н.</h4><p>TeamTime BPM продолжает работать как инструмент управления проектами — по сей день.</p></div>
+        </div>
+        <div class="tl now">
+          <div class="year">2022</div>
+          <div><h4>Распределённая RnD-команда</h4><p>Работающий прототип TeamTime BPM управляет работами дистанционной команды разработчиков встраиваемого ПО ООО «Ростовский завод электроники».</p></div>
+        </div>
+        <div class="tl now">
+          <div class="year">2026</div>
+          <div><h4>Новая редакция</h4><p>Концепция оформлена как инструмент модели Макаренко; в процессы добавляются исполнители-роботы и ИИ-агенты.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. КОНЦЕПЦИЯ ============ -->
+<section id="concept" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">2</div>
+      <h2>Время, а не деньги — эквивалент полезного продукта труда</h2>
+      <p>В TeamTime мерой работы служит <b>час подтверждённого полезного труда</b>. Деньги — производная величина: они вычисляются из часов, а не наоборот.</p>
+    </div>
+
+    <div class="equation reveal">
+      <div class="eq-box"><b>План-часы</b><span>руководитель оценивает задание до начала работы</span></div>
+      <div class="eq-op">→</div>
+      <div class="eq-box"><b>Факт-часы</b><span>счётчик времени и рапорт исполнителя</span></div>
+      <div class="eq-op">→</div>
+      <div class="eq-box accent"><b>Подтверждённые часы</b><span>принятые руководителем по результату</span></div>
+      <div class="eq-op">×</div>
+      <div class="eq-box"><b>Цена часа уровня</b><span>зависит от квалификации (модуль Карьера)</span></div>
+    </div>
+
+    <div class="grid-3">
+      <div class="card reveal">
+        <h4>Одинаково понятно всем</h4>
+        <p>Час работы понимают и директор, и инженер, и заказчик. О часах можно договориться заранее, их можно сравнить с планом и обсудить без торга.</p>
+      </div>
+      <div class="card reveal">
+        <h4>Не обесценивается</h4>
+        <p>Цены и курсы меняются, а час труда остаётся часом. Накопленный опыт сотрудника выражается в часах и сохраняет смысл годами.</p>
+      </div>
+      <div class="card reveal">
+        <h4>Учитывается только полезное</h4>
+        <p>Час засчитывается, когда за ним стоит рапорт и принятый результат. «Пустое присутствие» в системе не превращается в оплату.</p>
+      </div>
+      <div class="card reveal">
+        <h4>Сравнимо между профессиями</h4>
+        <p>Программист, дизайнер и администратор работают в одной мере. Разница квалификаций учтена ценой часа, а не разной логикой учёта.</p>
+      </div>
+      <div class="card reveal">
+        <h4>Растёт вместе с человеком</h4>
+        <p>Подтверждённые часы по специальности — это фактический опыт. Набрал опыт — перешёл на следующий уровень с более высокой ценой часа.</p>
+      </div>
+      <div class="card reveal">
+        <h4>Даёт честную экономику</h4>
+        <p>Себестоимость проекта и процесса считается из реальных часов (Activity Based Costing), а не из оценок «на глаз».</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. КАК УСТРОЕН ============ -->
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">3</div>
+      <h2>Как устроен TeamTime</h2>
+      <p>Пять принципов, на которых держится система. Скриншоты — из интерфейса первой версии; логика за ними не изменилась.</p>
+    </div>
+
+    <!-- 3.1 -->
+    <div class="feature">
+      <div class="f-text reveal">
+        <div class="f-tag">3.1</div>
+        <h3>Учёт времени и рапорты</h3>
+        <p>Сотрудник открывает задание, нажимает «Начать» — идёт счётчик времени. По окончании он пишет короткий рапорт: что сделано, каков результат, сколько времени ушло.</p>
+        <ul class="check">
+          <li>Рапорт — главный документ дня: кратко, по существу, со временем.</li>
+          <li>Лента «Что мы делаем?» показывает рапорты команды в реальном времени.</li>
+          <li>План / факт часов виден по каждому заданию, проекту и сотруднику.</li>
+          <li>Руководитель управляет по рапортам, а не по опросам.</li>
+        </ul>
+      </div>
+      <figure class="reveal">
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/uchet-cabinet.jpg" alt="Личный кабинет сотрудника: задания, техническое задание и лента рапортов" loading="lazy"></div>
+        <figcaption>Личный кабинет сотрудника: задания, текст задания и лента рапортов команды</figcaption>
+      </figure>
+    </div>
+
+    <!-- 3.2 -->
+    <div class="feature rev">
+      <div class="f-text reveal">
+        <div class="f-tag">3.2</div>
+        <h3>Процессы, проекты, задания — основные единицы планирования и учёта</h3>
+        <div class="units">
+          <div class="unit"><b>Проект</b><span>для кого и зачем работаем</span></div>
+          <div class="unit"><b>Процесс</b><span>BPMN-схема: кто, в каком порядке</span></div>
+          <div class="unit"><b>Задание</b><span>Дано · Требуется · Инструкции</span></div>
+          <div class="unit"><b>Рапорт</b><span>результат и факт-часы</span></div>
+        </div>
+        <p>Повторяющаяся работа описывается процессом один раз и дальше запускается из каталога шаблонов. Каждое задание сформулировано как техническое задание: <b>что дано, что требуется, как делать</b>. Неясных поручений в системе нет.</p>
+      </div>
+      <div class="shots-2 reveal">
+        <figure>
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/bpm-processes.jpg" alt="Список процессов со статусами" loading="lazy"></div>
+          <figcaption>Процессы и их статусы</figcaption>
+        </figure>
+        <figure>
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/creport-task.jpg" alt="Задание в формате Дано / Требуется / Инструкции" loading="lazy"></div>
+          <figcaption>Задание: Дано / Требуется / Инструкции</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- 3.3 -->
+    <div class="feature">
+      <div class="f-text reveal">
+        <div class="f-tag">3.3</div>
+        <h3>Информация в нужное время, нужному адресату</h3>
+        <p>Процесс сам передаёт работу по цепочке: когда один участник сдаёт рапорт, следующий получает своё задание — с инструкциями и входными данными.</p>
+        <ul class="check">
+          <li><b>Сотрудник</b> видит только свои задания и процессы, в которых участвует, и получает план работ на неделю.</li>
+          <li><b>Руководитель</b> получает рапорты и сводные отчёты по проектам, видам работ и людям.</li>
+          <li><b>Заказчик</b> в своём кабинете (C-Report) видит ход работ, рапорты и план / факт часов.</li>
+        </ul>
+      </div>
+      <figure class="reveal">
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/calendar-weekly.jpg" alt="Еженедельная рассылка плана работ сотруднику" loading="lazy" style="max-height:560px;object-fit:cover;object-position:top"></div>
+        <figcaption>Еженедельная рассылка плана работ сотруднику</figcaption>
+      </figure>
+    </div>
+
+    <!-- 3.4 -->
+    <div class="feature rev">
+      <div class="f-text reveal">
+        <div class="f-tag">3.4</div>
+        <h3>Прозрачность процессов</h3>
+        <p>Процесс в TeamTime — это живая схема, а не регламент в папке. На диаграмме видно, кто исполнитель на каждом шаге, где сейчас работа и сколько часов запланировано и потрачено.</p>
+        <ul class="check">
+          <li>Упрощённая нотация BPMN — 10 типовых элементов, понятных без обучения.</li>
+          <li>Стоимостной анализ процесса по фактическим часам.</li>
+          <li>Сразу видно, на каком шаге возникли трудности или ошибка.</li>
+          <li>Архив выполненных процессов — история того, как работа делалась на самом деле.</li>
+        </ul>
+      </div>
+      <figure class="reveal">
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/bpm-diagram.jpg" alt="Диаграмма процесса в редакторе TeamTime BPM с исполнителями и план/факт часами" loading="lazy"></div>
+        <figcaption>Процесс «Зарегистрировать доменное имя»: дорожки исполнителей, план 10,5 ч / факт 11,5 ч</figcaption>
+      </figure>
+    </div>
+
+    <!-- 3.5 -->
+    <div class="feature">
+      <div class="f-text reveal">
+        <div class="f-tag">3.5</div>
+        <h3>Задания для роботов и ИИ — часть процессов</h3>
+        <p>Формат задания TeamTime — «Дано · Требуется · Инструкции» — по сути готовая постановка задачи для ИИ-агента. Поэтому робот становится ещё одним участником процесса: у него есть своя дорожка на схеме, свои задания и свои рапорты.</p>
+        <ul class="check">
+          <li>Рутинные шаги (сбор данных, черновики документов, проверки) выполняет агент.</li>
+          <li>Агент сдаёт рапорт в том же формате, что и человек, — работа остаётся прозрачной.</li>
+          <li>Решение и контроль качества остаются за человеком.</li>
+          <li>Видно, сколько времени сотрудников освободила автоматизация.</li>
+        </ul>
+      </div>
+      <figure class="reveal">
+        <div class="ai-flow">
+          <svg viewBox="0 0 640 330" xmlns="http://www.w3.org/2000/svg" font-family="Fira Sans, sans-serif" font-size="13">
+            <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1d3f9b"/></marker></defs>
+            <g fill="#f4f7fe" stroke="#dfe5f1"><rect x="0" y="0" width="640" height="110"/><rect x="0" y="110" width="640" height="110"/><rect x="0" y="220" width="640" height="110"/></g>
+            <g fill="#e8eefc"><rect x="0" y="0" width="34" height="330"/></g>
+            <g fill="#0a1f63" font-weight="700" font-size="12">
+              <text transform="translate(22 92) rotate(-90)">Руководитель</text>
+              <text transform="translate(22 196) rotate(-90)" fill="#950909">ИИ-агент</text>
+              <text transform="translate(22 300) rotate(-90)">Инженер</text>
+            </g>
+            <circle cx="70" cy="55" r="18" fill="#fff" stroke="#1d3f9b" stroke-width="2"/><text x="70" y="59" text-anchor="middle" font-size="11">Start</text>
+            <g><rect x="110" y="25" width="140" height="60" rx="8" fill="#fff" stroke="#5d9b2f" stroke-width="2"/><rect x="110" y="25" width="140" height="18" rx="8" fill="#5d9b2f"/><text x="120" y="38" fill="#fff" font-size="11">Руководитель</text><text x="120" y="60">Поставить задачу:</text><text x="120" y="76" fill="#5b667a" font-size="11">Дано · Требуется</text></g>
+            <g><rect x="200" y="135" width="150" height="60" rx="8" fill="#fff" stroke="#950909" stroke-width="2"/><rect x="200" y="135" width="150" height="18" rx="8" fill="#950909"/><text x="210" y="148" fill="#fff" font-size="11">ИИ-агент</text><text x="210" y="170">Собрать данные,</text><text x="210" y="186">черновик + рапорт</text></g>
+            <g><rect x="320" y="245" width="168" height="60" rx="8" fill="#fff" stroke="#5d9b2f" stroke-width="2"/><rect x="320" y="245" width="168" height="18" rx="8" fill="#5d9b2f"/><text x="330" y="258" fill="#fff" font-size="11">Инженер</text><text x="330" y="280">Проверить, доработать</text><text x="330" y="296" fill="#5b667a" font-size="11">рапорт, факт-часы</text></g>
+            <g><rect x="434" y="25" width="156" height="60" rx="8" fill="#fff" stroke="#5d9b2f" stroke-width="2"/><rect x="434" y="25" width="156" height="18" rx="8" fill="#5d9b2f"/><text x="444" y="38" fill="#fff" font-size="11">Руководитель</text><text x="444" y="60">Контроль качества,</text><text x="444" y="76" fill="#5b667a" font-size="11">принять часы</text></g>
+            <circle cx="612" cy="55" r="18" fill="#fff" stroke="#0a1f63" stroke-width="3"/><text x="612" y="59" text-anchor="middle" font-size="11">End</text>
+            <g stroke="#1d3f9b" stroke-width="1.6" fill="none" marker-end="url(#ar)">
+              <path d="M88 55H108"/><path d="M180 85V165H198"/><path d="M350 165H395V243"/><path d="M488 275H510V87"/><path d="M590 55H592"/>
+            </g>
+          </svg>
+        </div>
+        <figcaption>Пример процесса: ИИ-агент — исполнитель одного из шагов</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. МОДУЛИ ============ -->
+<section id="modules" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">4</div>
+      <h2>Состав программных модулей</h2>
+      <p>Модули работают на общей базе сотрудников, проектов и заданий. Внедрять можно постепенно: начать с Учёта и добавлять остальные по мере надобности.</p>
+    </div>
+
+    <div class="modules reveal" role="tablist">
+      <button class="mod-tab active" data-target="m-uchet" role="tab" aria-selected="true"><img src="../assets/img/ic-uchet.png" alt=""><b>Учёт</b><span>сотрудники, проекты, рапорты</span></button>
+      <button class="mod-tab" data-target="m-calendar" role="tab" aria-selected="false"><img src="../assets/img/ic-calendar.png" alt=""><b>Calendar</b><span>календарь заданий</span></button>
+      <button class="mod-tab" data-target="m-bpm" role="tab" aria-selected="false"><img src="../assets/img/ic-bpm.png" alt=""><b>BPM</b><span>редактор процессов</span></button>
+      <button class="mod-tab" data-target="m-career" role="tab" aria-selected="false"><img src="../assets/img/ic-career.png" alt=""><b>Карьера</b><span>опыт и рост</span></button>
+      <button class="mod-tab" data-target="m-formal" role="tab" aria-selected="false"><img src="../assets/img/ic-doc.png" alt=""><b>Формальности</b><span>документы по шаблонам</span></button>
+    </div>
+
+    <div class="mod-panel active" id="m-uchet">
+      <div>
+        <h3>TeamTime Учёт</h3>
+        <p>Ядро системы: сотрудники, проекты, виды работ, задания и рапорты, итоговые отчёты.</p>
+        <h4>Кабинет сотрудника</h4>
+        <ul class="check">
+          <li>Счётчик времени выполнения задания.</li>
+          <li>Текст задания в виде технического задания.</li>
+          <li>Ввод рапорта; фильтр заданий по статусу, срочности, проекту.</li>
+        </ul>
+        <h4>Кабинет руководителя</h4>
+        <ul class="check">
+          <li>Временные и финансовые затраты по проектам, видам работ, сотрудникам.</li>
+          <li>Рапорты сотрудников и итоговые отчёты за период.</li>
+        </ul>
+        <h4>Кабинет заказчика (C-Report)</h4>
+        <ul class="check">
+          <li>Журнал работ, рапорты и план / факт часов по проекту.</li>
+          <li>Промежуточные результаты, материалы и инструкции.</li>
+        </ul>
+      </div>
+      <figure>
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/creport-journal.jpg" alt="Журнал работ и статистика по видам работ и исполнителям" loading="lazy"></div>
+        <figcaption>Журнал работ: рапорты, план / факт часов, статистика по видам работ и исполнителям</figcaption>
+      </figure>
+    </div>
+
+    <div class="mod-panel" id="m-calendar">
+      <div>
+        <h3>TeamTime Calendar</h3>
+        <p>Календарь заданий команды: кто, что и когда делает.</p>
+        <ul class="check">
+          <li>Режимы месяц / неделя / день, перенос заданий мышью.</li>
+          <li>Фильтры по сотрудникам, проектам, видам работ, процессам.</li>
+          <li>Подзадания и контроль план / факт часов с их учётом.</li>
+          <li>Повторяющиеся задания: ежедневные, еженедельные, ежемесячные, ежегодные.</li>
+          <li>Еженедельная рассылка плана работ каждому сотруднику.</li>
+        </ul>
+      </div>
+      <figure>
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/calendar.jpg" alt="Календарь заданий команды в режиме месяца" loading="lazy"></div>
+        <figcaption>Календарь работ команды, режим «Месяц»</figcaption>
+      </figure>
+    </div>
+
+    <div class="mod-panel" id="m-bpm">
+      <div>
+        <h3>TeamTime BPM</h3>
+        <p>Редактор бизнес-процессов, в котором схема — это одновременно состав заданий и логистика их исполнения.</p>
+        <ul class="check">
+          <li>Упрощённая BPMN-нотация из 10 типовых элементов.</li>
+          <li>Каждое действие на схеме — задание с исполнителем, план-часами и инструкциями.</li>
+          <li>Запуск процесса: задания автоматически переходят от одного исполнителя к другому.</li>
+          <li>Стоимостной анализ (ABC), каталог шаблонов, архив, сферы деятельности.</li>
+          <li>Исполнителем шага может быть человек, робот или ИИ-агент.</li>
+        </ul>
+      </div>
+      <figure>
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/bpm-diagram.jpg" alt="Редактор процессов TeamTime BPM" loading="lazy"></div>
+        <figcaption>Редактор процессов: дорожки исполнителей, задания, события</figcaption>
+      </figure>
+    </div>
+
+    <div class="mod-panel" id="m-career">
+      <div>
+        <h3>TeamTime Карьера</h3>
+        <p>Учёт фактического опыта по специальностям и программа роста каждого сотрудника.</p>
+        <ul class="check">
+          <li><b>Вектор целей.</b> При приёме на работу руководитель вместе с сотрудником формирует набор профессиональных целей, согласованных с целями компании.</li>
+          <li><b>Фактический опыт.</b> Подтверждённые часы по заданиям автоматически копятся по навыкам и специальностям.</li>
+          <li><b>Уровни и цена часа.</b> Прозрачная тарификация — от стажёра до руководителя; рост уровня по подтверждённым часам.</li>
+          <li><b>Переподготовка.</b> Индивидуальный образовательный маршрут: учебный план как BPMN-процесс, учебные задания с рапортами, оценочный лист навыков по итогам.</li>
+        </ul>
+      </div>
+      <div class="shots-2">
+        <figure>
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/career-table.jpg" alt="Вектор целей: специальности, навыки и цена часа" loading="lazy"></div>
+          <figcaption>Вектор целей: навыки и цена часа</figcaption>
+        </figure>
+        <figure>
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/career-balance.jpg" alt="Баланс вектора цели — прогресс по навыкам в процентах" loading="lazy"></div>
+          <figcaption>Баланс вектора цели: прогресс по навыкам</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="mod-panel" id="m-formal">
+      <div>
+        <h3>TeamTime Формальности</h3>
+        <p>Генерация отчётных документов по шаблонам — из тех же данных, что уже есть в системе: процессов, рапортов, реквизитов заказчиков и данных сотрудников.</p>
+        <ul class="check">
+          <li>Заказчику: сметы, акты выполненных работ, счета, типовые договоры.</li>
+          <li>Сотруднику: договоры, расходные кассовые ордера, начисление оплаты.</li>
+          <li>Потенциальному клиенту: онлайн-калькулятор услуг на сайте, построенный по процессу.</li>
+          <li>Произвольные шаблоны с переменными.</li>
+        </ul>
+      </div>
+      <div>
+        <figure>
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/formal-flow.jpg" alt="Схема: из данных BPM и Учёта формируются документы для заказчика, сотрудника и клиента" loading="lazy"></div>
+          <figcaption>Откуда берутся документы</figcaption>
+        </figure>
+        <figure style="margin-top:20px">
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/formal-table.jpg" alt="Список сформированных документов: акты, счета, сметы, кассовые ордера" loading="lazy"></div>
+          <figcaption>Реестр сформированных документов</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. МАКАРЕНКО ============ -->
+<section id="makarenko" class="mk">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">5</div>
+      <h2>TeamTime — инструмент модели Макаренко в управлении коллективом</h2>
+      <p>Модель А.С. Макаренко держится на устройстве коллектива, а не на личных качествах руководителя. TeamTime делает это устройство повседневной практикой: каждый принцип модели имеет в системе конкретный механизм.</p>
+    </div>
+
+    <div class="mk-formula reveal">
+      <p class="formula">max(У) = max(Т)</p>
+      <p style="margin:0">Высокое требование к человеку выражает уважение к нему, а уважение без требования означает безразличие. В TeamTime требование и уважение — одно действие: <b>чётко поставленное задание с честно учтённым трудом</b>.</p>
+    </div>
+
+    <table class="mk-table reveal">
+      <thead><tr><th>Принцип модели</th><th>Как это реализует TeamTime</th></tr></thead>
+      <tbody>
+        <tr><td>Максимальная требовательность</td><td>Каждое задание — «Дано · Требуется · Инструкции» с план-часами. Результат принимается контролем качества; засчитывается только подтверждённый труд.</td></tr>
+        <tr><td>Максимальное уважение</td><td>Нет микроменеджмента: руководитель видит работу по рапортам. Оплата предсказуема и вычисляется из часов; вклад каждого виден команде.</td></tr>
+        <tr><td>Рапорт командира<small>в коммуне — ежедневный</small></td><td>Ежедневный рапорт сотрудника: кратко, обоснованно, с указанием времени. Лента «Что мы делаем?» вместо опросов.</td></tr>
+        <tr><td>Коллектив как инструмент</td><td>Процессы связывают людей: результат одного — входные данные другого. Общий журнал работ делает команду видимой самой себе.</td></tr>
+        <tr><td>Перспективные линии</td><td>Вектор целей в модуле Карьера: близкая перспектива — следующий уровень, дальняя — новая специальность.</td></tr>
+        <tr><td>Параллельное действие</td><td>Руководитель управляет укладом — процессами и шаблонами, — а не каждым человеком по отдельности.</td></tr>
+        <tr><td>Производительный труд и обучение</td><td>Учебные задания — такие же задания процесса, с рапортами и часами; индивидуальный образовательный маршрут ведётся в той же системе.</td></tr>
+        <tr><td>Традиции</td><td>Каталог шаблонов процессов хранит, «как у нас принято делать», и передаёт это новым сотрудникам.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="mk-link reveal">
+      <div><h4 style="margin:0 0 4px">Подробно о модели</h4><span style="color:rgba(255,255,255,.75)">История колонии и коммуны, положения о коллективной работе, опыт применения с 2008 года</span></div>
+      <a class="btn btn-primary" href="https://antoncom.github.io/makarenko/ru/" target="_blank" rel="noopener">«Модель А.С. Макаренко в работе директора» →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. ВНЕДРЕНИЕ ============ -->
+<section id="deploy">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">6</div>
+      <h2>Варианты внедрения</h2>
+      <p>Функциональность одинакова в обоих вариантах. Разница — в том, где хранятся данные и кто обслуживает сервер.</p>
+    </div>
+    <div class="deploy">
+      <div class="plan featured reveal">
+        <span class="badge">Быстрый старт</span>
+        <h3>SaaS</h3>
+        <p class="sub">TeamTime в облачном хостинге</p>
+        <ul class="check">
+          <li>Начать работу можно сразу — без сервера и администратора.</li>
+          <li>Обновления, резервное копирование и поддержка — на стороне разработчика.</li>
+          <li>Доступ из браузера для сотрудников, руководителя и заказчиков из любой точки.</li>
+          <li>Удобно для распределённых и дистанционных команд.</li>
+        </ul>
+        <p class="for">Подходит: небольшим компаниям, студиям, проектным и удалённым командам.</p>
+      </div>
+      <div class="plan reveal">
+        <h3>Personal server</h3>
+        <p class="sub">Во внутреннем контуре предприятия</p>
+        <ul class="check">
+          <li>Данные о работах, людях и процессах не покидают периметр предприятия.</li>
+          <li>Установка на сервер заказчика; работа в закрытой сети.</li>
+          <li>Интеграция с внутренними системами и собственными ИИ-агентами.</li>
+          <li>Настройка шаблонов процессов и документов под регламенты предприятия.</li>
+        </ul>
+        <p class="for">Подходит: производственным предприятиям, RnD-подразделениям, организациям с требованиями к защите информации.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ КОНТАКТЫ ============ -->
+<section class="contact" id="contact">
+  <div class="wrap reveal">
+    <h2>Обсудить внедрение</h2>
+    <p class="muted" style="max-width:640px;margin:0 auto">Покажу работающий прототип, расскажу о практике управления дистанционной командой и помогу выбрать вариант внедрения.</p>
+    <div class="cta">
+      <a class="btn btn-blue" href="https://t.me/antongavrilyuk" target="_blank" rel="noopener">Telegram @antongavrilyuk</a>
+      <a class="btn btn-primary" href="mailto:amigoalt@gmail.com">amigoalt@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>TeamTime BPM · Автор: Антон Гаврилюк · 2026</span>
+    <span><a href="https://antoncom.github.io/makarenko/ru/">Модель А.С. Макаренко</a> · <a href="https://github.com/antoncom">GitHub</a></span>
+  </div>
+</footer>
+
+</div><!-- /.sheet -->
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

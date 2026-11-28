@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TeamTime BPM — 노동을 시간으로 측정하고 마카렌코 모델로 팀을 운영하기</title>
+<meta name="description" content="TeamTime BPM — 소규모·분산 팀을 위한 근무 시간 기록, 업무 보고, 비즈니스 프로세스 시스템. 확인된 노동 1시간을 유용한 성과의 척도로 삼습니다. A.S. 마카렌코의 ‘최대한의 존중과 최대한의 요구’ 모델을 위한 도구.">
+<meta property="og:title" content="TeamTime BPM">
+<meta property="og:description" content="노동을 시간으로 측정합니다. 프로세스, 과업, 보고. 팀 리더를 위한 마카렌코 모델 도구.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<link rel="icon" href="../assets/img/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Fira+Sans+Condensed:wght@500;600;700&family=PT+Serif:ital,wght@1,400;1,700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="TeamTime BPM — 맨 위로"><img src="../assets/img/logo-wordmark.png" alt="TeamTime"></a>
+    <ul class="menu">
+      <li><a href="#origin">기원</a></li>
+      <li><a href="#concept">개념</a></li>
+      <li><a href="#how">작동 방식</a></li>
+      <li><a href="#modules">모듈</a></li>
+      <li><a href="#makarenko">마카렌코 모델</a></li>
+      <li><a href="#deploy">도입</a></li>
+    </ul>
+    <details class="lang-switch">
+      <summary>KO</summary>
+      <ul>
+        <li><a href="../ru/" lang="ru">Русский</a></li>
+        <li><a href="../en/" lang="en">English</a></li>
+        <li><a href="../de/" lang="de">Deutsch</a></li>
+        <li><a href="../es/" lang="es">Español</a></li>
+        <li><a href="../hi/" lang="hi">हिन्दी</a></li>
+        <li><a href="../zh/" lang="zh">中文</a></li>
+        <li><a href="../ko/" lang="ko" class="current">한국어</a></li>
+      </ul>
+    </details>
+    <button class="nav-toggle" aria-label="메뉴">☰</button>
+  </div>
+</nav>
+
+<div class="sheet">
+
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">팀 업무 관리 시스템</div>
+      <h1>TeamTime BPM</h1>
+      <p class="lead">노동은 <b>돈이 아닌 시간으로</b> 측정됩니다. 프로세스, 과업, 보고를 하나의 시스템에서 — 리더는 팀의 실제 업무를 보고, 모든 직원은 자신의 기여와 성장을 봅니다.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#how">작동 방식 보기 →</a>
+        <a class="btn btn-ghost" href="#deploy">도입 방식</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <img class="logo-big" src="../assets/img/logo-teamtime-en.png" alt="TeamTime — Small business BPM">
+      <p class="formula">max(R) = max(D)</p>
+      <p class="formula-cap">최대한의 존중과 최대한의 요구 —<br>도구로 구현한 A.S. 마카렌코 모델</p>
+    </div>
+  </div>
+  <div class="wrap facts-wrap">
+    <div class="facts">
+      <div class="fact"><b>2009년부터</b><span>팀의 일상 업무에 사용</span></div>
+      <div class="fact"><b>2022년부터</b><span>‘로스토프 전자 공장’ 유한회사의 원격 R&amp;D 팀 관리</span></div>
+      <div class="fact"><b>5개 모듈</b><span>기록, 캘린더, BPM, 커리어, 서식</span></div>
+      <div class="fact"><b>SaaS / 자체 서버</b><span>클라우드 또는 기업 내부망</span></div>
+    </div>
+  </div>
+</header>
+
+
+<section id="origin">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">1</div>
+      <h2>TeamTime이 만들어진 이유</h2>
+      <p>TeamTime은 ‘시장을 위해’ 만들어진 것이 아닙니다. 작은 팀 리더의 필요에서 출발했습니다. 실제로 무엇이 이루어졌는지 보고, 각자의 노동을 공정하게 평가하며, 통제에 파묻히지 않는 것.</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="reveal">
+        <h3>해결하려던 문제</h3>
+        <ul class="check">
+          <li><b>업무가 보이지 않는다.</b> 작업 관리 도구는 과업이 종료되었다는 것만 보여 줄 뿐, 얼마나 많은 노동이 들어갔는지, 일이 어떻게 진행되었는지는 보여 주지 않습니다.</li>
+          <li><b>돈은 나쁜 척도다.</b> 단가는 제각각이고 가격은 변합니다. ‘이 일의 가치는 얼마인가’라는 대화는 금세 성과에 대한 논의가 아니라 흥정이 됩니다.</li>
+          <li><b>통제가 리더를 잡아먹는다.</b> 시스템이 없으면 책임자는 모든 사람에게 직접 물어봐야 하고 — 시간도 잃고 신뢰도 무너집니다.</li>
+          <li><b>회계 시스템은 소기업에 너무 무겁다.</b> 작업 완료 확인서를 발행하고 급여를 계산하는 데 별도의 회계 패키지가 필요해서는 안 됩니다.</li>
+        </ul>
+        <div class="quote">일에 대한 요구와 일하는 사람에 대한 존중이 하나의 같은 행동이 되는 도구가 필요했습니다.
+          <small>안톤 가브릴류크(Anton Gavrilyuk), TeamTime 개발자</small></div>
+      </div>
+
+      <div class="timeline reveal">
+        <div class="tl">
+          <div class="year">2008</div>
+          <div><h4>웹 스튜디오 ‘Media Publish’</h4><p>팀은 ‘존중 + 요구’ 원칙으로 일합니다. 각자의 업무 — 과업, 보고, 시간 — 를 기록해야 할 필요가 생깁니다.</p></div>
+        </div>
+        <div class="tl">
+          <div class="year">2009</div>
+          <div><h4>TeamTime 첫 버전</h4><p>기록, 캘린더, BPM 프로세스 편집기, 커리어, 서식, 고객 포털. 시스템이 스튜디오의 핵심 도구가 됩니다.</p></div>
+        </div>
+        <div class="tl">
+          <div class="year">2012</div>
+          <div><h4>개인사업자 A.N. 가브릴류크</h4><p>TeamTime BPM은 오늘날까지 프로젝트 관리 도구로 계속 사용되고 있습니다.</p></div>
+        </div>
+        <div class="tl now">
+          <div class="year">2022</div>
+          <div><h4>분산 R&amp;D 팀</h4><p>작동하는 TeamTime BPM 프로토타입이 ‘로스토프 전자 공장’ 유한회사의 원격 임베디드 소프트웨어 팀 업무를 관리합니다.</p></div>
+        </div>
+        <div class="tl now">
+          <div class="year">2026</div>
+          <div><h4>새 판</h4><p>개념이 마카렌코 모델의 도구로 정리되고, 로봇과 AI 에이전트가 수행자로 프로세스에 참여합니다.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="concept" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">2</div>
+      <h2>돈이 아니라 시간 — 유용한 노동의 등가물</h2>
+      <p>TeamTime에서 업무의 척도는 <b>확인된 유용한 노동 1시간</b>입니다. 돈은 파생된 값입니다. 시간에서 계산되며, 그 반대가 아닙니다.</p>
+    </div>
+
+    <div class="equation reveal">
+      <div class="eq-box"><b>계획 시간</b><span>착수 전에 리더가 과업을 산정</span></div>
+      <div class="eq-op">→</div>
+      <div class="eq-box"><b>실제 시간</b><span>타이머와 수행자의 보고</span></div>
+      <div class="eq-op">→</div>
+      <div class="eq-box accent"><b>확인 시간</b><span>결과에 따라 리더가 승인</span></div>
+      <div class="eq-op">×</div>
+      <div class="eq-box"><b>등급별 시간당 단가</b><span>자격에 따라 결정 (커리어 모듈)</span></div>
+    </div>
+
+    <div class="grid-3">
+      <div class="card reveal">
+        <h4>모두에게 똑같이 명확하다</h4>
+        <p>업무 1시간은 책임자도, 엔지니어도, 고객도 이해합니다. 시간은 미리 합의하고, 계획과 비교하고, 흥정 없이 논의할 수 있습니다.</p>
+      </div>
+      <div class="card reveal">
+        <h4>가치가 떨어지지 않는다</h4>
+        <p>가격과 환율은 변해도 노동 1시간은 1시간입니다. 직원이 쌓은 경험은 시간으로 표현되어 오랫동안 의미를 유지합니다.</p>
+      </div>
+      <div class="card reveal">
+        <h4>유용한 노동만 계산된다</h4>
+        <p>보고와 승인된 결과가 뒷받침될 때에만 시간이 인정됩니다. 시스템에 ‘그냥 있는 것’은 급여로 바뀌지 않습니다.</p>
+      </div>
+      <div class="card reveal">
+        <h4>직종 간 비교가 가능하다</h4>
+        <p>프로그래머, 디자이너, 관리자가 같은 척도로 일합니다. 자격 차이는 다른 계산 논리가 아니라 시간당 단가에 반영됩니다.</p>
+      </div>
+      <div class="card reveal">
+        <h4>사람과 함께 성장한다</h4>
+        <p>전문 분야에서 확인된 시간이 곧 실제 경험입니다. 경험을 쌓으면 시간당 단가가 더 높은 다음 등급으로 올라갑니다.</p>
+      </div>
+      <div class="card reveal">
+        <h4>정직한 경제성</h4>
+        <p>프로젝트와 프로세스의 원가는 ‘눈대중’이 아니라 실제 시간(활동기준원가, Activity Based Costing)으로 계산됩니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">3</div>
+      <h2>TeamTime의 작동 방식</h2>
+      <p>시스템을 떠받치는 다섯 가지 원칙. 스크린샷은 첫 번째 러시아어 버전 인터페이스이며, 그 뒤의 논리는 바뀌지 않았습니다.</p>
+    </div>
+
+    
+    <div class="feature">
+      <div class="f-text reveal">
+        <div class="f-tag">3.1</div>
+        <h3>시간 기록과 보고</h3>
+        <p>직원이 과업을 열고 ‘시작’을 누르면 타이머가 돌아갑니다. 끝나면 짧은 보고를 씁니다. 무엇을 했는지, 결과는 무엇인지, 시간이 얼마나 걸렸는지.</p>
+        <ul class="check">
+          <li>보고는 하루의 핵심 문서입니다. 짧게, 요점만, 시간과 함께.</li>
+          <li>‘우리는 지금 무엇을 하고 있나?’ 피드가 팀의 보고를 실시간으로 보여 줍니다.</li>
+          <li>모든 과업, 프로젝트, 직원별로 계획 / 실제 시간을 볼 수 있습니다.</li>
+          <li>리더는 캐묻기가 아니라 보고로 관리합니다.</li>
+        </ul>
+      </div>
+      <figure class="reveal">
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/uchet-cabinet.jpg" alt="직원 포털: 과업, 과업 명세, 보고 피드" loading="lazy"></div>
+        <figcaption>직원 포털: 과업, 과업 내용, 팀 보고 피드</figcaption>
+      </figure>
+    </div>
+
+    
+    <div class="feature rev">
+      <div class="f-text reveal">
+        <div class="f-tag">3.2</div>
+        <h3>프로세스, 프로젝트, 과업 — 계획과 기록의 기본 단위</h3>
+        <div class="units">
+          <div class="unit"><b>프로젝트</b><span>누구를 위해, 왜 일하는가</span></div>
+          <div class="unit"><b>프로세스</b><span>BPMN 다이어그램: 누가, 어떤 순서로</span></div>
+          <div class="unit"><b>과업</b><span>주어진 것 · 요구 사항 · 지침</span></div>
+          <div class="unit"><b>보고</b><span>결과와 실제 시간</span></div>
+        </div>
+        <p>반복되는 업무는 한 번 프로세스로 기술한 뒤 템플릿 카탈로그에서 실행합니다. 모든 과업은 기술 명세처럼 작성됩니다. <b>무엇이 주어졌고, 무엇이 요구되며, 어떻게 하는가</b>. 시스템에는 모호한 지시가 없습니다.</p>
+      </div>
+      <div class="shots-2 reveal">
+        <figure>
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/bpm-processes.jpg" alt="상태가 표시된 프로세스 목록" loading="lazy"></div>
+          <figcaption>프로세스와 상태</figcaption>
+        </figure>
+        <figure>
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/creport-task.jpg" alt="‘주어진 것 / 요구 사항 / 지침’ 형식의 과업" loading="lazy"></div>
+          <figcaption>과업: 주어진 것 / 요구 사항 / 지침</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    
+    <div class="feature">
+      <div class="f-text reveal">
+        <div class="f-tag">3.3</div>
+        <h3>필요한 정보를, 필요한 때에, 필요한 사람에게</h3>
+        <p>프로세스가 스스로 업무를 다음 단계로 넘깁니다. 한 참여자가 보고를 제출하면 다음 참여자가 지침과 입력 데이터가 담긴 자신의 과업을 받습니다.</p>
+        <ul class="check">
+          <li><b>직원</b>은 자신의 과업과 자신이 참여하는 프로세스만 보며, 주간 업무 계획을 받습니다.</li>
+          <li><b>리더</b>는 프로젝트, 업무 유형, 사람별 보고와 요약을 받습니다.</li>
+          <li><b>고객</b>은 자신의 포털(C-Report)에서 진행 상황, 보고, 계획 / 실제 시간을 봅니다.</li>
+        </ul>
+      </div>
+      <figure class="reveal">
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/calendar-weekly.jpg" alt="직원에게 이메일로 발송되는 주간 업무 계획" loading="lazy" style="max-height:560px;object-fit:cover;object-position:top"></div>
+        <figcaption>직원에게 이메일로 발송되는 주간 업무 계획</figcaption>
+      </figure>
+    </div>
+
+    
+    <div class="feature rev">
+      <div class="f-text reveal">
+        <div class="f-tag">3.4</div>
+        <h3>프로세스의 투명성</h3>
+        <p>TeamTime의 프로세스는 폴더 속 규정이 아니라 살아 있는 다이어그램입니다. 각 단계의 수행자가 누구인지, 지금 업무가 어디에 있는지, 몇 시간이 계획되고 쓰였는지 다이어그램에서 보입니다.</p>
+        <ul class="check">
+          <li>단순화한 BPMN 표기법 — 교육 없이도 이해되는 10가지 표준 요소.</li>
+          <li>실제 시간에 기반한 프로세스 원가 분석.</li>
+          <li>어느 단계에서 어려움이나 오류가 생겼는지 바로 보입니다.</li>
+          <li>완료된 프로세스 아카이브 — 업무가 실제로 어떻게 이루어졌는지의 기록.</li>
+        </ul>
+      </div>
+      <figure class="reveal">
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/bpm-diagram.jpg" alt="수행자와 계획/실제 시간이 표시된 TeamTime BPM 편집기의 프로세스 다이어그램" loading="lazy"></div>
+        <figcaption>프로세스 ‘도메인 이름 등록’: 수행자 레인, 계획 10.5시간 / 실제 11.5시간</figcaption>
+      </figure>
+    </div>
+
+    
+    <div class="feature">
+      <div class="f-text reveal">
+        <div class="f-tag">3.5</div>
+        <h3>로봇과 AI를 위한 과업도 프로세스의 일부</h3>
+        <p>TeamTime의 과업 형식 — ‘주어진 것 · 요구 사항 · 지침’ — 은 사실상 AI 에이전트를 위한 완성된 과업 설명입니다. 그래서 로봇은 프로세스의 또 다른 참여자가 됩니다. 다이어그램에 자신의 레인이 있고, 자신의 과업과 보고가 있습니다.</p>
+        <ul class="check">
+          <li>반복적인 단계(데이터 수집, 문서 초안, 점검)는 에이전트가 수행합니다.</li>
+          <li>에이전트도 사람과 같은 형식으로 보고를 제출하므로 업무는 투명하게 유지됩니다.</li>
+          <li>결정과 품질 관리는 사람이 맡습니다.</li>
+          <li>자동화로 직원의 시간이 얼마나 절약되었는지 보입니다.</li>
+        </ul>
+      </div>
+      <figure class="reveal">
+        <div class="ai-flow">
+          <svg viewBox="0 0 640 330" xmlns="http://www.w3.org/2000/svg" font-family="Fira Sans, sans-serif" font-size="13">
+            <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1d3f9b"/></marker></defs>
+            <g fill="#f4f7fe" stroke="#dfe5f1"><rect x="0" y="0" width="640" height="110"/><rect x="0" y="110" width="640" height="110"/><rect x="0" y="220" width="640" height="110"/></g>
+            <g fill="#e8eefc"><rect x="0" y="0" width="34" height="330"/></g>
+            <g fill="#0a1f63" font-weight="700" font-size="12">
+              <text transform="translate(22 92) rotate(-90)">리더</text>
+              <text transform="translate(22 196) rotate(-90)" fill="#950909">AI 에이전트</text>
+              <text transform="translate(22 300) rotate(-90)">엔지니어</text>
+            </g>
+            <circle cx="70" cy="55" r="18" fill="#fff" stroke="#1d3f9b" stroke-width="2"/><text x="70" y="59" text-anchor="middle" font-size="11">Start</text>
+            <g><rect x="110" y="25" width="140" height="60" rx="8" fill="#fff" stroke="#5d9b2f" stroke-width="2"/><rect x="110" y="25" width="140" height="18" rx="8" fill="#5d9b2f"/><text x="120" y="38" fill="#fff" font-size="11">리더</text><text x="120" y="60">과업 부여:</text><text x="120" y="76" fill="#5b667a" font-size="11">주어진 것 · 요구 사항</text></g>
+            <g><rect x="200" y="135" width="150" height="60" rx="8" fill="#fff" stroke="#950909" stroke-width="2"/><rect x="200" y="135" width="150" height="18" rx="8" fill="#950909"/><text x="210" y="148" fill="#fff" font-size="11">AI 에이전트</text><text x="210" y="170">데이터 수집,</text><text x="210" y="186">초안 + 보고</text></g>
+            <g><rect x="320" y="245" width="168" height="60" rx="8" fill="#fff" stroke="#5d9b2f" stroke-width="2"/><rect x="320" y="245" width="168" height="18" rx="8" fill="#5d9b2f"/><text x="330" y="258" fill="#fff" font-size="11">엔지니어</text><text x="330" y="280">검토, 보완</text><text x="330" y="296" fill="#5b667a" font-size="11">보고, 실제 시간</text></g>
+            <g><rect x="434" y="25" width="156" height="60" rx="8" fill="#fff" stroke="#5d9b2f" stroke-width="2"/><rect x="434" y="25" width="156" height="18" rx="8" fill="#5d9b2f"/><text x="444" y="38" fill="#fff" font-size="11">리더</text><text x="444" y="60">품질 관리,</text><text x="444" y="76" fill="#5b667a" font-size="11">시간 승인</text></g>
+            <circle cx="612" cy="55" r="18" fill="#fff" stroke="#0a1f63" stroke-width="3"/><text x="612" y="59" text-anchor="middle" font-size="11">End</text>
+            <g stroke="#1d3f9b" stroke-width="1.6" fill="none" marker-end="url(#ar)">
+              <path d="M88 55H108"/><path d="M180 85V165H198"/><path d="M350 165H395V243"/><path d="M488 275H510V87"/><path d="M590 55H592"/>
+            </g>
+          </svg>
+        </div>
+        <figcaption>프로세스 예: AI 에이전트가 단계 중 하나를 수행</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+
+<section id="modules" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">4</div>
+      <h2>소프트웨어 모듈</h2>
+      <p>모듈은 직원, 프로젝트, 과업에 대한 공통 데이터를 사용합니다. 단계적으로 도입할 수 있습니다. 기록부터 시작해 필요에 따라 나머지를 추가하세요.</p>
+    </div>
+
+    <div class="modules reveal" role="tablist">
+      <button class="mod-tab active" data-target="m-uchet" role="tab" aria-selected="true"><img src="../assets/img/ic-uchet.png" alt=""><b>기록</b><span>직원, 프로젝트, 보고</span></button>
+      <button class="mod-tab" data-target="m-calendar" role="tab" aria-selected="false"><img src="../assets/img/ic-calendar.png" alt=""><b>Calendar</b><span>과업 캘린더</span></button>
+      <button class="mod-tab" data-target="m-bpm" role="tab" aria-selected="false"><img src="../assets/img/ic-bpm.png" alt=""><b>BPM</b><span>프로세스 편집기</span></button>
+      <button class="mod-tab" data-target="m-career" role="tab" aria-selected="false"><img src="../assets/img/ic-career.png" alt=""><b>커리어</b><span>경험과 성장</span></button>
+      <button class="mod-tab" data-target="m-formal" role="tab" aria-selected="false"><img src="../assets/img/ic-doc.png" alt=""><b>서식</b><span>템플릿 기반 문서</span></button>
+    </div>
+
+    <div class="mod-panel active" id="m-uchet">
+      <div>
+        <h3>TeamTime 기록</h3>
+        <p>시스템의 핵심: 직원, 프로젝트, 업무 유형, 과업과 보고, 종합 보고서.</p>
+        <h4>직원 포털</h4>
+        <ul class="check">
+          <li>과업 수행 타이머.</li>
+          <li>기술 명세 형태의 과업 내용.</li>
+          <li>보고 입력; 상태, 긴급도, 프로젝트별 과업 필터.</li>
+        </ul>
+        <h4>리더 포털</h4>
+        <ul class="check">
+          <li>프로젝트, 업무 유형, 직원별 시간 및 비용.</li>
+          <li>직원 보고와 기간별 종합 보고서.</li>
+        </ul>
+        <h4>고객 포털 (C-Report)</h4>
+        <ul class="check">
+          <li>프로젝트별 작업 일지, 보고, 계획 / 실제 시간.</li>
+          <li>중간 결과물, 자료, 지침.</li>
+        </ul>
+      </div>
+      <figure>
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/creport-journal.jpg" alt="작업 일지와 업무 유형·수행자별 통계" loading="lazy"></div>
+        <figcaption>작업 일지: 보고, 계획 / 실제 시간, 업무 유형·수행자별 통계</figcaption>
+      </figure>
+    </div>
+
+    <div class="mod-panel" id="m-calendar">
+      <div>
+        <h3>TeamTime Calendar</h3>
+        <p>팀의 과업 캘린더: 누가, 무엇을, 언제 하는가.</p>
+        <ul class="check">
+          <li>월 / 주 / 일 보기, 마우스로 과업 이동.</li>
+          <li>직원, 프로젝트, 업무 유형, 프로세스별 필터.</li>
+          <li>하위 과업과 이를 반영한 계획 / 실제 시간 관리.</li>
+          <li>반복 과업: 매일, 매주, 매월, 매년.</li>
+          <li>모든 직원에게 주간 업무 계획을 이메일로 발송.</li>
+        </ul>
+      </div>
+      <figure>
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/calendar.jpg" alt="월 보기의 팀 과업 캘린더" loading="lazy"></div>
+        <figcaption>팀 업무 캘린더, ‘월’ 보기</figcaption>
+      </figure>
+    </div>
+
+    <div class="mod-panel" id="m-bpm">
+      <div>
+        <h3>TeamTime BPM</h3>
+        <p>다이어그램이 곧 과업 구성이자 실행 흐름이 되는 비즈니스 프로세스 편집기.</p>
+        <ul class="check">
+          <li>10가지 표준 요소로 된 단순화한 BPMN 표기법.</li>
+          <li>다이어그램의 모든 동작은 수행자, 계획 시간, 지침을 가진 과업입니다.</li>
+          <li>프로세스 실행: 과업이 한 수행자에서 다음 수행자로 자동 전달됩니다.</li>
+          <li>원가 분석(ABC), 템플릿 카탈로그, 아카이브, 활동 영역.</li>
+          <li>단계의 수행자는 사람, 로봇 또는 AI 에이전트일 수 있습니다.</li>
+        </ul>
+      </div>
+      <figure>
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+          <img src="../assets/img/bpm-diagram.jpg" alt="TeamTime BPM 프로세스 편집기" loading="lazy"></div>
+        <figcaption>프로세스 편집기: 수행자 레인, 과업, 이벤트</figcaption>
+      </figure>
+    </div>
+
+    <div class="mod-panel" id="m-career">
+      <div>
+        <h3>TeamTime 커리어</h3>
+        <p>전문 분야별 실제 경험 기록과 모든 직원을 위한 성장 프로그램.</p>
+        <ul class="check">
+          <li><b>목표 벡터.</b> 채용 시 리더와 직원이 함께 회사의 목표와 맞물린 직업적 목표를 정합니다.</li>
+          <li><b>실제 경험.</b> 과업에서 확인된 시간이 기술과 전문 분야별로 자동 누적됩니다.</li>
+          <li><b>등급과 시간당 단가.</b> 인턴부터 리더까지 투명한 보수 체계. 확인된 시간에 따라 등급이 오릅니다.</li>
+          <li><b>재교육.</b> 개인 학습 경로: BPMN 프로세스로 된 교육 과정, 보고가 포함된 학습 과업, 마지막의 역량 평가표.</li>
+        </ul>
+      </div>
+      <div class="shots-2">
+        <figure>
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/career-table.jpg" alt="목표 벡터: 전문 분야, 기술, 시간당 단가" loading="lazy"></div>
+          <figcaption>목표 벡터: 기술과 시간당 단가</figcaption>
+        </figure>
+        <figure>
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/career-balance.jpg" alt="목표 벡터 균형 — 기술별 진척도(%)" loading="lazy"></div>
+          <figcaption>목표 벡터 균형: 기술별 진척도</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="mod-panel" id="m-formal">
+      <div>
+        <h3>TeamTime 서식</h3>
+        <p>템플릿으로 문서 생성 — 시스템에 이미 있는 데이터, 즉 프로세스, 보고, 고객 정보, 직원 정보를 활용합니다.</p>
+        <ul class="check">
+          <li>고객용: 견적서, 작업 완료 확인서, 청구서, 표준 계약서.</li>
+          <li>직원용: 계약서, 현금 지급 전표, 급여 계산.</li>
+          <li>잠재 고객용: 프로세스를 바탕으로 만든 웹사이트의 온라인 서비스 계산기.</li>
+          <li>변수가 있는 사용자 정의 템플릿.</li>
+        </ul>
+      </div>
+      <div>
+        <figure>
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/formal-flow.jpg" alt="도식: BPM과 기록 데이터로 고객, 직원, 잠재 고객용 문서가 만들어진다" loading="lazy"></div>
+          <figcaption>문서는 어디에서 오는가</figcaption>
+        </figure>
+        <figure style="margin-top:20px">
+          <div class="shot"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="../assets/img/formal-table.jpg" alt="생성된 문서 목록: 확인서, 청구서, 견적서, 현금 전표" loading="lazy"></div>
+          <figcaption>생성된 문서 대장</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="makarenko" class="mk">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">5</div>
+      <h2>TeamTime — 집단 운영을 위한 마카렌코 모델의 도구</h2>
+      <p>A.S. 마카렌코 모델은 리더의 개인적 자질이 아니라 집단의 구조에 기반합니다. TeamTime은 이 구조를 일상의 실천으로 만듭니다. 모델의 모든 원칙에 시스템 안의 구체적인 장치가 있습니다.</p>
+    </div>
+
+    <div class="mk-formula reveal">
+      <p class="formula">max(R) = max(D)</p>
+      <p style="margin:0">사람에게 높은 요구를 하는 것은 그를 존중한다는 표현이며, 요구 없는 존중은 무관심을 뜻합니다. TeamTime에서 요구와 존중은 하나의 행동입니다. <b>명확하게 부여된 과업과 정직하게 계산된 노동</b>.</p>
+    </div>
+
+    <table class="mk-table reveal">
+      <thead><tr><th>모델의 원칙</th><th>TeamTime의 구현 방식</th></tr></thead>
+      <tbody>
+        <tr><td>최대한의 요구</td><td>모든 과업은 계획 시간이 있는 ‘주어진 것 · 요구 사항 · 지침’입니다. 결과는 품질 관리를 거치며, 확인된 노동만 인정됩니다.</td></tr>
+        <tr><td>최대한의 존중</td><td>마이크로매니지먼트가 없습니다. 리더는 보고로 업무를 봅니다. 보수는 예측 가능하며 시간으로 계산되고, 각자의 기여가 팀 전체에 보입니다.</td></tr>
+        <tr><td>지휘관의 보고<small>코뮌에서는 — 매일</small></td><td>직원의 일일 보고: 짧게, 근거를 들어, 시간과 함께. 캐묻기 대신 ‘우리는 지금 무엇을 하고 있나?’ 피드.</td></tr>
+        <tr><td>도구로서의 집단</td><td>프로세스가 사람을 잇습니다. 한 사람의 결과가 다른 사람의 입력이 됩니다. 공동 작업 일지가 팀이 스스로를 볼 수 있게 합니다.</td></tr>
+        <tr><td>전망선</td><td>커리어 모듈의 목표 벡터: 가까운 전망은 다음 등급, 먼 전망은 새로운 전문 분야입니다.</td></tr>
+        <tr><td>병행 작용</td><td>리더는 한 사람 한 사람이 아니라 일하는 방식 — 프로세스와 템플릿 — 을 관리합니다.</td></tr>
+        <tr><td>생산적 노동과 학습</td><td>학습 과업도 보고와 시간이 있는 일반 프로세스 과업이며, 개인 학습 경로도 같은 시스템에서 진행됩니다.</td></tr>
+        <tr><td>전통</td><td>프로세스 템플릿 카탈로그는 ‘우리가 일하는 방식’을 보존하고 새 직원에게 전합니다.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="mk-link reveal">
+      <div><h4 style="margin:0 0 4px">모델에 대해 더 알아보기</h4><span style="color:rgba(255,255,255,.75)">콜로니와 코뮌의 역사, 집단 작업 규정, 2008년부터의 적용 경험</span></div>
+      <a class="btn btn-primary" href="https://antoncom.github.io/makarenko/ko/" target="_blank" rel="noopener">‘공장장의 업무에 적용한 A.S. 마카렌코 모델’ →</a>
+    </div>
+  </div>
+</section>
+
+
+<section id="deploy">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">6</div>
+      <h2>도입 방식</h2>
+      <p>두 방식 모두 기능은 같습니다. 차이는 데이터가 어디에 저장되고 누가 서버를 관리하느냐입니다.</p>
+    </div>
+    <div class="deploy">
+      <div class="plan featured reveal">
+        <span class="badge">빠른 시작</span>
+        <h3>SaaS</h3>
+        <p class="sub">클라우드 호스팅의 TeamTime</p>
+        <ul class="check">
+          <li>서버와 관리자 없이 바로 시작할 수 있습니다.</li>
+          <li>업데이트, 백업, 기술 지원은 개발자가 맡습니다.</li>
+          <li>직원, 리더, 고객이 어디서나 브라우저로 접속합니다.</li>
+          <li>분산·원격 팀에 편리합니다.</li>
+        </ul>
+        <p class="for">적합 대상: 소기업, 스튜디오, 프로젝트 팀, 원격 팀.</p>
+      </div>
+      <div class="plan reveal">
+        <h3>Personal server</h3>
+        <p class="sub">기업 내부망에 설치</p>
+        <ul class="check">
+          <li>업무, 사람, 프로세스에 관한 데이터가 기업 경계를 벗어나지 않습니다.</li>
+          <li>고객 서버에 설치하며, 폐쇄망에서 운영합니다.</li>
+          <li>내부 시스템 및 자체 AI 에이전트와 연동.</li>
+          <li>기업 규정에 맞춘 프로세스·문서 템플릿 설정.</li>
+        </ul>
+        <p class="for">적합 대상: 제조 기업, R&amp;D 부서, 정보 보안 요건이 있는 조직.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="contact" id="contact">
+  <div class="wrap reveal">
+    <h2>도입 상담</h2>
+    <p class="muted" style="max-width:640px;margin:0 auto">작동하는 프로토타입을 보여 드리고, 원격 팀 운영 경험을 나누며, 도입 방식 선택을 도와드립니다.</p>
+    <div class="cta">
+      <a class="btn btn-blue" href="https://t.me/antongavrilyuk" target="_blank" rel="noopener">Telegram @antongavrilyuk</a>
+      <a class="btn btn-primary" href="mailto:amigoalt@gmail.com">amigoalt@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>TeamTime BPM · 저자: 안톤 가브릴류크 · 2026</span>
+    <span><a href="https://antoncom.github.io/makarenko/ko/">A.S. 마카렌코 모델</a> · <a href="https://github.com/antoncom">GitHub</a></span>
+  </div>
+</footer>
+
+</div>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
